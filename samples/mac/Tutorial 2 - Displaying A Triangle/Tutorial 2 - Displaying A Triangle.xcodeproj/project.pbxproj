@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		341689B610DAF28000B941D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689B510DAF28000B941D4 /* Cocoa.framework */; };
+		341689E810DAF30900B941D4 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689E610DAF30900B941D4 /* SDL.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		341689E910DAF30900B941D4 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689E710DAF30900B941D4 /* SDL_image.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		341689F310DAF32500B941D4 /* lavish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689F210DAF31A00B941D4 /* lavish.framework */; };
+		341689F410DAF32900B941D4 /* lavish.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 341689F210DAF31A00B941D4 /* lavish.framework */; };
+		341689FF10DAF36B00B941D4 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 341689FE10DAF36B00B941D4 /* SDLMain.m */; };
+		34168A0110DAF37500B941D4 /* GLEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34168A0010DAF37500B941D4 /* GLEW.framework */; };
+		34168A0D10DAF3A000B941D4 /* GLEW.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 34168A0010DAF37500B941D4 /* GLEW.framework */; };
+		34168A0E10DAF3A000B941D4 /* SDL.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 341689E610DAF30900B941D4 /* SDL.framework */; };
+		34168A0F10DAF3A000B941D4 /* SDL_image.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 341689E710DAF30900B941D4 /* SDL_image.framework */; };
+		34168A4910DAF55E00B941D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34168A4810DAF55E00B941D4 /* OpenGL.framework */; };
+		8DD76F650486A84900D96B5E /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.mm */; settings = {ATTRIBUTES = (); }; };
+		8DD76F6A0486A84900D96B5E /* Tutorial 2 - Displaying A Triangle.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* Tutorial 2 - Displaying A Triangle.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		341689F110DAF31A00B941D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 341689EA10DAF31A00B941D4 /* lavish.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = lavish;
+		};
+		341689F510DAF33800B941D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 341689EA10DAF31A00B941D4 /* lavish.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = lavish;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		341689D110DAF2CF00B941D4 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34168A0D10DAF3A000B941D4 /* GLEW.framework in Copy Frameworks */,
+				34168A0E10DAF3A000B941D4 /* SDL.framework in Copy Frameworks */,
+				34168A0F10DAF3A000B941D4 /* SDL_image.framework in Copy Frameworks */,
+				341689F410DAF32900B941D4 /* lavish.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F6A0486A84900D96B5E /* Tutorial 2 - Displaying A Triangle.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		341689B510DAF28000B941D4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		341689E610DAF30900B941D4 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../projects/mac/dependancies/SDL.framework; sourceTree = SOURCE_ROOT; };
+		341689E710DAF30900B941D4 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = ../../../projects/mac/dependancies/SDL_image.framework; sourceTree = SOURCE_ROOT; };
+		341689EA10DAF31A00B941D4 /* lavish.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = lavish.xcodeproj; path = ../../../projects/mac/lavish.xcodeproj; sourceTree = SOURCE_ROOT; };
+		341689FD10DAF36B00B941D4 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDLMain.h; path = ../../../projects/mac/dependancies/SDLMain.h; sourceTree = SOURCE_ROOT; };
+		341689FE10DAF36B00B941D4 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDLMain.m; path = ../../../projects/mac/dependancies/SDLMain.m; sourceTree = SOURCE_ROOT; };
+		34168A0010DAF37500B941D4 /* GLEW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLEW.framework; path = ../../../projects/mac/dependancies/GLEW.framework; sourceTree = SOURCE_ROOT; };
+		34168A4810DAF55E00B941D4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8DD76F6C0486A84900D96B5E /* Tutorial 2 - Displaying A Triangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Tutorial 2 - Displaying A Triangle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6859E8B029090EE04C91782 /* Tutorial 2 - Displaying A Triangle.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "Tutorial 2 - Displaying A Triangle.1"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341689F310DAF32500B941D4 /* lavish.framework in Frameworks */,
+				341689B610DAF28000B941D4 /* Cocoa.framework in Frameworks */,
+				341689E810DAF30900B941D4 /* SDL.framework in Frameworks */,
+				341689E910DAF30900B941D4 /* SDL_image.framework in Frameworks */,
+				34168A0110DAF37500B941D4 /* GLEW.framework in Frameworks */,
+				34168A4910DAF55E00B941D4 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* Tutorial 2 - Displaying A Triangle */ = {
+			isa = PBXGroup;
+			children = (
+				341689EA10DAF31A00B941D4 /* lavish.xcodeproj */,
+				341689BB10DAF29000B941D4 /* frameworks */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				34168A4810DAF55E00B941D4 /* OpenGL.framework */,
+			);
+			name = "Tutorial 2 - Displaying A Triangle";
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				341689FD10DAF36B00B941D4 /* SDLMain.h */,
+				341689FE10DAF36B00B941D4 /* SDLMain.m */,
+				08FB7796FE84155DC02AAC07 /* main.mm */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* Tutorial 2 - Displaying A Triangle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		341689BB10DAF29000B941D4 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34168A0010DAF37500B941D4 /* GLEW.framework */,
+				341689E610DAF30900B941D4 /* SDL.framework */,
+				341689E710DAF30900B941D4 /* SDL_image.framework */,
+				341689B510DAF28000B941D4 /* Cocoa.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		341689EB10DAF31A00B941D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				341689F210DAF31A00B941D4 /* lavish.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* Tutorial 2 - Displaying A Triangle.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* Tutorial 2 - Displaying A Triangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "Tutorial 2 - Displaying A Triangle" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+				341689D110DAF2CF00B941D4 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				341689F610DAF33800B941D4 /* PBXTargetDependency */,
+			);
+			name = "Tutorial 2 - Displaying A Triangle";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tutorial 2 - Displaying A Triangle";
+			productReference = 8DD76F6C0486A84900D96B5E /* Tutorial 2 - Displaying A Triangle */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "Tutorial 2 - Displaying A Triangle" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* Tutorial 2 - Displaying A Triangle */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 341689EB10DAF31A00B941D4 /* Products */;
+					ProjectRef = 341689EA10DAF31A00B941D4 /* lavish.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* Tutorial 2 - Displaying A Triangle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		341689F210DAF31A00B941D4 /* lavish.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = lavish.framework;
+			remoteRef = 341689F110DAF31A00B941D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F650486A84900D96B5E /* main.mm in Sources */,
+				341689FF10DAF36B00B941D4 /* SDLMain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		341689F610DAF33800B941D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = lavish;
+			targetProxy = 341689F510DAF33800B941D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../projects/mac/dependancies\"",
+					"\"$(SRCROOT)/../../../projects/mac/dependancies\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_GLIBCXX_DEBUG=1",
+					"_GLIBCXX_DEBUG_PEDANTIC=1",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tutorial 2 - Displaying A Triangle";
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../projects/mac/dependancies\"",
+					"\"$(SRCROOT)/../../../projects/mac/dependancies\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tutorial 2 - Displaying A Triangle";
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "Tutorial 2 - Displaying A Triangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "Tutorial 2 - Displaying A Triangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
