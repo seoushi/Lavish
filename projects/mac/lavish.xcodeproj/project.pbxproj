@@ -23,9 +23,6 @@
 		341687DD10DADE3000B941D4 /* GLEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DA10DADE3000B941D4 /* GLEW.framework */; };
 		341687DE10DADE3000B941D4 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DB10DADE3000B941D4 /* SDL.framework */; };
 		341687DF10DADE3000B941D4 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DC10DADE3000B941D4 /* SDL_image.framework */; };
-		3416881410DADE5200B941D4 /* GLEW.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DA10DADE3000B941D4 /* GLEW.framework */; };
-		3416881510DADE5200B941D4 /* SDL.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DB10DADE3000B941D4 /* SDL.framework */; };
-		3416881610DADE5200B941D4 /* SDL_image.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DC10DADE3000B941D4 /* SDL_image.framework */; };
 		3416881910DADE6C00B941D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3416881810DADE6C00B941D4 /* OpenGL.framework */; };
 		3416884D10DAE07D00B941D4 /* color.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416883510DAE07D00B941D4 /* color.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		3416884E10DAE07D00B941D4 /* rectangle.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416883610DAE07D00B941D4 /* rectangle.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,22 +48,6 @@
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		3416881A10DADE6D00B941D4 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3416881410DADE5200B941D4 /* GLEW.framework in Copy Frameworks */,
-				3416881510DADE5200B941D4 /* SDL.framework in Copy Frameworks */,
-				3416881610DADE5200B941D4 /* SDL_image.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -336,7 +317,6 @@
 				8DC2EF520486A6940098B216 /* Resources */,
 				8DC2EF540486A6940098B216 /* Sources */,
 				8DC2EF560486A6940098B216 /* Frameworks */,
-				3416881A10DADE6D00B941D4 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);

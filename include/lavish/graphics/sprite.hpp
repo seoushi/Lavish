@@ -12,7 +12,7 @@
 #include <lavish/renderable.hpp>
 #include <lavish/resource.hpp>
 #include <lavish/texture.hpp>
-#include <lavish/common/rectangle.hpp>
+#include <lavish/rectangle.hpp>
 #include <lavish/vertexBuffer.hpp>
 #include <lavish/platform.hpp>
 

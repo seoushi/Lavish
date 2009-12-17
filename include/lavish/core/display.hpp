@@ -12,7 +12,7 @@
 
 #include <lavish/platform.hpp>
 #include <string>
-#include <lavish/common/color.hpp>
+#include <lavish/color.hpp>
 #include <lavish/eventListener.hpp>
 #include <list>
 #include <lavish/vector2.hpp>

@@ -11,7 +11,7 @@
 
 #include <lavish/vector2.hpp>
 #include <lavish/vector3.hpp>
-#include <lavish/common/color.hpp>
+#include <lavish/color.hpp>
 #include <lavish/platform.hpp>
 
 namespace lavish

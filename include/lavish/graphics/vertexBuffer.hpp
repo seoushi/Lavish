@@ -14,7 +14,7 @@
 #include <lavish/platform.hpp>
 #include <lavish/vertexFormats.hpp>
 #include <lavish/resource.hpp>
-#include <lavish/common/types.hpp>
+#include <lavish/types.hpp>
 
 namespace lavish
 {

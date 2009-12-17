@@ -7,7 +7,7 @@
  * Copyright 2009 Seoushi Games. All rights reserved.
  */
 
-#include <lavish/common/color.hpp>
+#include <lavish/color.hpp>
 #include <algorithm>
 
 using namespace std;
