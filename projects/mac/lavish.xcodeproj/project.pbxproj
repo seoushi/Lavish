@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3416868010DADDAF00B941D4 /* color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867010DADDAF00B941D4 /* color.cpp */; };
+		3416868110DADDAF00B941D4 /* rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867110DADDAF00B941D4 /* rectangle.cpp */; };
+		3416868210DADDAF00B941D4 /* display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867310DADDAF00B941D4 /* display.cpp */; };
+		3416868310DADDAF00B941D4 /* eventListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867410DADDAF00B941D4 /* eventListener.cpp */; };
+		3416868410DADDAF00B941D4 /* keyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867510DADDAF00B941D4 /* keyboard.cpp */; };
+		3416868510DADDAF00B941D4 /* mouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867610DADDAF00B941D4 /* mouse.cpp */; };
+		3416868610DADDAF00B941D4 /* resource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867710DADDAF00B941D4 /* resource.cpp */; };
+		3416868710DADDAF00B941D4 /* stateManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867810DADDAF00B941D4 /* stateManager.cpp */; };
+		3416868810DADDAF00B941D4 /* timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867910DADDAF00B941D4 /* timer.cpp */; };
+		3416868910DADDAF00B941D4 /* sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867B10DADDAF00B941D4 /* sprite.cpp */; };
+		3416868A10DADDAF00B941D4 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867C10DADDAF00B941D4 /* texture.cpp */; };
+		3416868B10DADDAF00B941D4 /* vertexFormats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867D10DADDAF00B941D4 /* vertexFormats.cpp */; };
+		3416868C10DADDAF00B941D4 /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867F10DADDAF00B941D4 /* matrix.cpp */; };
+		341687DD10DADE3000B941D4 /* GLEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DA10DADE3000B941D4 /* GLEW.framework */; };
+		341687DE10DADE3000B941D4 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DB10DADE3000B941D4 /* SDL.framework */; };
+		341687DF10DADE3000B941D4 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DC10DADE3000B941D4 /* SDL_image.framework */; };
+		3416881410DADE5200B941D4 /* GLEW.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DA10DADE3000B941D4 /* GLEW.framework */; };
+		3416881510DADE5200B941D4 /* SDL.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DB10DADE3000B941D4 /* SDL.framework */; };
+		3416881610DADE5200B941D4 /* SDL_image.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DC10DADE3000B941D4 /* SDL_image.framework */; };
+		3416881910DADE6C00B941D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3416881810DADE6C00B941D4 /* OpenGL.framework */; };
+		3416884D10DAE07D00B941D4 /* color.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416883510DAE07D00B941D4 /* color.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416884E10DAE07D00B941D4 /* rectangle.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416883610DAE07D00B941D4 /* rectangle.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416884F10DAE07D00B941D4 /* types.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416883710DAE07D00B941D4 /* types.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885010DAE07D00B941D4 /* display.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416883910DAE07D00B941D4 /* display.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885110DAE07D00B941D4 /* eventListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416883A10DAE07D00B941D4 /* eventListener.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885210DAE07D00B941D4 /* gameState.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416883B10DAE07D00B941D4 /* gameState.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885310DAE07D00B941D4 /* keyboard.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416883C10DAE07D00B941D4 /* keyboard.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885410DAE07D00B941D4 /* mouse.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416883D10DAE07D00B941D4 /* mouse.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885510DAE07D00B941D4 /* platform.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416883E10DAE07D00B941D4 /* platform.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885610DAE07D00B941D4 /* resource.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416883F10DAE07D00B941D4 /* resource.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885710DAE07D00B941D4 /* stateManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884010DAE07D00B941D4 /* stateManager.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885810DAE07D00B941D4 /* timer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884110DAE07D00B941D4 /* timer.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885910DAE07D00B941D4 /* renderable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884310DAE07D00B941D4 /* renderable.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885A10DAE07D00B941D4 /* sprite.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884410DAE07D00B941D4 /* sprite.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885B10DAE07D00B941D4 /* texture.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884510DAE07D00B941D4 /* texture.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885C10DAE07D00B941D4 /* vertexBuffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884610DAE07D00B941D4 /* vertexBuffer.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885D10DAE07D00B941D4 /* vertexFormats.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884710DAE07D00B941D4 /* vertexFormats.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885E10DAE07D00B941D4 /* math.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884910DAE07D00B941D4 /* math.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416885F10DAE07D00B941D4 /* matrix4.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884A10DAE07D00B941D4 /* matrix4.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416886010DAE07D00B941D4 /* vector2.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884B10DAE07D00B941D4 /* vector2.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		3416886110DAE07D00B941D4 /* vector3.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884C10DAE07D00B941D4 /* vector3.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3416881A10DADE6D00B941D4 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3416881410DADE5200B941D4 /* GLEW.framework in Copy Frameworks */,
+				3416881510DADE5200B941D4 /* SDL.framework in Copy Frameworks */,
+				3416881610DADE5200B941D4 /* SDL_image.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* lavish_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lavish_Prefix.pch; sourceTree = "<group>"; };
+		3416867010DADDAF00B941D4 /* color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = color.cpp; path = ../../src/common/color.cpp; sourceTree = SOURCE_ROOT; };
+		3416867110DADDAF00B941D4 /* rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rectangle.cpp; path = ../../src/common/rectangle.cpp; sourceTree = SOURCE_ROOT; };
+		3416867310DADDAF00B941D4 /* display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = display.cpp; path = ../../src/core/display.cpp; sourceTree = SOURCE_ROOT; };
+		3416867410DADDAF00B941D4 /* eventListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eventListener.cpp; path = ../../src/core/eventListener.cpp; sourceTree = SOURCE_ROOT; };
+		3416867510DADDAF00B941D4 /* keyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = keyboard.cpp; path = ../../src/core/keyboard.cpp; sourceTree = SOURCE_ROOT; };
+		3416867610DADDAF00B941D4 /* mouse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mouse.cpp; path = ../../src/core/mouse.cpp; sourceTree = SOURCE_ROOT; };
+		3416867710DADDAF00B941D4 /* resource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = resource.cpp; path = ../../src/core/resource.cpp; sourceTree = SOURCE_ROOT; };
+		3416867810DADDAF00B941D4 /* stateManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stateManager.cpp; path = ../../src/core/stateManager.cpp; sourceTree = SOURCE_ROOT; };
+		3416867910DADDAF00B941D4 /* timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = timer.cpp; path = ../../src/core/timer.cpp; sourceTree = SOURCE_ROOT; };
+		3416867B10DADDAF00B941D4 /* sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sprite.cpp; path = ../../src/graphics/sprite.cpp; sourceTree = SOURCE_ROOT; };
+		3416867C10DADDAF00B941D4 /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = ../../src/graphics/texture.cpp; sourceTree = SOURCE_ROOT; };
+		3416867D10DADDAF00B941D4 /* vertexFormats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vertexFormats.cpp; path = ../../src/graphics/vertexFormats.cpp; sourceTree = SOURCE_ROOT; };
+		3416867F10DADDAF00B941D4 /* matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matrix.cpp; path = ../../src/math/matrix.cpp; sourceTree = SOURCE_ROOT; };
+		341687DA10DADE3000B941D4 /* GLEW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLEW.framework; path = dependancies/GLEW.framework; sourceTree = SOURCE_ROOT; };
+		341687DB10DADE3000B941D4 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = dependancies/SDL.framework; sourceTree = SOURCE_ROOT; };
+		341687DC10DADE3000B941D4 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = dependancies/SDL_image.framework; sourceTree = SOURCE_ROOT; };
+		3416881810DADE6C00B941D4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		3416883510DAE07D00B941D4 /* color.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = color.hpp; path = ../../include/lavish/common/color.hpp; sourceTree = SOURCE_ROOT; };
+		3416883610DAE07D00B941D4 /* rectangle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = rectangle.hpp; path = ../../include/lavish/common/rectangle.hpp; sourceTree = SOURCE_ROOT; };
+		3416883710DAE07D00B941D4 /* types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = types.hpp; path = ../../include/lavish/common/types.hpp; sourceTree = SOURCE_ROOT; };
+		3416883910DAE07D00B941D4 /* display.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = display.hpp; path = ../../include/lavish/core/display.hpp; sourceTree = SOURCE_ROOT; };
+		3416883A10DAE07D00B941D4 /* eventListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = eventListener.hpp; path = ../../include/lavish/core/eventListener.hpp; sourceTree = SOURCE_ROOT; };
+		3416883B10DAE07D00B941D4 /* gameState.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = gameState.hpp; path = ../../include/lavish/core/gameState.hpp; sourceTree = SOURCE_ROOT; };
+		3416883C10DAE07D00B941D4 /* keyboard.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = keyboard.hpp; path = ../../include/lavish/core/keyboard.hpp; sourceTree = SOURCE_ROOT; };
+		3416883D10DAE07D00B941D4 /* mouse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = mouse.hpp; path = ../../include/lavish/core/mouse.hpp; sourceTree = SOURCE_ROOT; };
+		3416883E10DAE07D00B941D4 /* platform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = platform.hpp; path = ../../include/lavish/core/platform.hpp; sourceTree = SOURCE_ROOT; };
+		3416883F10DAE07D00B941D4 /* resource.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = resource.hpp; path = ../../include/lavish/core/resource.hpp; sourceTree = SOURCE_ROOT; };
+		3416884010DAE07D00B941D4 /* stateManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = stateManager.hpp; path = ../../include/lavish/core/stateManager.hpp; sourceTree = SOURCE_ROOT; };
+		3416884110DAE07D00B941D4 /* timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = timer.hpp; path = ../../include/lavish/core/timer.hpp; sourceTree = SOURCE_ROOT; };
+		3416884310DAE07D00B941D4 /* renderable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = renderable.hpp; path = ../../include/lavish/graphics/renderable.hpp; sourceTree = SOURCE_ROOT; };
+		3416884410DAE07D00B941D4 /* sprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = sprite.hpp; path = ../../include/lavish/graphics/sprite.hpp; sourceTree = SOURCE_ROOT; };
+		3416884510DAE07D00B941D4 /* texture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = texture.hpp; path = ../../include/lavish/graphics/texture.hpp; sourceTree = SOURCE_ROOT; };
+		3416884610DAE07D00B941D4 /* vertexBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vertexBuffer.hpp; path = ../../include/lavish/graphics/vertexBuffer.hpp; sourceTree = SOURCE_ROOT; };
+		3416884710DAE07D00B941D4 /* vertexFormats.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vertexFormats.hpp; path = ../../include/lavish/graphics/vertexFormats.hpp; sourceTree = SOURCE_ROOT; };
+		3416884910DAE07D00B941D4 /* math.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = math.hpp; path = ../../include/lavish/math/math.hpp; sourceTree = SOURCE_ROOT; };
+		3416884A10DAE07D00B941D4 /* matrix4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = matrix4.hpp; path = ../../include/lavish/math/matrix4.hpp; sourceTree = SOURCE_ROOT; };
+		3416884B10DAE07D00B941D4 /* vector2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vector2.hpp; path = ../../include/lavish/math/vector2.hpp; sourceTree = SOURCE_ROOT; };
+		3416884C10DAE07D00B941D4 /* vector3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vector3.hpp; path = ../../include/lavish/math/vector3.hpp; sourceTree = SOURCE_ROOT; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* lavish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = lavish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				341687DD10DADE3000B941D4 /* GLEW.framework in Frameworks */,
+				341687DE10DADE3000B941D4 /* SDL.framework in Frameworks */,
+				341687DF10DADE3000B941D4 /* SDL_image.framework in Frameworks */,
+				3416881910DADE6C00B941D4 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* lavish.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* lavish */ = {
+			isa = PBXGroup;
+			children = (
+				341688CB10DAE3F300B941D4 /* other */,
+				3416883310DAE07D00B941D4 /* include */,
+				3416866E10DADDAF00B941D4 /* src */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				3416881810DADE6C00B941D4 /* OpenGL.framework */,
+			);
+			name = lavish;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				341687DA10DADE3000B941D4 /* GLEW.framework */,
+				341687DB10DADE3000B941D4 /* SDL.framework */,
+				341687DC10DADE3000B941D4 /* SDL_image.framework */,
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		3416866E10DADDAF00B941D4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3416866F10DADDAF00B941D4 /* common */,
+				3416867210DADDAF00B941D4 /* core */,
+				3416867A10DADDAF00B941D4 /* graphics */,
+				3416867E10DADDAF00B941D4 /* math */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = SOURCE_ROOT;
+		};
+		3416866F10DADDAF00B941D4 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				3416867010DADDAF00B941D4 /* color.cpp */,
+				3416867110DADDAF00B941D4 /* rectangle.cpp */,
+			);
+			name = common;
+			path = ../../src/common;
+			sourceTree = SOURCE_ROOT;
+		};
+		3416867210DADDAF00B941D4 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				3416867310DADDAF00B941D4 /* display.cpp */,
+				3416867410DADDAF00B941D4 /* eventListener.cpp */,
+				3416867510DADDAF00B941D4 /* keyboard.cpp */,
+				3416867610DADDAF00B941D4 /* mouse.cpp */,
+				3416867710DADDAF00B941D4 /* resource.cpp */,
+				3416867810DADDAF00B941D4 /* stateManager.cpp */,
+				3416867910DADDAF00B941D4 /* timer.cpp */,
+			);
+			name = core;
+			path = ../../src/core;
+			sourceTree = SOURCE_ROOT;
+		};
+		3416867A10DADDAF00B941D4 /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				3416867B10DADDAF00B941D4 /* sprite.cpp */,
+				3416867C10DADDAF00B941D4 /* texture.cpp */,
+				3416867D10DADDAF00B941D4 /* vertexFormats.cpp */,
+			);
+			name = graphics;
+			path = ../../src/graphics;
+			sourceTree = SOURCE_ROOT;
+		};
+		3416867E10DADDAF00B941D4 /* math */ = {
+			isa = PBXGroup;
+			children = (
+				3416867F10DADDAF00B941D4 /* matrix.cpp */,
+			);
+			name = math;
+			path = ../../src/math;
+			sourceTree = SOURCE_ROOT;
+		};
+		3416883310DAE07D00B941D4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				3416883410DAE07D00B941D4 /* common */,
+				3416883810DAE07D00B941D4 /* core */,
+				3416884210DAE07D00B941D4 /* graphics */,
+				3416884810DAE07D00B941D4 /* math */,
+			);
+			name = include;
+			path = ../../include/lavish;
+			sourceTree = SOURCE_ROOT;
+		};
+		3416883410DAE07D00B941D4 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				3416883510DAE07D00B941D4 /* color.hpp */,
+				3416883610DAE07D00B941D4 /* rectangle.hpp */,
+				3416883710DAE07D00B941D4 /* types.hpp */,
+			);
+			name = common;
+			path = ../../include/lavish/common;
+			sourceTree = SOURCE_ROOT;
+		};
+		3416883810DAE07D00B941D4 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				3416883910DAE07D00B941D4 /* display.hpp */,
+				3416883A10DAE07D00B941D4 /* eventListener.hpp */,
+				3416883B10DAE07D00B941D4 /* gameState.hpp */,
+				3416883C10DAE07D00B941D4 /* keyboard.hpp */,
+				3416883D10DAE07D00B941D4 /* mouse.hpp */,
+				3416883E10DAE07D00B941D4 /* platform.hpp */,
+				3416883F10DAE07D00B941D4 /* resource.hpp */,
+				3416884010DAE07D00B941D4 /* stateManager.hpp */,
+				3416884110DAE07D00B941D4 /* timer.hpp */,
+			);
+			name = core;
+			path = ../../include/lavish/core;
+			sourceTree = SOURCE_ROOT;
+		};
+		3416884210DAE07D00B941D4 /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				3416884310DAE07D00B941D4 /* renderable.hpp */,
+				3416884410DAE07D00B941D4 /* sprite.hpp */,
+				3416884510DAE07D00B941D4 /* texture.hpp */,
+				3416884610DAE07D00B941D4 /* vertexBuffer.hpp */,
+				3416884710DAE07D00B941D4 /* vertexFormats.hpp */,
+			);
+			name = graphics;
+			path = ../../include/lavish/graphics;
+			sourceTree = SOURCE_ROOT;
+		};
+		3416884810DAE07D00B941D4 /* math */ = {
+			isa = PBXGroup;
+			children = (
+				3416884910DAE07D00B941D4 /* math.hpp */,
+				3416884A10DAE07D00B941D4 /* matrix4.hpp */,
+				3416884B10DAE07D00B941D4 /* vector2.hpp */,
+				3416884C10DAE07D00B941D4 /* vector3.hpp */,
+			);
+			name = math;
+			path = ../../include/lavish/math;
+			sourceTree = SOURCE_ROOT;
+		};
+		341688CB10DAE3F300B941D4 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+				32DBCF5E0370ADEE00C91783 /* lavish_Prefix.pch */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3416884D10DAE07D00B941D4 /* color.hpp in Headers */,
+				3416884E10DAE07D00B941D4 /* rectangle.hpp in Headers */,
+				3416884F10DAE07D00B941D4 /* types.hpp in Headers */,
+				3416885010DAE07D00B941D4 /* display.hpp in Headers */,
+				3416885110DAE07D00B941D4 /* eventListener.hpp in Headers */,
+				3416885210DAE07D00B941D4 /* gameState.hpp in Headers */,
+				3416885310DAE07D00B941D4 /* keyboard.hpp in Headers */,
+				3416885410DAE07D00B941D4 /* mouse.hpp in Headers */,
+				3416885510DAE07D00B941D4 /* platform.hpp in Headers */,
+				3416885610DAE07D00B941D4 /* resource.hpp in Headers */,
+				3416885710DAE07D00B941D4 /* stateManager.hpp in Headers */,
+				3416885810DAE07D00B941D4 /* timer.hpp in Headers */,
+				3416885910DAE07D00B941D4 /* renderable.hpp in Headers */,
+				3416885A10DAE07D00B941D4 /* sprite.hpp in Headers */,
+				3416885B10DAE07D00B941D4 /* texture.hpp in Headers */,
+				3416885C10DAE07D00B941D4 /* vertexBuffer.hpp in Headers */,
+				3416885D10DAE07D00B941D4 /* vertexFormats.hpp in Headers */,
+				3416885E10DAE07D00B941D4 /* math.hpp in Headers */,
+				3416885F10DAE07D00B941D4 /* matrix4.hpp in Headers */,
+				3416886010DAE07D00B941D4 /* vector2.hpp in Headers */,
+				3416886110DAE07D00B941D4 /* vector3.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* lavish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "lavish" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+				3416881A10DADE6D00B941D4 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lavish;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = lavish;
+			productReference = 8DC2EF5B0486A6940098B216 /* lavish.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "lavish" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* lavish */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* lavish */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3416868010DADDAF00B941D4 /* color.cpp in Sources */,
+				3416868110DADDAF00B941D4 /* rectangle.cpp in Sources */,
+				3416868210DADDAF00B941D4 /* display.cpp in Sources */,
+				3416868310DADDAF00B941D4 /* eventListener.cpp in Sources */,
+				3416868410DADDAF00B941D4 /* keyboard.cpp in Sources */,
+				3416868510DADDAF00B941D4 /* mouse.cpp in Sources */,
+				3416868610DADDAF00B941D4 /* resource.cpp in Sources */,
+				3416868710DADDAF00B941D4 /* stateManager.cpp in Sources */,
+				3416868810DADDAF00B941D4 /* timer.cpp in Sources */,
+				3416868910DADDAF00B941D4 /* sprite.cpp in Sources */,
+				3416868A10DADDAF00B941D4 /* texture.cpp in Sources */,
+				3416868B10DADDAF00B941D4 /* vertexFormats.cpp in Sources */,
+				3416868C10DADDAF00B941D4 /* matrix.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/dependancies\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = lavish_Prefix.pch;
+				HEADER_SEARCH_PATHS = "../../include/**";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = lavish;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/dependancies\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = lavish_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = lavish;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "lavish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "lavish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

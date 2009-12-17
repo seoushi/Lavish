@@ -1,0 +1,30 @@
+/* 
+ * File:   platform.hpp
+ * Author: Sean Chapel
+ *
+ * Created on May 26, 2009, 11:54 PM
+ * Copyright 2009 Seoushi Games. All rights reserved.
+ */
+
+#ifndef _PLATFORM_HPP
+#define	_PLATFORM_HPP
+
+#ifdef __APPLE__
+    #include <GLEW/glew.h>
+    #include <SDL/SDL.h>
+    #include <SDL_image/SDL_image.h>
+#else
+    #include <GL/glew.h>
+    #include <SDL/SDL.h>
+    #include <SDL/SDL_image.h>
+#endif
+
+#ifdef __WIN32__
+	#define LAVISH_DECLSPEC _declspec(dllexport)
+#else
+	#define LAVISH_DECLSPEC
+#endif
+
+
+#endif	/* _PLATFORM_HPP */
+
