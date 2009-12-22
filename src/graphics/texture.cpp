@@ -43,7 +43,6 @@ Texture::Texture(std::string filename)
 Texture::~Texture()
 {
     Dispose();
-    glDeleteTextures(1, &glId);
 }
 
 

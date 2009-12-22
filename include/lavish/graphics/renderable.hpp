@@ -14,34 +14,34 @@
 
 namespace lavish
 {
-
+	
     
-/**
- * An interface class that defines a Render method
- */
-class LAVISH_DECLSPEC Renderable
-{
+	/**
+	 * An interface class that defines a Render method
+	 */
+	class LAVISH_DECLSPEC Renderable
+	{
     public:
-
+		
         /**
          * A default constructor
          */
         Renderable(){};
-
-
+		
+		
         /**
          * A virtual destructor
          */
         virtual ~Renderable(){};
-
-
+		
+		
         /**
          * A virtual function that should draw an object
          */
         virtual void Render(Matrix4* transformations = 0) = 0;
-};
-
-
+	};
+	
+	
 } /* lavish */
 
 

@@ -14,9 +14,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					341,
+					510,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -57,20 +57,10 @@
 			PBXWorkspaceStateSaveDate = 282785038;
 		};
 		perUserProjectItems = {
-			34168A3C10DAF51600B941D4 /* PBXBookmark */ = 34168A3C10DAF51600B941D4 /* PBXBookmark */;
-			34168A3D10DAF51600B941D4 /* PBXTextBookmark */ = 34168A3D10DAF51600B941D4 /* PBXTextBookmark */;
-			34168A4D10DAF59C00B941D4 /* PBXTextBookmark */ = 34168A4D10DAF59C00B941D4 /* PBXTextBookmark */;
-			34168A4F10DAF59C00B941D4 /* PBXTextBookmark */ = 34168A4F10DAF59C00B941D4 /* PBXTextBookmark */;
-			34168A5110DAF59C00B941D4 /* PBXTextBookmark */ = 34168A5110DAF59C00B941D4 /* PBXTextBookmark */;
-			34168A5310DAF59C00B941D4 /* PBXTextBookmark */ = 34168A5310DAF59C00B941D4 /* PBXTextBookmark */;
-			34168A5510DAF59C00B941D4 /* PBXTextBookmark */ = 34168A5510DAF59C00B941D4 /* PBXTextBookmark */;
-			34168A5710DAF59C00B941D4 /* PBXTextBookmark */ = 34168A5710DAF59C00B941D4 /* PBXTextBookmark */;
-			34168A5910DAF59C00B941D4 /* PBXTextBookmark */ = 34168A5910DAF59C00B941D4 /* PBXTextBookmark */;
-			34168A6210DAF5A000B941D4 /* PBXTextBookmark */ = 34168A6210DAF5A000B941D4 /* PBXTextBookmark */;
 			34168A6410DAF5AE00B941D4 /* PBXTextBookmark */ = 34168A6410DAF5AE00B941D4 /* PBXTextBookmark */;
 			34168A6510DAF5AE00B941D4 /* PBXTextBookmark */ = 34168A6510DAF5AE00B941D4 /* PBXTextBookmark */;
 			34168A6710DAF5AE00B941D4 /* PBXTextBookmark */ = 34168A6710DAF5AE00B941D4 /* PBXTextBookmark */;
-			34168A6810DAF5AE00B941D4 /* PBXTextBookmark */ = 34168A6810DAF5AE00B941D4 /* PBXTextBookmark */;
+			34168A7110DAF63400B941D4 /* PBXTextBookmark */ = 34168A7110DAF63400B941D4 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 34168A4110DAF51600B941D4 /* Source Control */;
 		userBuildSettings = {
@@ -107,20 +97,6 @@
 		sourceDirectories = (
 		);
 	};
-	34168A3C10DAF51600B941D4 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* main.mm */;
-	};
-	34168A3D10DAF51600B941D4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* main.mm */;
-		name = "main.mm: 7";
-		rLen = 0;
-		rLoc = 10;
-		rType = 0;
-		vrLen = 345;
-		vrLoc = 0;
-	};
 	34168A4110DAF51600B941D4 /* Source Control */ = {
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
@@ -131,138 +107,6 @@
 	34168A4210DAF51600B941D4 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
-	};
-	34168A4D10DAF59C00B941D4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 34168A4E10DAF59C00B941D4 /* vertexBuffer.hpp */;
-		name = "vertexBuffer.hpp: 17";
-		rLen = 0;
-		rLoc = 340;
-		rType = 0;
-		vrLen = 172;
-		vrLoc = 206;
-	};
-	34168A4E10DAF59C00B941D4 /* vertexBuffer.hpp */ = {
-		isa = PBXFileReference;
-		name = vertexBuffer.hpp;
-		path = /Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks/lavish.framework/Headers/vertexBuffer.hpp;
-		sourceTree = "<absolute>";
-	};
-	34168A4F10DAF59C00B941D4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "error: 'Color' has not been declared";
-		fRef = 34168A5010DAF59C00B941D4 /* vertexFormats.hpp */;
-		rLen = 1;
-		rLoc = 96;
-		rType = 1;
-	};
-	34168A5010DAF59C00B941D4 /* vertexFormats.hpp */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.cpp.h;
-		name = vertexFormats.hpp;
-		path = /Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks/lavish.framework/Headers/vertexFormats.hpp;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {803, 2156}}";
-			sepNavSelRange = "{2281, 0}";
-			sepNavVisRange = "{2086, 318}";
-		};
-	};
-	34168A5110DAF59C00B941D4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 34168A5210DAF59C00B941D4 /* vertexFormats.hpp */;
-		name = "vertexFormats.hpp: 14";
-		rLen = 0;
-		rLoc = 286;
-		rType = 0;
-		vrLen = 200;
-		vrLoc = 153;
-	};
-	34168A5210DAF59C00B941D4 /* vertexFormats.hpp */ = {
-		isa = PBXFileReference;
-		name = vertexFormats.hpp;
-		path = /Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks/lavish.framework/Headers/vertexFormats.hpp;
-		sourceTree = "<absolute>";
-	};
-	34168A5310DAF59C00B941D4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 34168A5410DAF59C00B941D4 /* vertexBuffer.hpp */;
-		name = "vertexBuffer.hpp: 14";
-		rLen = 0;
-		rLoc = 255;
-		rType = 0;
-		vrLen = 179;
-		vrLoc = 206;
-	};
-	34168A5410DAF59C00B941D4 /* vertexBuffer.hpp */ = {
-		isa = PBXFileReference;
-		name = vertexBuffer.hpp;
-		path = /Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks/lavish.framework/Headers/vertexBuffer.hpp;
-		sourceTree = "<absolute>";
-	};
-	34168A5510DAF59C00B941D4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 34168A5610DAF59C00B941D4 /* vertexFormats.hpp */;
-		name = "vertexFormats.hpp: 11";
-		rLen = 0;
-		rLoc = 208;
-		rType = 0;
-		vrLen = 200;
-		vrLoc = 153;
-	};
-	34168A5610DAF59C00B941D4 /* vertexFormats.hpp */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.cpp.h;
-		name = vertexFormats.hpp;
-		path = /Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks/lavish.framework/Headers/vertexFormats.hpp;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {688, 2212}}";
-			sepNavSelRange = "{208, 0}";
-			sepNavVisRange = "{0, 599}";
-		};
-	};
-	34168A5710DAF59C00B941D4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 34168A5810DAF59C00B941D4 /* vertexBuffer.hpp */;
-		name = "vertexBuffer.hpp: 17";
-		rLen = 0;
-		rLoc = 340;
-		rType = 0;
-		vrLen = 172;
-		vrLoc = 206;
-	};
-	34168A5810DAF59C00B941D4 /* vertexBuffer.hpp */ = {
-		isa = PBXFileReference;
-		name = vertexBuffer.hpp;
-		path = /Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks/lavish.framework/Headers/vertexBuffer.hpp;
-		sourceTree = "<absolute>";
-	};
-	34168A5910DAF59C00B941D4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 34168A5A10DAF59C00B941D4 /* vertexFormats.hpp */;
-		name = "vertexFormats.hpp: 99";
-		rLen = 0;
-		rLoc = 2281;
-		rType = 0;
-		vrLen = 318;
-		vrLoc = 2086;
-	};
-	34168A5A10DAF59C00B941D4 /* vertexFormats.hpp */ = {
-		isa = PBXFileReference;
-		name = vertexFormats.hpp;
-		path = /Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks/lavish.framework/Headers/vertexFormats.hpp;
-		sourceTree = "<absolute>";
-	};
-	34168A6210DAF5A000B941D4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 34168A5010DAF59C00B941D4 /* vertexFormats.hpp */;
-		name = "vertexFormats.hpp: 99";
-		rLen = 0;
-		rLoc = 2281;
-		rType = 0;
-		vrLen = 318;
-		vrLoc = 2086;
 	};
 	34168A6410DAF5AE00B941D4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -288,6 +132,11 @@
 		name = vertexFormats.hpp;
 		path = /Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks/lavish.framework/Headers/vertexFormats.hpp;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 2156}}";
+			sepNavSelRange = "{2281, 0}";
+			sepNavVisRange = "{2086, 318}";
+		};
 	};
 	34168A6710DAF5AE00B941D4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -299,15 +148,26 @@
 		vrLen = 314;
 		vrLoc = 0;
 	};
-	34168A6810DAF5AE00B941D4 /* PBXTextBookmark */ = {
+	34168A7110DAF63400B941D4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 34168A5610DAF59C00B941D4 /* vertexFormats.hpp */;
+		fRef = 34168A7210DAF63400B941D4 /* vertexFormats.hpp */;
 		name = "vertexFormats.hpp: 11";
 		rLen = 0;
 		rLoc = 208;
 		rType = 0;
 		vrLen = 599;
 		vrLoc = 0;
+	};
+	34168A7210DAF63400B941D4 /* vertexFormats.hpp */ = {
+		isa = PBXFileReference;
+		name = vertexFormats.hpp;
+		path = /Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks/lavish.framework/Headers/vertexFormats.hpp;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {688, 2212}}";
+			sepNavSelRange = "{208, 0}";
+			sepNavVisRange = "{0, 599}";
+		};
 	};
 	8DD76F620486A84900D96B5E /* Tutorial 2 - Displaying A Triangle */ = {
 		activeExec = 0;

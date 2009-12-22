@@ -27,6 +27,7 @@ namespace resource
         Texture,
         Sprite,
         VertexBuffer,
+		Shader,
         Custom
     };
 } /* resource */
