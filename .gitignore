@@ -462,3 +462,6 @@ samples/mac/Tutorial 2 - Displaying A Triangle/build/Tutorial 2 - Displaying A T
 projects/mac/build/lavish.build/Debug/lavish.build/Objects-normal/i386/shader.o
 projects/mac/build/lavish.build/Release/lavish.build/lavish~.dep
 samples/mac/Tutorial 2 - Displaying A Triangle/build/Tutorial 2 - Displaying A Triangle.build/Release/Tutorial 2 - Displaying A Triangle.build/Tutorial 2 - Displaying A Triangle.dep
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/shader.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/shaderSet.hpp
+projects/mac/build/lavish.build/Debug/lavish.build/Objects-normal/i386/shaderSet.o

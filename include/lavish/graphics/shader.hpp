@@ -24,11 +24,16 @@ namespace lavish
 		}Type;
 	}
 	
+	// forward declaration
+	class ShaderSet;
+	
 	/**
 	 * A class that defines a shader
 	 */
 	class LAVISH_DECLSPEC Shader : public Resource
 	{
+		friend class ShaderSet;
+		
     public:
 		
         /**
@@ -70,13 +75,6 @@ namespace lavish
          * @return if the shader was loaded successfully
          */
         bool Reload();
-		
-		
-		/**
-         * Gets the id of the shader
-         * @return id of the shader
-         */
-		unsigned int Id();
 		
 		
 		/**

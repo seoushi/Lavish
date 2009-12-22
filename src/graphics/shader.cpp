@@ -97,11 +97,6 @@ bool Shader::Reload()
     Dispose();
     return Load(resourceName, type);
 }
-
-unsigned int Shader::Id()
-{
-	return glId;
-}
 	
 shader::Type Shader::Type()
 {
