@@ -67,7 +67,7 @@ bool Shader::Load(std::string filename, shader::Type type)
 		shaderSource[len] = '\n';
 		shaderSource += len + 1;
 	}
-	shaderSource[0] = 0;
+	shaderSource[len + 1] = 0;
 	
 	
 	// load shader into opengl
