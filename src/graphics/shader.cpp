@@ -10,6 +10,7 @@
 #include <lavish/platform.hpp>
 #include <iostream>
 #include <fstream>
+#include <sstream>
 
 #define MAX_SHADER_SOURCE_LINE_SIZE 256
 #define MAX_SHADER_SOURCE_LINES 512
@@ -48,37 +49,62 @@ bool Shader::Load(std::string filename, shader::Type type)
 {
 	this->type = type;
 	
-	std::ifstream file(filename.c_str());
+	std::ifstream file;
+	file.open(filename.c_str(), std::ios::in);
 	
-	if(!file.is_open())
+	if(!file) 
 	{
 		return false;
 	}
-	
-	// load file into memory for opengl processing
-	char* shaderSource = (char*)malloc(sizeof(char) * MAX_SHADER_SOURCE_LINE_SIZE * MAX_SHADER_SOURCE_LINES);
-	const GLchar** shaderSourcePtr = (const GLchar**)&shaderSource;
-	int len;
-	
-	while (!file.eof())
+    
+	// get file length
+	file.seekg (0, std::ios::end);
+	int len = file.tellg();
+	file.seekg (0, std::ios::beg);
+    
+	if(len == 0) 
 	{
-		file.getline(shaderSource, MAX_SHADER_SOURCE_LINE_SIZE);
-		len = strlen(shaderSource);
-		shaderSource[len] = '\n';
-		shaderSource += len + 1;
+		return false;
 	}
-	shaderSource[len + 1] = 0;
+    
 	
+	GLchar* ShaderSource = (GLchar*) new char[len+1];	
+	ShaderSource[len] = 0; 
+	
+	// read in the shader
+	unsigned int i = 0;
+	
+	while (file.good())
+	{
+		ShaderSource[i] = file.get();
+		
+		if (!file.eof())
+		{
+			i++;
+		}
+	}
+    
+	ShaderSource[i] = 0;
+    
+	file.close();
+
+	const GLchar** ShaderSourcePtr = (const GLchar**)&ShaderSource;
 	
 	// load shader into opengl
 	glId = glCreateShader(type);
-	glShaderSource(glId, 1, shaderSourcePtr, NULL);
+	glShaderSource(glId, 1, ShaderSourcePtr, NULL);
 	glCompileShader(glId);
 	
-	free(shaderSource);
+	// make sure it's valid
+	GLint status;
+	glGetShaderiv(glId, GL_COMPILE_STATUS, &status);
 	
-	file.close();
-	
+	if (status == 0)
+	{
+		glDeleteShader(glId);
+		return false;
+	}
+
 	return true;
 }
 

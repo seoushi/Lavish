@@ -61,6 +61,13 @@ namespace lavish
          */
 		void Unbind();
 		
+		/**
+		 * Gets the uniform id given a name
+		 * @param the uniform name
+		 * @return the uniform id
+		 */
+		GLint GetUniformId(std::string uniform);
+		
     protected:
 		
 		unsigned int glId;	/**< Holds the opengl shader program id        */

@@ -36,7 +36,7 @@ namespace lavish
 	
 	void ShaderSet::Finalize()
 	{
-		glLinkProgramARB(glId);
+		glLinkProgram(glId);
 	}
 	
 	void ShaderSet::Bind()
@@ -47,5 +47,10 @@ namespace lavish
 	void ShaderSet::Unbind()
 	{
 		glUseProgram(0);
+	}
+	
+	GLint ShaderSet::GetUniformId(std::string uniform)
+	{
+		return glGetUniformLocation(glId, uniform.c_str());
 	}
 }
