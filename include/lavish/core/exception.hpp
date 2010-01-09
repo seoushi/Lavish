@@ -10,7 +10,9 @@
 #ifndef _EXCEPTION_HPP
 #define	_EXCEPTION_HPP
 
+#include <string>
 #include <lavish/platform.hpp>
+
 
 #ifndef __FUNCTION__
 #define __FUNCTION__ "?"
@@ -28,66 +30,66 @@
 namespace lavish
 {
 	class LAVISH_DECLSPEC Exception
-    {
-    public:
+	{
+	public:
 		
-        /**
-         * Constructor.	
-         */
-        Exception();
-
-
-        /**
-         * Constructor.
-         * @param the error message to throw
-         */
-        Exception(const std::string& message);
+		/**
+		 * Constructor.	
+		 */
+		Exception();
 
 
 		/**
-         * Constructor.
-         * @param the error message to throw
-         * @param the name of the function
-         * @param the name of the file
-         * @param the line number
-         */
-        Exception(std::string message, std::string function, std::string filename, unsigned int line);
+		 * Constructor.
+		 * @param the error message to throw
+		 */
+		Exception(const std::string& message);
 
-        
+
 		/**
-         * Gets the function name
-         * @return The function name
-         */
-        std::string getFunction();
+		 * Constructor.
+		 * @param the error message to throw
+		 * @param the name of the function
+		 * @param the name of the file
+		 * @param the line number
+		 */
+		Exception(std::string message, std::string function, std::string filename, unsigned int line);
 
-        
+
 		/**
-         * Gets the error message
-         * @return The error message
-         */
-        std::string getMessage();
+		 * Gets the function name
+		 * @return The function name
+		 */
+		std::string getFunction();
 
-        
+
 		/**
-         * Gets the filename
-         * @return The filename
-         */
-        std::string getFilename();
+		 * Gets the error message
+		 * @return The error message
+		 */
+		std::string getMessage();
 
-        
+
 		/**
-         * Gets the line number
-         * @return The line number
-         */
-        unsigned int getLine();
+		 * Gets the filename
+		 * @return The filename
+		 */
+		std::string getFilename();
 
-    protected:
 
-        std::string function;
-        std::string message;
-        std::string filename;
-        unsigned int line;
-    };
+		/**
+		 * Gets the line number
+		 * @return The line number
+		 */
+		unsigned int getLine();
+
+	protected:
+
+		std::string function;
+		std::string message;
+		std::string filename;
+		unsigned int line;
+	};
 
 } /* namespace lavish */
 
