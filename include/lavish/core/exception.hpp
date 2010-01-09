@@ -20,7 +20,7 @@
 /**
  * a simple macro to throw an exception with all details
  */	
-#define LAVISH_EXCEPTION(mess) lavish::Exception(mess,	\	
+#define LAVISH_EXCEPTION(mess) lavish::Exception(mess,	\
 									__FUNCTION__,		\
 									__FILE__,           \
 									__LINE__)

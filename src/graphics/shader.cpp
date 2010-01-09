@@ -8,6 +8,7 @@
 
 #include <lavish/shader.hpp>
 #include <lavish/platform.hpp>
+#include <lavish/exception.hpp>
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -33,8 +34,7 @@ Shader::Shader(std::string filename, shader::Type type)
 
     if(!Load(filename,type))
     {
-        // TODO: make a proper exception type!
-        throw "Failed to load shader";
+		throw LAVISH_EXCEPTION("Failed to load shader");
     }
 }
 

@@ -647,3 +647,5 @@ samples/mac/Tutorial 3 - Using Shaders/build/Tutorial 3 - Using Shaders.build/Tu
 samples/mac/Tutorial 3 - Using Shaders/build/Tutorial 3 - Using Shaders.build/Tutorial 3 - Using Shaders.pbxindex/subclasses.pbxbtree
 samples/mac/Tutorial 3 - Using Shaders/build/Tutorial 3 - Using Shaders.build/Tutorial 3 - Using Shaders.pbxindex/symbols0.pbxsymbols
 samples/mac/Tutorial 3 - Using Shaders/build/Tutorial 3 - Using Shaders.build/Debug/Tutorial 3 - Using Shaders.build/Tutorial 3 - Using Shaders.dep
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/exception.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/model.hpp

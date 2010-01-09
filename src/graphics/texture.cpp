@@ -8,6 +8,7 @@
 
 #include <lavish/texture.hpp>
 #include <lavish/platform.hpp>
+#include <lavish/exception.hpp>
 #include <iostream>
 
 
@@ -34,8 +35,7 @@ Texture::Texture(std::string filename)
 
     if(! Load(filename) )
     {
-        // TODO: make a proper exception type!
-        throw "Failed to load texture";
+        throw LAVISH_EXCEPTION("Failed to load texture");
     }
 }
 

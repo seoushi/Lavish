@@ -45,8 +45,8 @@
 		3416885F10DAE07D00B941D4 /* matrix4.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884A10DAE07D00B941D4 /* matrix4.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		3416886010DAE07D00B941D4 /* vector2.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884B10DAE07D00B941D4 /* vector2.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		3416886110DAE07D00B941D4 /* vector3.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884C10DAE07D00B941D4 /* vector3.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		34D8CB9910F7F90000EBF296 /* model.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34D8CB9810F7F90000EBF296 /* model.hpp */; };
-		34D8CB9B10F7FBA100EBF296 /* exception.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34D8CB9A10F7FBA100EBF296 /* exception.hpp */; };
+		34D8CB9910F7F90000EBF296 /* model.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34D8CB9810F7F90000EBF296 /* model.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		34D8CB9B10F7FBA100EBF296 /* exception.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34D8CB9A10F7FBA100EBF296 /* exception.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		34F714B110E047DB0053AD37 /* shader.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34F714B010E047DB0053AD37 /* shader.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		34F714B510E048B30053AD37 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34F714B410E048B30053AD37 /* shader.cpp */; };
 		34F714EA10E163BF0053AD37 /* shaderSet.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34F714E910E163BF0053AD37 /* shaderSet.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
