@@ -12,6 +12,7 @@
 #include <string>
 #include <lavish/resource.hpp>
 #include <lavish/renderable.hpp>
+#include <lavish/vertexBuffer.hpp>
 #include <lavish/platform.hpp>
 
 namespace lavish
@@ -69,17 +70,13 @@ namespace lavish
 		 * @param the transformation of the model
 		 */
 		void Render(Matrix4* transformations);
-
-		
-		VertexBuffer* vertices;
-		VertexBuffer* normals;
-		VertexBuffer* texCoords;
 		
     protected:
 		
 		bool loadObj();
 
-		std::string file;
+		VertexBuffer<VertexNormalTexture> buffer;
+		std::string filename;
 	};
 	
 } /* lavish */

@@ -48,6 +48,7 @@
 		34D8CB9910F7F90000EBF296 /* model.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34D8CB9810F7F90000EBF296 /* model.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		34D8CB9B10F7FBA100EBF296 /* exception.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34D8CB9A10F7FBA100EBF296 /* exception.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		34D8CBCC10F8059200EBF296 /* exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34D8CBCB10F8059200EBF296 /* exception.cpp */; };
+		34D8CBDC10F807DB00EBF296 /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34D8CBDB10F807DB00EBF296 /* model.cpp */; };
 		34F714B110E047DB0053AD37 /* shader.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34F714B010E047DB0053AD37 /* shader.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		34F714B510E048B30053AD37 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34F714B410E048B30053AD37 /* shader.cpp */; };
 		34F714EA10E163BF0053AD37 /* shaderSet.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34F714E910E163BF0053AD37 /* shaderSet.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -101,6 +102,7 @@
 		34D8CB9810F7F90000EBF296 /* model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = model.hpp; sourceTree = "<group>"; };
 		34D8CB9A10F7FBA100EBF296 /* exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exception.hpp; sourceTree = "<group>"; };
 		34D8CBCB10F8059200EBF296 /* exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exception.cpp; sourceTree = "<group>"; };
+		34D8CBDB10F807DB00EBF296 /* model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = model.cpp; sourceTree = "<group>"; };
 		34F714B010E047DB0053AD37 /* shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
 		34F714B410E048B30053AD37 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
 		34F714E910E163BF0053AD37 /* shaderSet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shaderSet.hpp; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		3416867A10DADDAF00B941D4 /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				34D8CBDB10F807DB00EBF296 /* model.cpp */,
 				34F714EC10E163D90053AD37 /* shaderSet.cpp */,
 				34F714B410E048B30053AD37 /* shader.cpp */,
 				3416867B10DADDAF00B941D4 /* sprite.cpp */,
@@ -403,6 +406,7 @@
 				34F714B510E048B30053AD37 /* shader.cpp in Sources */,
 				34F714ED10E163D90053AD37 /* shaderSet.cpp in Sources */,
 				34D8CBCC10F8059200EBF296 /* exception.cpp in Sources */,
+				34D8CBDC10F807DB00EBF296 /* model.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

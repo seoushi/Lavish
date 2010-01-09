@@ -53,14 +53,14 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 282785038;
-			PBXWorkspaceStateSaveDate = 282785038;
+			PBXPerProjectTemplateStateSaveDate = 284691168;
+			PBXWorkspaceStateSaveDate = 284691168;
 		};
 		perUserProjectItems = {
-			34168A6410DAF5AE00B941D4 /* PBXTextBookmark */ = 34168A6410DAF5AE00B941D4 /* PBXTextBookmark */;
-			34168A6510DAF5AE00B941D4 /* PBXTextBookmark */ = 34168A6510DAF5AE00B941D4 /* PBXTextBookmark */;
-			34168A6710DAF5AE00B941D4 /* PBXTextBookmark */ = 34168A6710DAF5AE00B941D4 /* PBXTextBookmark */;
-			34168A7110DAF63400B941D4 /* PBXTextBookmark */ = 34168A7110DAF63400B941D4 /* PBXTextBookmark */;
+			34168A6410DAF5AE00B941D4 = 34168A6410DAF5AE00B941D4 /* PBXTextBookmark */;
+			34168A6510DAF5AE00B941D4 = 34168A6510DAF5AE00B941D4 /* PBXTextBookmark */;
+			34168A6710DAF5AE00B941D4 = 34168A6710DAF5AE00B941D4 /* PBXTextBookmark */;
+			34168A7110DAF63400B941D4 = 34168A7110DAF63400B941D4 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 34168A4110DAF51600B941D4 /* Source Control */;
 		userBuildSettings = {
@@ -132,11 +132,6 @@
 		name = vertexFormats.hpp;
 		path = /Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks/lavish.framework/Headers/vertexFormats.hpp;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {803, 2156}}";
-			sepNavSelRange = "{2281, 0}";
-			sepNavVisRange = "{2086, 318}";
-		};
 	};
 	34168A6710DAF5AE00B941D4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -160,13 +155,14 @@
 	};
 	34168A7210DAF63400B941D4 /* vertexFormats.hpp */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.cpp.h;
 		name = vertexFormats.hpp;
 		path = /Developer/SDKs/MacOSX10.5.sdk/Library/Frameworks/lavish.framework/Headers/vertexFormats.hpp;
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {688, 2212}}";
+			sepNavIntBoundsRect = "{{0, 0}, {688, 2128}}";
 			sepNavSelRange = "{208, 0}";
-			sepNavVisRange = "{0, 599}";
+			sepNavVisRange = "{841, 695}";
 		};
 	};
 	8DD76F620486A84900D96B5E /* Tutorial 2 - Displaying A Triangle */ = {
