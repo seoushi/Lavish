@@ -45,6 +45,8 @@
 		3416885F10DAE07D00B941D4 /* matrix4.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884A10DAE07D00B941D4 /* matrix4.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		3416886010DAE07D00B941D4 /* vector2.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884B10DAE07D00B941D4 /* vector2.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		3416886110DAE07D00B941D4 /* vector3.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3416884C10DAE07D00B941D4 /* vector3.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		34D8CB9910F7F90000EBF296 /* model.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34D8CB9810F7F90000EBF296 /* model.hpp */; };
+		34D8CB9B10F7FBA100EBF296 /* exception.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34D8CB9A10F7FBA100EBF296 /* exception.hpp */; };
 		34F714B110E047DB0053AD37 /* shader.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34F714B010E047DB0053AD37 /* shader.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		34F714B510E048B30053AD37 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34F714B410E048B30053AD37 /* shader.cpp */; };
 		34F714EA10E163BF0053AD37 /* shaderSet.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34F714E910E163BF0053AD37 /* shaderSet.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -95,6 +97,8 @@
 		3416884A10DAE07D00B941D4 /* matrix4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = matrix4.hpp; path = ../../include/lavish/math/matrix4.hpp; sourceTree = SOURCE_ROOT; };
 		3416884B10DAE07D00B941D4 /* vector2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vector2.hpp; path = ../../include/lavish/math/vector2.hpp; sourceTree = SOURCE_ROOT; };
 		3416884C10DAE07D00B941D4 /* vector3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vector3.hpp; path = ../../include/lavish/math/vector3.hpp; sourceTree = SOURCE_ROOT; };
+		34D8CB9810F7F90000EBF296 /* model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = model.hpp; sourceTree = "<group>"; };
+		34D8CB9A10F7FBA100EBF296 /* exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exception.hpp; sourceTree = "<group>"; };
 		34F714B010E047DB0053AD37 /* shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
 		34F714B410E048B30053AD37 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
 		34F714E910E163BF0053AD37 /* shaderSet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shaderSet.hpp; sourceTree = "<group>"; };
@@ -236,6 +240,7 @@
 		3416883810DAE07D00B941D4 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				34D8CB9A10F7FBA100EBF296 /* exception.hpp */,
 				3416883910DAE07D00B941D4 /* display.hpp */,
 				3416883A10DAE07D00B941D4 /* eventListener.hpp */,
 				3416883B10DAE07D00B941D4 /* gameState.hpp */,
@@ -253,6 +258,7 @@
 		3416884210DAE07D00B941D4 /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				34D8CB9810F7F90000EBF296 /* model.hpp */,
 				34F714E910E163BF0053AD37 /* shaderSet.hpp */,
 				34F714B010E047DB0053AD37 /* shader.hpp */,
 				3416884310DAE07D00B941D4 /* renderable.hpp */,
@@ -317,6 +323,8 @@
 				3416886110DAE07D00B941D4 /* vector3.hpp in Headers */,
 				34F714B110E047DB0053AD37 /* shader.hpp in Headers */,
 				34F714EA10E163BF0053AD37 /* shaderSet.hpp in Headers */,
+				34D8CB9910F7F90000EBF296 /* model.hpp in Headers */,
+				34D8CB9B10F7FBA100EBF296 /* exception.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
