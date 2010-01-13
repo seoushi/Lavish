@@ -76,6 +76,15 @@ class LAVISH_DECLSPEC VertexBuffer : public Resource
             buffer.push_back(element);
         }
 
+	
+		/** Gets the number of elements in the buffer
+		 * @return the number of elements
+		 */
+		uint NumElements()
+		{
+			return buffer.size();
+		}
+
 
         /**
          * Generates the buffer for use

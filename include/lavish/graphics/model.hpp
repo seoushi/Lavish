@@ -76,6 +76,7 @@ namespace lavish
 		bool loadObj();
 
 		VertexBuffer<VertexNormalTexture> buffer;
+		
 		std::string filename;
 	};
 	

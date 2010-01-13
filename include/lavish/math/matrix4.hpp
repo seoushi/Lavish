@@ -177,7 +177,7 @@ class LAVISH_DECLSPEC Matrix4
          * @param j y-column to ignore
          * @param mat the output matrix
          */
-	void SubMatrix3x3(int i, int j, float* mat) const;
+		void SubMatrix3x3(int i, int j, float* mat) const;
 
 
         /**
