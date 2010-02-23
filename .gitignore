@@ -767,4 +767,64 @@ samples/mac/Tutorial 4 - Loading Obj Models/build/Tutorial 4 - Loading Obj Model
 samples/mac/Tutorial 4 - Loading Obj Models/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/strings.pbxstrings/control
 samples/mac/Tutorial 4 - Loading Obj Models/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/strings.pbxstrings/strings
 samples/mac/Tutorial 4 - Loading Obj Models/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/subclasses.pbxbtree
-samples/mac/Tutorial 4 - Loading Obj Models/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/symbols0.pbxsymbols
+samples/mac/Tutorial 4 - Loading Obj Models/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/symbols0.pbxsymbols/include/lavish/common/color.hpp~
+/include/lavish/common/rectangle.hpp~
+/include/lavish/core/display.hpp~
+/include/lavish/core/eventListener.hpp~
+/include/lavish/core/exception.hpp~
+/include/lavish/core/gameState.hpp~
+/include/lavish/core/keyboard.hpp~
+/include/lavish/core/mouse.hpp~
+/include/lavish/core/platform.hpp~
+/include/lavish/core/resource.hpp~
+/include/lavish/core/stateManager.hpp~
+/include/lavish/core/timer.hpp~
+/include/lavish/graphics/model.hpp~
+/include/lavish/graphics/renderable.hpp~
+/include/lavish/graphics/shader.hpp~
+/include/lavish/graphics/shaderSet.hpp~
+/include/lavish/graphics/sprite.hpp~
+/include/lavish/graphics/texture.hpp~
+/include/lavish/graphics/vertexBuffer.hpp~
+/include/lavish/graphics/vertexFormats.hpp~
+/include/lavish/math/matrix4.hpp~
+/include/lavish/math/vector2.hpp~
+/include/lavish/math/vector3.hpp~
+/projects/linux/liblavish.so
+/projects/linux/Makefile~
+/projects/swig/lavish.i~
+/projects/swig/lavish_wrap.cxx
+/src/common/color.cpp~
+/src/common/color.o
+/src/common/rectangle.cpp~
+/src/common/rectangle.o
+/src/core/display.cpp~
+/src/core/display.o
+/src/core/eventListener.cpp~
+/src/core/eventListener.o
+/src/core/exception.cpp~
+/src/core/exception.o
+/src/core/keyboard.cpp~
+/src/core/keyboard.o
+/src/core/mouse.cpp~
+/src/core/mouse.o
+/src/core/resource.cpp~
+/src/core/resource.o
+/src/core/stateManager.cpp~
+/src/core/stateManager.o
+/src/core/timer.cpp~
+/src/core/timer.o
+/src/graphics/model.cpp~
+/src/graphics/model.o
+/src/graphics/shader.cpp~
+/src/graphics/shader.o
+/src/math/matrix.o
+/src/math/matrix.cpp~
+/src/graphics/vertexFormats.o
+/src/graphics/vertexFormats.cpp~
+/src/graphics/texture.o
+/src/graphics/texture.cpp~
+/src/graphics/sprite.o
+/src/graphics/sprite.cpp~
+/src/graphics/shaderSet.o
+/src/graphics/shaderSet.cpp~
