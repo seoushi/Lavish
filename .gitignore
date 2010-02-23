@@ -828,3 +828,4 @@ samples/mac/Tutorial 4 - Loading Obj Models/build/Tutorial 4 - Loading Obj Model
 /src/graphics/sprite.cpp~
 /src/graphics/shaderSet.o
 /src/graphics/shaderSet.cpp~
+/include/lavish/common/color.hpp~
