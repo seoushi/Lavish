@@ -829,3 +829,8 @@ samples/mac/Tutorial 4 - Loading Obj Models/build/Tutorial 4 - Loading Obj Model
 /src/graphics/shaderSet.o
 /src/graphics/shaderSet.cpp~
 /include/lavish/common/color.hpp~
+/projects/swig/Makefile
+/projects/swig/extconf.rb~
+/projects/swig/lavish.so
+/projects/swig/lavish_wrap.o
+/samples/ruby/Tutorial 2 - Displaying A Triangle/tutorial-2.rb~
