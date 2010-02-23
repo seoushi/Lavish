@@ -6,10 +6,11 @@
  * Copyright 2009 Seoushi Games. All rights reserved.
  */
 
-#include <lavish/texture.hpp>
-#include <lavish/platform.hpp>
-#include <lavish/exception.hpp>
 #include <iostream>
+
+#include <lavish/graphics/texture.hpp>
+#include <lavish/core/platform.hpp>
+#include <lavish/core/exception.hpp>
 
 
 namespace lavish

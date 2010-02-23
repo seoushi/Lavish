@@ -11,10 +11,10 @@
 
 #include <vector>
 
-#include <lavish/platform.hpp>
-#include <lavish/vertexFormats.hpp>
-#include <lavish/resource.hpp>
-#include <lavish/types.hpp>
+#include <lavish/core/platform.hpp>
+#include <lavish/graphics/vertexFormats.hpp>
+#include <lavish/core/resource.hpp>
+#include <lavish/common/types.hpp>
 
 namespace lavish
 {

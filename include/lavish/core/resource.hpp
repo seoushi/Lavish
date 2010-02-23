@@ -10,7 +10,7 @@
 #define	_RESOURCE_HPP
 
 #include <string>
-#include <lavish/platform.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {

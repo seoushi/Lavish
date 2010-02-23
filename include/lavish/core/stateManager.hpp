@@ -9,8 +9,8 @@
 #ifndef _STATEMANAGER_HPP
 #define	_STATEMANAGER_HPP
 
-#include <lavish/display.hpp>
-#include <lavish/platform.hpp>
+#include <lavish/core/display.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {

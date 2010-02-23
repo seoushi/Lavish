@@ -10,10 +10,10 @@
 #define	_MODEL_HPP
 
 #include <string>
-#include <lavish/resource.hpp>
-#include <lavish/renderable.hpp>
-#include <lavish/vertexBuffer.hpp>
-#include <lavish/platform.hpp>
+#include <lavish/core/resource.hpp>
+#include <lavish/graphics/renderable.hpp>
+#include <lavish/graphics/vertexBuffer.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {	

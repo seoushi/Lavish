@@ -8,9 +8,9 @@
 
 #include <fstream>
 
-#include <lavish/platform.hpp>
-#include <lavish/model.hpp>
-#include <lavish/exception.hpp>
+#include <lavish/core/platform.hpp>
+#include <lavish/graphics/model.hpp>
+#include <lavish/core/exception.hpp>
 
 namespace lavish
 {	

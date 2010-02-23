@@ -6,7 +6,7 @@
  * Copyright 2009 Seoushi Games. All rights reserved.
  */
 
-#include <lavish/resource.hpp>
+#include <lavish/core/resource.hpp>
 
 
 namespace lavish

@@ -9,9 +9,10 @@
 #ifndef _EVENT_LISTENER_HPP
 #define	_EVENT_LISTENER_HPP
 
-#include <lavish/mouse.hpp>
-#include <lavish/keyboard.hpp>
 #include <list>
+
+#include <lavish/core/mouse.hpp>
+#include <lavish/core/keyboard.hpp>
 
 namespace lavish
 {

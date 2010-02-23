@@ -10,8 +10,8 @@
 #ifndef _Matrix4_HPP
 #define _Matrix4_HPP
 
-#include <lavish/vector3.hpp>
-#include <lavish/platform.hpp>
+#include <lavish/math/vector3.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {

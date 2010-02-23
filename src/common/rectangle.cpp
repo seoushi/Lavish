@@ -6,8 +6,9 @@
  * Copyright 2009 Seoushi Games. All rights reserved.
  */
 
-#include <lavish/rectangle.hpp>
 #include <math.h>
+
+#include <lavish/common/rectangle.hpp>
 
 namespace lavish
 {

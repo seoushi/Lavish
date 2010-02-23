@@ -9,7 +9,7 @@
 #ifndef _RECTANGLE_HPP
 #define	_RECTANGLE_HPP
 
-#include <lavish/platform.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {

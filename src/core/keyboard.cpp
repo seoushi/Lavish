@@ -6,7 +6,7 @@
  * Copyright 2009 Seoushi Games. All rights reserved.
  */
 
-#include <lavish/keyboard.hpp>
+#include <lavish/core/keyboard.hpp>
 
 namespace lavish
 {
@@ -68,6 +68,9 @@ char KeyToAscii(Key key)
             return '\n';
         case Tab:
             return '\t';
+	    
+	default:
+	  break;
     }
 
     return 1;

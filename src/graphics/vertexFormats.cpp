@@ -8,8 +8,8 @@
  */
 
 
-#include <lavish/vertexFormats.hpp>
-#include <lavish/platform.hpp>
+#include <lavish/graphics/vertexFormats.hpp>
+#include <lavish/core/platform.hpp>
 
 
 namespace lavish

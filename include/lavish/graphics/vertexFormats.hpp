@@ -9,10 +9,10 @@
 #ifndef _VERTEXFORMATS_HPP
 #define	_VERTEXFORMATS_HPP
 
-#include <lavish/vector2.hpp>
-#include <lavish/vector3.hpp>
-#include <lavish/color.hpp>
-#include <lavish/platform.hpp>
+#include <lavish/math/vector2.hpp>
+#include <lavish/math/vector3.hpp>
+#include <lavish/common/color.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {

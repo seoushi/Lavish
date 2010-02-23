@@ -10,7 +10,7 @@
 #define	_VECTOR3_HPP
 
 #include <math.h>
-#include <lavish/platform.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {

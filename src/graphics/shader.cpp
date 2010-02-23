@@ -6,12 +6,13 @@
  * Copyright 2009 Seoushi Games. All rights reserved.
  */
 
-#include <lavish/shader.hpp>
-#include <lavish/platform.hpp>
-#include <lavish/exception.hpp>
 #include <iostream>
 #include <fstream>
 #include <sstream>
+
+#include <lavish/graphics/shader.hpp>
+#include <lavish/core/platform.hpp>
+#include <lavish/core/exception.hpp>
 
 #define MAX_SHADER_SOURCE_LINE_SIZE 256
 #define MAX_SHADER_SOURCE_LINES 512

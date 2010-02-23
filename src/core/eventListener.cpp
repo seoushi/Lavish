@@ -6,8 +6,8 @@
  * Copyright 2009 Seoushi Games. All rights reserved.
  */
 
-#include <lavish/eventListener.hpp>
-#include <lavish/platform.hpp>
+#include <lavish/core/eventListener.hpp>
+#include <lavish/core/platform.hpp>
 
 
 namespace lavish

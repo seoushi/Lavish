@@ -6,9 +6,9 @@
  */
 
 
-#include <lavish/stateManager.hpp>
-#include <lavish/gameState.hpp>
-#include <lavish/timer.hpp>
+#include <lavish/core/stateManager.hpp>
+#include <lavish/core/gameState.hpp>
+#include <lavish/core/timer.hpp>
 
 namespace lavish
 {

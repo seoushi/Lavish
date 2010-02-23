@@ -9,12 +9,12 @@
 #ifndef _SPRITE_HPP
 #define	_SPRITE_HPP
 
-#include <lavish/renderable.hpp>
-#include <lavish/resource.hpp>
-#include <lavish/texture.hpp>
-#include <lavish/rectangle.hpp>
-#include <lavish/vertexBuffer.hpp>
-#include <lavish/platform.hpp>
+#include <lavish/graphics/renderable.hpp>
+#include <lavish/core/resource.hpp>
+#include <lavish/graphics/texture.hpp>
+#include <lavish/common/rectangle.hpp>
+#include <lavish/graphics/vertexBuffer.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {

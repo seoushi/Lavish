@@ -9,7 +9,7 @@
 #ifndef _KEYBOARD_HPP
 #define _KEYBOARD_HPP
 
-#include <lavish/platform.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {

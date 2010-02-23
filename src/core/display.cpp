@@ -7,9 +7,9 @@
  *
  */
 
-
-#include <lavish/display.hpp>
 #include <iostream>
+
+#include <lavish/core/display.hpp>
 
 using namespace std;
 

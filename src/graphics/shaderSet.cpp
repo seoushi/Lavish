@@ -6,8 +6,8 @@
  * Copyright 2009 Seoushi Games. All rights reserved.
  */
 
-#include <lavish/shaderSet.hpp>
-#include <lavish/platform.hpp>
+#include <lavish/graphics/shaderSet.hpp>
+#include <lavish/core/platform.hpp>
 #include <iostream>
 #include <fstream>
 

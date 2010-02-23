@@ -10,12 +10,13 @@
 #ifndef _DISPLAY_HPP
 #define	_DISPLAY_HPP
 
-#include <lavish/platform.hpp>
 #include <string>
-#include <lavish/color.hpp>
-#include <lavish/eventListener.hpp>
 #include <list>
-#include <lavish/vector2.hpp>
+
+#include <lavish/core/platform.hpp>
+#include <lavish/common/color.hpp>
+#include <lavish/core/eventListener.hpp>
+#include <lavish/math/vector2.hpp>
 
 namespace lavish
 {

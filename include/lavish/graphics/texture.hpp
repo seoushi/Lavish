@@ -10,8 +10,8 @@
 #define	_TEXTURE_HPP
 
 #include <string>
-#include <lavish/resource.hpp>
-#include <lavish/platform.hpp>
+#include <lavish/core/resource.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {

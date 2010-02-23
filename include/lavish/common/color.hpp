@@ -9,8 +9,8 @@
 #ifndef _COLOR_HPP
 #define	_COLOR_HPP
 
-#include <lavish/platform.hpp>
-#include <lavish/types.hpp>
+#include <lavish/core/platform.hpp>
+#include <lavish/common/types.hpp>
 
 namespace lavish
 {

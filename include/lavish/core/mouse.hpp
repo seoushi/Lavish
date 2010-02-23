@@ -9,7 +9,7 @@
 #ifndef _MOUSE_HPP
 #define	_MOUSE_HPP
 
-#include <lavish/platform.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {

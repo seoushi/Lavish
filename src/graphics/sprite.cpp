@@ -6,8 +6,8 @@
  * Copyright 2009 Seoushi Games. All rights reserved.
  */
 
-#include <lavish/sprite.hpp>
-#include <lavish/platform.hpp>
+#include <lavish/graphics/sprite.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {

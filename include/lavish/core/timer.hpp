@@ -9,7 +9,7 @@
 #ifndef _TIMER_HPP
 #define	_TIMER_HPP
 
-#include <lavish/platform.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {

@@ -9,8 +9,8 @@
 #ifndef _GAMESTATE_HPP
 #define	_GAMESTATE_HPP
 
-#include <lavish/display.hpp>
-#include <lavish/stateManager.hpp>
+#include <lavish/core/display.hpp>
+#include <lavish/core/stateManager.hpp>
 
 namespace lavish
 {

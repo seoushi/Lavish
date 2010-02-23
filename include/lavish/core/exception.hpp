@@ -11,7 +11,8 @@
 #define	_EXCEPTION_HPP
 
 #include <string>
-#include <lavish/platform.hpp>
+
+#include <lavish/core/platform.hpp>
 
 
 #ifndef __FUNCTION__

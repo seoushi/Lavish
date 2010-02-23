@@ -22,7 +22,7 @@
 #ifdef __WIN32__
 	#define LAVISH_DECLSPEC _declspec(dllexport)
 #else
-	#define LAVISH_DECLSPEC
+	#define LAVISH_DECLSPEC 
 #endif
 
 

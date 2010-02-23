@@ -10,8 +10,8 @@
 #define	_SHADER_SET_HPP
 
 #include <string>
-#include <lavish/platform.hpp>
-#include <lavish/shader.hpp>
+#include <lavish/core/platform.hpp>
+#include <lavish/graphics/shader.hpp>
 
 namespace lavish
 {

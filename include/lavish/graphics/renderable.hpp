@@ -9,8 +9,8 @@
 #ifndef _RENDERABLE_HPP
 #define	_RENDERABLE_HPP
 
-#include <lavish/matrix4.hpp>
-#include <lavish/platform.hpp>
+#include <lavish/math/matrix4.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {

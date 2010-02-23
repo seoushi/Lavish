@@ -6,11 +6,12 @@
  * Copyright 2009 Seoushi Games. All rights reserved.
  */
 
-#include <lavish/matrix4.hpp>
 #include <stdio.h>
 #include <string.h>
-#include <lavish/math.hpp>
-#include <lavish/platform.hpp>
+
+#include <lavish/math/matrix4.hpp>
+#include <lavish/math/math.hpp>
+#include <lavish/core/platform.hpp>
 
 namespace lavish
 {
@@ -217,7 +218,7 @@ void Matrix4::GetTranslation(Vector3* v) const
 
 void Matrix4::SubMatrix3x3(int i,int j,float* mat) const
 {
-    int ti, tj, idst, jdst;
+    int ti, tj, idst = 0, jdst = 0;
 
     for ( ti = 0; ti < 4; ti++ )
     {

@@ -7,7 +7,7 @@
  *
  */
 
-#include <lavish/exception.hpp>
+#include <lavish/core/exception.hpp>
 
 namespace lavish
 {
