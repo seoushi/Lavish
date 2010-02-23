@@ -19,7 +19,7 @@ namespace lavish
 	/**
 	 * A class that defines a shader
 	 */
-	class LAVISH_DECLSPEC ShaderSet
+	class ShaderSet
 	{
     public:
 		

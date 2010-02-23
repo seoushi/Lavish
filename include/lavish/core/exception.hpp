@@ -30,7 +30,7 @@
 
 namespace lavish
 {
-	class LAVISH_DECLSPEC Exception
+	class Exception
 	{
 	public:
 		

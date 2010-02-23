@@ -18,7 +18,7 @@ namespace lavish
  * A class for simpler timers.
  * Time is represented as an unsigned int, the value 1000 is 1 second.
  */
-class LAVISH_DECLSPEC Timer
+class Timer
 {
     public:
 

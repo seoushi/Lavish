@@ -21,7 +21,7 @@ namespace resource
     /**
      * An enum of the types of resources
      */
-    enum LAVISH_DECLSPEC Type
+    enum Type
     {
         Unknown,
         Texture,
@@ -38,7 +38,7 @@ namespace resource
 /**
  * An interface class to define what a resource is
  */
-class LAVISH_DECLSPEC Resource
+class Resource
 {
     public:
 

@@ -18,7 +18,7 @@ namespace lavish
 /**
  * It's a rectangle
  */
-class LAVISH_DECLSPEC Rectangle
+class Rectangle
 {
     public:
 

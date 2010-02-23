@@ -30,7 +30,7 @@ namespace lavish
 	/**
 	 * A class that defines a shader
 	 */
-	class LAVISH_DECLSPEC Shader : public Resource
+	class Shader : public Resource
 	{
 		friend class ShaderSet;
 		

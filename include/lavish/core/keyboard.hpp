@@ -26,7 +26,7 @@ namespace keyboard
  * Numbers are prefixed with Num (example Num0)
  * Numpad keys are prefixed with Pad (example Pad0)
  */
-enum LAVISH_DECLSPEC Key
+enum Key
 {
     Unknown     = SDLK_UNKNOWN,
     First       = SDLK_FIRST,
@@ -192,7 +192,7 @@ enum LAVISH_DECLSPEC Key
  * @param key a keyboard key
  * @return the equivalent
  */
-char LAVISH_DECLSPEC KeyToAscii(Key key);
+char KeyToAscii(Key key);
 
 
 } /* keyboard */
@@ -204,7 +204,7 @@ char LAVISH_DECLSPEC KeyToAscii(Key key);
  * A class that receives events related to the keyboard.
  * it must be attached to an eventListener in order for it to receive events.
  */
-class LAVISH_DECLSPEC KeyboardListener
+class KeyboardListener
 {
     public:
 

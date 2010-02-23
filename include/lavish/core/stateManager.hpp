@@ -21,7 +21,7 @@ class GameState;
 /**
  * A state manager used to handle game states
  */
-class LAVISH_DECLSPEC StateManager
+class StateManager
 {
     public:
 

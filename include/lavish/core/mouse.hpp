@@ -22,7 +22,7 @@ namespace mouse
 /**
 * An enum of the mouse buttons
 */
-enum LAVISH_DECLSPEC Button
+enum Button
 {
     Left    = 1,
     Middle  = 2,
@@ -38,7 +38,7 @@ enum LAVISH_DECLSPEC Button
  * A class that receives events related to the mouse.
  * it must be attached to an eventListener in order for it to receive events.
  */
-class LAVISH_DECLSPEC MouseListener
+class MouseListener
 {
     public:
 

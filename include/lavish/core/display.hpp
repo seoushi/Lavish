@@ -25,7 +25,7 @@ namespace lavish
 /**
  * The Display class handles the graphics window
  */
-class LAVISH_DECLSPEC Display
+class Display
 {
     public:
         

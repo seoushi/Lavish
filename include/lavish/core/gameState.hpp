@@ -20,7 +20,7 @@ namespace lavish
 * A Game State is used to manage a specific portion of a game
 * Some examples are an intro screen, main menus, in-game
 */
-class LAVISH_DECLSPEC GameState
+class GameState
 {
     public:
         

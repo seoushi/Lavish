@@ -19,7 +19,7 @@ namespace lavish
 /**
  * A 4x4 matrix class
  */
-class LAVISH_DECLSPEC Matrix4
+class Matrix4
 {
     public:
 

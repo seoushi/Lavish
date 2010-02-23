@@ -19,7 +19,7 @@
 namespace lavish
 {
 
-class LAVISH_DECLSPEC Sprite : public Renderable, public Resource
+class Sprite : public Renderable, public Resource
 {
 
     public:

@@ -20,7 +20,7 @@ namespace lavish
 	/**
 	 * A class that defines a model
 	 */
-	class LAVISH_DECLSPEC Model : public Resource, public Renderable
+	class Model : public Resource, public Renderable
 	{
     public:
 		

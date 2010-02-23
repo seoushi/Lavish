@@ -19,12 +19,6 @@
     #include <SDL/SDL_image.h>
 #endif
 
-#ifdef __WIN32__
-	#define LAVISH_DECLSPEC _declspec(dllexport)
-#else
-	#define LAVISH_DECLSPEC 
-#endif
-
 
 #endif	/* _PLATFORM_HPP */
 

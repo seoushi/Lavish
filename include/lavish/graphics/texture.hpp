@@ -19,7 +19,7 @@ namespace lavish
 /**
  * A class that defines a texture
  */
-class LAVISH_DECLSPEC Texture : public Resource
+class Texture : public Resource
 {
     public:
 

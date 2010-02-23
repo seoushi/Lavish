@@ -19,7 +19,7 @@ namespace lavish
 	/**
 	 * An interface class that defines a Render method
 	 */
-	class LAVISH_DECLSPEC Renderable
+	class Renderable
 	{
     public:
 		

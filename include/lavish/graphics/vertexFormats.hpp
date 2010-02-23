@@ -20,7 +20,7 @@ namespace lavish
 /**
  * A vertex with a position, normal and texture coords
  */
-struct LAVISH_DECLSPEC VertexNormalTexture
+struct VertexNormalTexture
 {
 
     /**
@@ -55,7 +55,7 @@ struct LAVISH_DECLSPEC VertexNormalTexture
 /**
  * A vertex with a position and texture coords
  */
-struct LAVISH_DECLSPEC VertexTexture
+struct VertexTexture
 {
     /**
      * A constructor that initializes all components
@@ -85,7 +85,7 @@ struct LAVISH_DECLSPEC VertexTexture
 /**
  * A vertex with a position, normal and color
  */
-struct LAVISH_DECLSPEC VertexNormalColor
+struct VertexNormalColor
 {
 
     /**
@@ -118,7 +118,7 @@ struct LAVISH_DECLSPEC VertexNormalColor
 /**
  * A vertex with a position and color
  */
-struct LAVISH_DECLSPEC VertexColor
+struct VertexColor
 {
 
     /**

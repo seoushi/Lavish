@@ -20,7 +20,7 @@ namespace lavish
  * The Color class represents a color with red, blue, green and alpha.
  * a color is represented by an unsigned int color components ranging from 0 to 255
  */
-class LAVISH_DECLSPEC Color
+class Color
 {
     public:
 

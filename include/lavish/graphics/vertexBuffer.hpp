@@ -25,7 +25,7 @@ namespace lavish
  * A vertex buffer object that stores a fixed size of elements
  */
 template <class T>
-class LAVISH_DECLSPEC VertexBuffer : public Resource
+class VertexBuffer : public Resource
 {
 
     public:

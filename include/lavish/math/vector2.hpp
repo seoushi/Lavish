@@ -18,7 +18,7 @@ namespace lavish
 /**
  * A generic math class for a vector with x y
  */
-class LAVISH_DECLSPEC Vector2
+class Vector2
 {
     public:
 

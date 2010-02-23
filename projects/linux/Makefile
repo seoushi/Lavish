@@ -37,3 +37,15 @@ $(LIBRARY):	$(OBJ)
 .PHONY : clean
 clean:
 	rm -f $(OBJ)
+
+install:
+	cp liblavish.so /usr/local/lib/
+	mkdir -p /usr/local/include/lavish
+	mkdir -p /usr/local/include/lavish/common
+	mkdir -p /usr/local/include/lavish/core
+	mkdir -p /usr/local/include/lavish/graphics
+	mkdir -p /usr/local/include/lavish/math
+	cp ../../include/lavish/common/*.hpp /usr/local/include/lavish/common/
+	cp ../../include/lavish/core/*.hpp /usr/local/include/lavish/core/
+	cp ../../include/lavish/graphics/*.hpp /usr/local/include/lavish/graphics/
+	cp ../../include/lavish/math/*.hpp /usr/local/include/lavish/math/

@@ -21,7 +21,7 @@ namespace lavish
  * The event listener handles all input events
  * The proper way to get a reference to the event listener is from the Display class
  */
-class LAVISH_DECLSPEC EventListener
+class EventListener
 {
     public:
 

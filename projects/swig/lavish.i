@@ -1,9 +1,9 @@
 %module lavish
 %{
   /* Includes the header in the wrapper code */
-  extern class Lavish::Display;
+  #include <lavish/core/display.hpp>
 %}
  
 /* Parse the header file to generate wrappers */
 
-extern class Lavish::Display;
+%include "../../include/lavish/core/display.hpp";
