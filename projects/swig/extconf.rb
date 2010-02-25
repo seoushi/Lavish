@@ -1,5 +1,5 @@
 require 'mkmf'
 
-$LIBS << " -lstdc++ -lc"
+$LIBS << " -lstdc++ -lc -framework lavish"
 $CC = "g++"
 create_makefile('lavish')

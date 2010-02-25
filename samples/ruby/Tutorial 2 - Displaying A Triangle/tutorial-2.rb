@@ -1,8 +1,7 @@
 require 'lavish'
 
-
-disp = Lavish:Display.new 
-disp.Initialize 800, 600, 24, "Tutorial 2"
+disp = Lavish::Display.new 
+disp.Setup(800, 600, 24, "Tutorial 2", false)
 
 if !disp.Show()
   puts "Failed to open window, exiting."
