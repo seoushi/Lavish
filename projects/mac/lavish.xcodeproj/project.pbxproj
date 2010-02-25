@@ -20,7 +20,6 @@
 		3416868A10DADDAF00B941D4 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867C10DADDAF00B941D4 /* texture.cpp */; };
 		3416868B10DADDAF00B941D4 /* vertexFormats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867D10DADDAF00B941D4 /* vertexFormats.cpp */; };
 		3416868C10DADDAF00B941D4 /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867F10DADDAF00B941D4 /* matrix.cpp */; };
-		341687DD10DADE3000B941D4 /* GLEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DA10DADE3000B941D4 /* GLEW.framework */; };
 		341687DE10DADE3000B941D4 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DB10DADE3000B941D4 /* SDL.framework */; };
 		341687DF10DADE3000B941D4 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341687DC10DADE3000B941D4 /* SDL_image.framework */; };
 		3416881910DADE6C00B941D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3416881810DADE6C00B941D4 /* OpenGL.framework */; };
@@ -30,6 +29,8 @@
 		3437E6B21135FE5D0090CE53 /* math in Headers */ = {isa = PBXBuildFile; fileRef = 3437E6921135FC280090CE53 /* math */; settings = {ATTRIBUTES = (Public, ); }; };
 		34D8CBCC10F8059200EBF296 /* exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34D8CBCB10F8059200EBF296 /* exception.cpp */; };
 		34D8CBDC10F807DB00EBF296 /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34D8CBDB10F807DB00EBF296 /* model.cpp */; };
+		34DCA823113638170022D17E /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 34DCA822113638170022D17E /* glew.c */; };
+		34DCA83B1136391E0022D17E /* misc in Headers */ = {isa = PBXBuildFile; fileRef = 34DCA8361136391E0022D17E /* misc */; settings = {ATTRIBUTES = (Public, ); }; };
 		34F714B510E048B30053AD37 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34F714B410E048B30053AD37 /* shader.cpp */; };
 		34F714ED10E163D90053AD37 /* shaderSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34F714EC10E163D90053AD37 /* shaderSet.cpp */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
@@ -53,7 +54,6 @@
 		3416867C10DADDAF00B941D4 /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = ../../src/graphics/texture.cpp; sourceTree = SOURCE_ROOT; };
 		3416867D10DADDAF00B941D4 /* vertexFormats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vertexFormats.cpp; path = ../../src/graphics/vertexFormats.cpp; sourceTree = SOURCE_ROOT; };
 		3416867F10DADDAF00B941D4 /* matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matrix.cpp; path = ../../src/math/matrix.cpp; sourceTree = SOURCE_ROOT; };
-		341687DA10DADE3000B941D4 /* GLEW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLEW.framework; path = dependancies/GLEW.framework; sourceTree = SOURCE_ROOT; };
 		341687DB10DADE3000B941D4 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = dependancies/SDL.framework; sourceTree = SOURCE_ROOT; };
 		341687DC10DADE3000B941D4 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = dependancies/SDL_image.framework; sourceTree = SOURCE_ROOT; };
 		3416881810DADE6C00B941D4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -63,6 +63,8 @@
 		3437E6921135FC280090CE53 /* math */ = {isa = PBXFileReference; lastKnownFileType = folder; name = math; path = ../../include/lavish/math; sourceTree = SOURCE_ROOT; };
 		34D8CBCB10F8059200EBF296 /* exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exception.cpp; sourceTree = "<group>"; };
 		34D8CBDB10F807DB00EBF296 /* model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = model.cpp; sourceTree = "<group>"; };
+		34DCA822113638170022D17E /* glew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glew.c; path = misc/glew.c; sourceTree = "<group>"; };
+		34DCA8361136391E0022D17E /* misc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = misc; path = ../../include/lavish/misc; sourceTree = SOURCE_ROOT; };
 		34F714B410E048B30053AD37 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
 		34F714EC10E163D90053AD37 /* shaderSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shaderSet.cpp; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,7 +77,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
-				341687DD10DADE3000B941D4 /* GLEW.framework in Frameworks */,
 				341687DE10DADE3000B941D4 /* SDL.framework in Frameworks */,
 				341687DF10DADE3000B941D4 /* SDL_image.framework in Frameworks */,
 				3416881910DADE6C00B941D4 /* OpenGL.framework in Frameworks */,
@@ -101,7 +102,6 @@
 				3416866E10DADDAF00B941D4 /* src */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				034768DFFF38A50411DB9C8B /* Products */,
-				3416881810DADE6C00B941D4 /* OpenGL.framework */,
 			);
 			name = lavish;
 			sourceTree = "<group>";
@@ -109,7 +109,7 @@
 		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				341687DA10DADE3000B941D4 /* GLEW.framework */,
+				3416881810DADE6C00B941D4 /* OpenGL.framework */,
 				341687DB10DADE3000B941D4 /* SDL.framework */,
 				341687DC10DADE3000B941D4 /* SDL_image.framework */,
 				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
@@ -120,6 +120,7 @@
 		3416866E10DADDAF00B941D4 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				34DCA8241136381D0022D17E /* misc */,
 				3416866F10DADDAF00B941D4 /* common */,
 				3416867210DADDAF00B941D4 /* core */,
 				3416867A10DADDAF00B941D4 /* graphics */,
@@ -191,12 +192,21 @@
 		3437E68E1135FC080090CE53 /* headers */ = {
 			isa = PBXGroup;
 			children = (
+				34DCA8361136391E0022D17E /* misc */,
 				3437E68F1135FC280090CE53 /* common */,
 				3437E6901135FC280090CE53 /* core */,
 				3437E6911135FC280090CE53 /* graphics */,
 				3437E6921135FC280090CE53 /* math */,
 			);
 			name = headers;
+			sourceTree = "<group>";
+		};
+		34DCA8241136381D0022D17E /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				34DCA822113638170022D17E /* glew.c */,
+			);
+			name = misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +216,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34DCA83B1136391E0022D17E /* misc in Headers */,
 				3437E6AF1135FE5D0090CE53 /* common in Headers */,
 				3437E6B01135FE5D0090CE53 /* core in Headers */,
 				3437E6B11135FE5D0090CE53 /* graphics in Headers */,
@@ -286,6 +297,7 @@
 				34F714ED10E163D90053AD37 /* shaderSet.cpp in Sources */,
 				34D8CBCC10F8059200EBF296 /* exception.cpp in Sources */,
 				34D8CBDC10F807DB00EBF296 /* model.cpp in Sources */,
+				34DCA823113638170022D17E /* glew.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -341,12 +354,13 @@
 					"\"$(SRCROOT)/dependancies\"",
 				);
 				FRAMEWORK_VERSION = A;
-				GCC_MODEL_TUNING = G5;
+				GCC_MODEL_TUNING = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = lavish_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				PRODUCT_NAME = lavish;
+				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
