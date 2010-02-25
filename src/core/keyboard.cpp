@@ -19,7 +19,7 @@ char KeyToAscii(Key key)
 {
 
     if(  ((key >= Space) && (key < At)) ||      // ' ' to '@'
-         ((key >= LeftBracket) && (key < z)))   // '[' to 'z'
+         ((key >= LeftBracket) && (key < Z)))   // '[' to 'z'
     {
         return (char) key;
     }
@@ -69,8 +69,8 @@ char KeyToAscii(Key key)
         case Tab:
             return '\t';
 	    
-	default:
-	  break;
+		default:
+			break;
     }
 
     return 1;
