@@ -24,9 +24,9 @@ namespace mouse
 */
 enum Button
 {
-    Left    = 1,
-    Middle  = 2,
-    Right   = 3
+    LeftButton    = 1,
+    MiddleButton  = 2,
+    RightButton   = 3
 };
 
 
