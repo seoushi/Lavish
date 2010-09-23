@@ -9,13 +9,13 @@
 #ifndef _PLATFORM_HPP
 #define	_PLATFORM_HPP
 
-#include <Lavish/misc/glew.h>
 
 #ifdef __APPLE__
+	#include <Lavish/misc/glew.h>
     #include <SDL/SDL.h>
     #include <SDL_image/SDL_image.h>
 #else
-//    #include <GL/glew.h>
+    #include <GL/glew.h>
     #include <SDL/SDL.h>
     #include <SDL/SDL_image.h>
 #endif

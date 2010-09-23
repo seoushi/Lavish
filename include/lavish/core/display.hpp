@@ -48,13 +48,6 @@ class Display
         bool Initialize(int Width = 640, int Height = 480, int Bpp = 32, std::string WindowTitle = "", bool resizable = false);
 	
 		/**
-		 * Initializes the graphics library for window for creation.
-		 * alternative version of initialize with out default arguments for swig
-		 *
-		 */
-		bool Setup(int Width, int Height, int Bpp, const char* WindowTitle, bool resizable);
-
-        /**
          * @return a list of known valid display modes
          * Requires that Display has been initialized
          */

@@ -894,3 +894,264 @@ projects/mac/build/lavish.build/Release/lavish.build/Objects-normal/x86_64/state
 projects/mac/build/lavish.build/Release/lavish.build/Objects-normal/x86_64/texture.o
 projects/mac/build/lavish.build/Release/lavish.build/Objects-normal/x86_64/timer.o
 projects/mac/build/lavish.build/Release/lavish.build/Objects-normal/x86_64/vertexFormats.o
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/common/color.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/common/rectangle.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/common/types.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/core/display.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/core/eventListener.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/core/exception.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/core/gameState.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/core/keyboard.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/core/mouse.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/core/platform.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/core/resource.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/core/stateManager.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/core/timer.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/graphics/model.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/graphics/renderable.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/graphics/shader.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/graphics/shaderSet.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/graphics/sprite.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/graphics/texture.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/graphics/vertexBuffer.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/graphics/vertexFormats.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/math/math.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/math/matrix4.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/math/vector2.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/math/vector3.hpp
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/misc/glew.h
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/misc/glxew.h
+projects/mac/build/Debug/lavish.framework/Versions/A/Headers/misc/wglew.h
+projects/mac/build/lavish.build/Debug/lavish.build/Objects-normal/i386/glew.o
+projects/mac/lavish.xcodeproj/seanchapel.mode1v3
+projects/mac/lavish.xcodeproj/seanchapel.pbxuser
+samples/mac/04-Loading-Obj-Files/Tutorial 4 - Loading Obj Models.xcodeproj/seanchapel.mode1v3
+samples/mac/04-Loading-Obj-Files/Tutorial 4 - Loading Obj Models.xcodeproj/seanchapel.pbxuser
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Headers
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Resources
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/SDL
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_active.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_audio.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_byteorder.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_cdrom.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_config.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_dreamcast.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_macos.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_macosx.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_os2.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_win32.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_copying.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_cpuinfo.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_endian.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_error.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_events.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_getenv.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_joystick.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_keyboard.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_keysym.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_loadso.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_main.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_mouse.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_mutex.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_name.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_opengl.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_platform.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_quit.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_rwops.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_stdinc.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_syswm.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_thread.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_timer.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_types.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_version.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_video.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/begin_code.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/close_code.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Resources/Info.plist
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Resources/SDLMain.nib/objects.nib
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/SDL
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/Current
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL_image.framework/Headers
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL_image.framework/Resources
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL_image.framework/SDL_image
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL_image.framework/Versions/A/Headers/SDL_image.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL_image.framework/Versions/A/Resources/Info.plist
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL_image.framework/Versions/A/SDL_image
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/SDL_image.framework/Versions/Current
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Headers
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Resources
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/common/color.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/common/rectangle.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/common/types.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/display.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/eventListener.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/exception.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/gameState.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/keyboard.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/mouse.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/platform.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/resource.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/stateManager.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/timer.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/model.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/renderable.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/shader.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/shaderSet.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/sprite.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/texture.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/vertexBuffer.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/vertexFormats.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/math/math.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/math/matrix4.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/math/vector2.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/math/vector3.hpp
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/misc/glew.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/misc/glxew.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/misc/wglew.h
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Resources/Info.plist
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/lavish
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/Current
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Frameworks/lavish.framework/lavish
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Info.plist
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/MacOS/Sample-4
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/PkgInfo
+samples/mac/04-Loading-Obj-Files/build/Debug/Sample-4.app/Contents/Resources/cube.obj
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app.dSYM/Contents/Info.plist
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app.dSYM/Contents/Resources/DWARF/Sample-4
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Headers
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Resources
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/SDL
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_active.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_audio.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_byteorder.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_cdrom.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_config.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_dreamcast.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_macos.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_macosx.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_os2.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_config_win32.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_copying.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_cpuinfo.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_endian.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_error.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_events.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_getenv.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_joystick.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_keyboard.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_keysym.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_loadso.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_main.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_mouse.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_mutex.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_name.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_opengl.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_platform.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_quit.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_rwops.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_stdinc.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_syswm.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_thread.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_timer.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_types.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_version.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/SDL_video.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/begin_code.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Headers/close_code.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Resources/Info.plist
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/Resources/SDLMain.nib/objects.nib
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/A/SDL
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL.framework/Versions/Current
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL_image.framework/Headers
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL_image.framework/Resources
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL_image.framework/SDL_image
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL_image.framework/Versions/A/Headers/SDL_image.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL_image.framework/Versions/A/Resources/Info.plist
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL_image.framework/Versions/A/SDL_image
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/SDL_image.framework/Versions/Current
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Headers
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Resources
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/common/color.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/common/rectangle.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/common/types.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/display.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/eventListener.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/exception.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/gameState.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/keyboard.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/mouse.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/platform.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/resource.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/stateManager.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/core/timer.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/model.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/renderable.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/shader.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/shaderSet.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/sprite.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/texture.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/vertexBuffer.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/graphics/vertexFormats.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/math/math.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/math/matrix4.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/math/vector2.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/math/vector3.hpp
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/misc/glew.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/misc/glxew.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Headers/misc/wglew.h
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/Resources/Info.plist
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/A/lavish
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/Versions/Current
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Frameworks/lavish.framework/lavish
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Info.plist
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/MacOS/Sample-4
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/PkgInfo
+samples/mac/04-Loading-Obj-Files/build/Release/Sample-4.app/Contents/Resources/cube.obj
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/Objects-normal/i386/SDLMain-AF8904A18EA48471.o
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/Objects-normal/i386/Sample-4.LinkFileList
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/Objects-normal/i386/main.o
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/Objects-normal/i386/main.o~$
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/Objects-normal/i386/main.o~>
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/Objects-normal/i386/main.o~?
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/Sample-4-all-target-headers.hmap
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/Sample-4-generated-files.hmap
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/Sample-4-own-target-headers.hmap
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/Sample-4-project-headers.hmap
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/Sample-4.dep
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/Sample-4.hmap
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/Sample-4~.dep
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/build-state.dat
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Debug/Sample-4.build/build-state~.dat
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Objects-normal/i386/SDLMain-AF8904A18EA48471.o
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Objects-normal/i386/Sample-4
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Objects-normal/i386/Sample-4.LinkFileList
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Objects-normal/i386/main.o
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Objects-normal/x86_64/SDLMain-AF8904A18EA48471.o
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Objects-normal/x86_64/Sample-4
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Objects-normal/x86_64/Sample-4.LinkFileList
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Objects-normal/x86_64/main.o
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Sample-4-all-target-headers.hmap
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Sample-4-generated-files.hmap
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Sample-4-own-target-headers.hmap
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Sample-4-project-headers.hmap
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Sample-4.dep
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Sample-4.hmap
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/Sample-4~.dep
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/build-state.dat
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Release/Sample-4.build/build-state~.dat
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/categories.pbxbtree
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/cdecls.pbxbtree
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/decls.pbxbtree
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/files.pbxbtree
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/imports.pbxbtree
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/pbxindex.header
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/protocols.pbxbtree
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/refs.pbxbtree
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/strings.pbxstrings/control
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/strings.pbxstrings/strings
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/subclasses.pbxbtree
+samples/mac/04-Loading-Obj-Files/build/Tutorial 4 - Loading Obj Models.build/Tutorial 4 - Loading Obj Models.pbxindex/symbols0.pbxsymbols

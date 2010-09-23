@@ -106,20 +106,6 @@ bool Display::Initialize(int Width, int Height, int Bpp, std::string WindowTitle
 
 	return true;
 }
-	
-bool Display::Setup(int Width, int Height, int Bpp, const char* WindowTitle, bool resizable)
-{
-#ifdef __APPLE__
-	//force cocoa to load for swig friends
-	void* cocoa_lib; 
-	cocoa_lib = dlopen( "/System/Library/Frameworks/Cocoa.framework/Cocoa", RTLD_LAZY ); 
-	void (*nsappload)(void); 
-	nsappload = (void(*)()) dlsym( cocoa_lib, "NSApplicationLoad"); 
-	nsappload();
-#endif
-	
-	return Initialize(Width, Height, Bpp, WindowTitle, resizable);
-}
 
 std::list<Vector2> Display::DisplayModes()
 {

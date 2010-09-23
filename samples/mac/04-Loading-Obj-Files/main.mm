@@ -1,14 +1,22 @@
-#include <lavish/vertexBuffer.hpp>
-#include <lavish/display.hpp>
-#include <lavish/model.hpp>
-#include <lavish/timer.hpp>
+#include <lavish/graphics/vertexBuffer.hpp>
+#include <lavish/core/display.hpp>
+#include <lavish/graphics/model.hpp>
+#include <lavish/core/timer.hpp>
 
 #include <iostream>
+
+#include <AppKit/AppKit.h>
+
+
 
 using namespace lavish;
 
 int main(int argc, char** argv)
 {
+	// TODO: this needs to be integrated during intialization of the library
+	[[NSFileManager defaultManager] changeCurrentDirectoryPath:[[NSBundle mainBundle] resourcePath]];
+	
+	
     Display d;
 	
     d.Initialize(800, 600, 24, "Tutorial 4");
@@ -21,7 +29,7 @@ int main(int argc, char** argv)
 	
     d.ClearColor( Color::Blue() );
 	
-	Model* m = new Model("data/cube.obj");
+	Model* m = new Model("cube.obj");
 	
 	uint time = Timer::GetCurrentGameTime();
 	
