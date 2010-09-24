@@ -11,7 +11,7 @@
 
 
 #ifdef __APPLE__
-	#include <Lavish/misc/glew.h>
+	#include <GLEW/glew.h>
     #include <SDL/SDL.h>
     #include <SDL_image/SDL_image.h>
 #else

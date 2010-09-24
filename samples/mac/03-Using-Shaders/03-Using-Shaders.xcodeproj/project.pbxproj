@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27B3BB93124D6E8000A7616D /* GLEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B3BB92124D6E8000A7616D /* GLEW.framework */; };
+		27B3BB96124D6E8600A7616D /* GLEW.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B3BB92124D6E8000A7616D /* GLEW.framework */; };
 		27C8A0DB124D3C80009FD473 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689E610DAF30900B941D4 /* SDL.framework */; };
 		27C8A0DC124D3C80009FD473 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689E710DAF30900B941D4 /* SDL_image.framework */; };
 		27C8A0DD124D3C80009FD473 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689B510DAF28000B941D4 /* Cocoa.framework */; };
@@ -26,7 +28,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 341689EA10DAF31A00B941D4 /* lavish.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216 /* lavish */;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = lavish;
 		};
 		341689F110DAF31A00B941D4 /* PBXContainerItemProxy */ = {
@@ -45,6 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				27B3BB96124D6E8600A7616D /* GLEW.framework in CopyFiles */,
 				27C8A0FB124D3D0E009FD473 /* lavish.framework in CopyFiles */,
 				27C8A0F9124D3D0B009FD473 /* SDL.framework in CopyFiles */,
 				27C8A0FA124D3D0B009FD473 /* SDL_image.framework in CopyFiles */,
@@ -55,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		27B3BB92124D6E8000A7616D /* GLEW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLEW.framework; path = ../../../projects/mac/dependancies/GLEW.framework; sourceTree = SOURCE_ROOT; };
 		27C8A0AA124D3C46009FD473 /* Sample-03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-03.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C8A0AC124D3C46009FD473 /* Sample-03-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sample-03-Info.plist"; sourceTree = "<group>"; };
 		27C8A0E1124D3CAF009FD473 /* Shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Shader.frag; path = ../../data/Shader.frag; sourceTree = SOURCE_ROOT; };
@@ -72,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B3BB93124D6E8000A7616D /* GLEW.framework in Frameworks */,
 				27C8A132124D3D7D009FD473 /* OpenGL.framework in Frameworks */,
 				27C8A0E7124D3CF2009FD473 /* lavish.framework in Frameworks */,
 				27C8A0DB124D3C80009FD473 /* SDL.framework in Frameworks */,
@@ -125,6 +130,7 @@
 		341689BB10DAF29000B941D4 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27B3BB92124D6E8000A7616D /* GLEW.framework */,
 				341689E610DAF30900B941D4 /* SDL.framework */,
 				341689E710DAF30900B941D4 /* SDL_image.framework */,
 				341689B510DAF28000B941D4 /* Cocoa.framework */,

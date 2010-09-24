@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27B3BBBE124D6E9900A7616D /* GLEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B3BBBD124D6E9900A7616D /* GLEW.framework */; };
+		27B3BBBF124D6EA500A7616D /* GLEW.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 27B3BBBD124D6E9900A7616D /* GLEW.framework */; };
 		27C94869124AC43F0082233F /* SDLMain.h in Sources */ = {isa = PBXBuildFile; fileRef = 341689FD10DAF36B00B941D4 /* SDLMain.h */; };
 		27C9486A124AC43F0082233F /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 341689FE10DAF36B00B941D4 /* SDLMain.m */; };
 		27C9486B124AC43F0082233F /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.mm */; };
@@ -45,6 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				27B3BBBF124D6EA500A7616D /* GLEW.framework in Copy Frameworks */,
 				27C9491A124AC9770082233F /* lavish.framework in Copy Frameworks */,
 				27C948F3124AC8000082233F /* SDL.framework in Copy Frameworks */,
 				27C948F4124AC8000082233F /* SDL_image.framework in Copy Frameworks */,
@@ -56,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		27B3BBBD124D6E9900A7616D /* GLEW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLEW.framework; path = ../../../projects/mac/dependancies/GLEW.framework; sourceTree = SOURCE_ROOT; };
 		27C94863124AC4300082233F /* Sample-04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-04.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C94865124AC4300082233F /* Sample-04-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sample-04-Info.plist"; sourceTree = "<group>"; };
 		27C948E3124AC7500082233F /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cube.obj; path = ../../data/cube.obj; sourceTree = SOURCE_ROOT; };
@@ -74,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B3BBBE124D6E9900A7616D /* GLEW.framework in Frameworks */,
 				27C94919124AC9740082233F /* lavish.framework in Frameworks */,
 				27C94881124AC4570082233F /* OpenGL.framework in Frameworks */,
 				27C94882124AC4570082233F /* SDL.framework in Frameworks */,
@@ -128,6 +133,7 @@
 		341689BB10DAF29000B941D4 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27B3BBBD124D6E9900A7616D /* GLEW.framework */,
 				34168A4810DAF55E00B941D4 /* OpenGL.framework */,
 				341689E610DAF30900B941D4 /* SDL.framework */,
 				341689E710DAF30900B941D4 /* SDL_image.framework */,

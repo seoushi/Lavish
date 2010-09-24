@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27B3BA99124D675300A7616D /* GLEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B3BA98124D675300A7616D /* GLEW.framework */; };
 		3416868010DADDAF00B941D4 /* color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867010DADDAF00B941D4 /* color.cpp */; };
 		3416868110DADDAF00B941D4 /* rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867110DADDAF00B941D4 /* rectangle.cpp */; };
 		3416868210DADDAF00B941D4 /* display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3416867310DADDAF00B941D4 /* display.cpp */; };
@@ -29,8 +30,6 @@
 		3437E6B21135FE5D0090CE53 /* math in Headers */ = {isa = PBXBuildFile; fileRef = 3437E6921135FC280090CE53 /* math */; settings = {ATTRIBUTES = (Public, ); }; };
 		34D8CBCC10F8059200EBF296 /* exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34D8CBCB10F8059200EBF296 /* exception.cpp */; };
 		34D8CBDC10F807DB00EBF296 /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34D8CBDB10F807DB00EBF296 /* model.cpp */; };
-		34DCA823113638170022D17E /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 34DCA822113638170022D17E /* glew.c */; };
-		34DCA83B1136391E0022D17E /* misc in Headers */ = {isa = PBXBuildFile; fileRef = 34DCA8361136391E0022D17E /* misc */; settings = {ATTRIBUTES = (Public, ); }; };
 		34F714B510E048B30053AD37 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34F714B410E048B30053AD37 /* shader.cpp */; };
 		34F714ED10E163D90053AD37 /* shaderSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34F714EC10E163D90053AD37 /* shaderSet.cpp */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
@@ -40,6 +39,7 @@
 /* Begin PBXFileReference section */
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		27B3BA98124D675300A7616D /* GLEW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLEW.framework; path = dependancies/GLEW.framework; sourceTree = "<group>"; };
 		32DBCF5E0370ADEE00C91783 /* lavish_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lavish_Prefix.pch; sourceTree = "<group>"; };
 		3416867010DADDAF00B941D4 /* color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = color.cpp; path = ../../src/common/color.cpp; sourceTree = SOURCE_ROOT; };
 		3416867110DADDAF00B941D4 /* rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rectangle.cpp; path = ../../src/common/rectangle.cpp; sourceTree = SOURCE_ROOT; };
@@ -63,8 +63,6 @@
 		3437E6921135FC280090CE53 /* math */ = {isa = PBXFileReference; lastKnownFileType = folder; name = math; path = ../../include/lavish/math; sourceTree = SOURCE_ROOT; };
 		34D8CBCB10F8059200EBF296 /* exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exception.cpp; sourceTree = "<group>"; };
 		34D8CBDB10F807DB00EBF296 /* model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = model.cpp; sourceTree = "<group>"; };
-		34DCA822113638170022D17E /* glew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glew.c; path = misc/glew.c; sourceTree = "<group>"; };
-		34DCA8361136391E0022D17E /* misc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = misc; path = ../../include/lavish/misc; sourceTree = SOURCE_ROOT; };
 		34F714B410E048B30053AD37 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
 		34F714EC10E163D90053AD37 /* shaderSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shaderSet.cpp; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +78,7 @@
 				341687DE10DADE3000B941D4 /* SDL.framework in Frameworks */,
 				341687DF10DADE3000B941D4 /* SDL_image.framework in Frameworks */,
 				3416881910DADE6C00B941D4 /* OpenGL.framework in Frameworks */,
+				27B3BA99124D675300A7616D /* GLEW.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +108,7 @@
 		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				27B3BA98124D675300A7616D /* GLEW.framework */,
 				3416881810DADE6C00B941D4 /* OpenGL.framework */,
 				341687DB10DADE3000B941D4 /* SDL.framework */,
 				341687DC10DADE3000B941D4 /* SDL_image.framework */,
@@ -120,7 +120,6 @@
 		3416866E10DADDAF00B941D4 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				34DCA8241136381D0022D17E /* misc */,
 				3416866F10DADDAF00B941D4 /* common */,
 				3416867210DADDAF00B941D4 /* core */,
 				3416867A10DADDAF00B941D4 /* graphics */,
@@ -192,21 +191,12 @@
 		3437E68E1135FC080090CE53 /* headers */ = {
 			isa = PBXGroup;
 			children = (
-				34DCA8361136391E0022D17E /* misc */,
 				3437E68F1135FC280090CE53 /* common */,
 				3437E6901135FC280090CE53 /* core */,
 				3437E6911135FC280090CE53 /* graphics */,
 				3437E6921135FC280090CE53 /* math */,
 			);
 			name = headers;
-			sourceTree = "<group>";
-		};
-		34DCA8241136381D0022D17E /* misc */ = {
-			isa = PBXGroup;
-			children = (
-				34DCA822113638170022D17E /* glew.c */,
-			);
-			name = misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +206,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34DCA83B1136391E0022D17E /* misc in Headers */,
 				3437E6AF1135FE5D0090CE53 /* common in Headers */,
 				3437E6B01135FE5D0090CE53 /* core in Headers */,
 				3437E6B11135FE5D0090CE53 /* graphics in Headers */,
@@ -304,7 +293,6 @@
 				34F714ED10E163D90053AD37 /* shaderSet.cpp in Sources */,
 				34D8CBCC10F8059200EBF296 /* exception.cpp in Sources */,
 				34D8CBDC10F807DB00EBF296 /* model.cpp in Sources */,
-				34DCA823113638170022D17E /* glew.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -343,7 +332,9 @@
 				HEADER_SEARCH_PATHS = ../../include;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = lavish;
+				VALID_ARCHS = "x86_64 i386";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -364,10 +355,12 @@
 				GCC_MODEL_TUNING = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = lavish_Prefix.pch;
+				HEADER_SEARCH_PATHS = ../../include;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = lavish;
-				VALID_ARCHS = "i386 x86_64";
+				VALID_ARCHS = "x86_64 i386";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -376,13 +369,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../include;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx10.5;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -390,12 +386,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../../include;
 				PREBINDING = NO;
 				SDKROOT = macosx10.5;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
