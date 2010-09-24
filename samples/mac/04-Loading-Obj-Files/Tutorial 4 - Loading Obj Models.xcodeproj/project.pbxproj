@@ -26,7 +26,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 341689EA10DAF31A00B941D4 /* lavish.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216 /* lavish */;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = lavish;
 		};
 		341689F110DAF31A00B941D4 /* PBXContainerItemProxy */ = {

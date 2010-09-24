@@ -7,87 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		341689B610DAF28000B941D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689B510DAF28000B941D4 /* Cocoa.framework */; };
-		341689E810DAF30900B941D4 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689E610DAF30900B941D4 /* SDL.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		341689E910DAF30900B941D4 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689E710DAF30900B941D4 /* SDL_image.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		341689F310DAF32500B941D4 /* lavish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689F210DAF31A00B941D4 /* lavish.framework */; };
-		341689F410DAF32900B941D4 /* lavish.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 341689F210DAF31A00B941D4 /* lavish.framework */; };
-		341689FF10DAF36B00B941D4 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 341689FE10DAF36B00B941D4 /* SDLMain.m */; };
-		34168A0110DAF37500B941D4 /* GLEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34168A0010DAF37500B941D4 /* GLEW.framework */; };
-		34168A0D10DAF3A000B941D4 /* GLEW.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 34168A0010DAF37500B941D4 /* GLEW.framework */; };
-		34168A0E10DAF3A000B941D4 /* SDL.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 341689E610DAF30900B941D4 /* SDL.framework */; };
-		34168A0F10DAF3A000B941D4 /* SDL_image.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 341689E710DAF30900B941D4 /* SDL_image.framework */; };
-		8DD76F650486A84900D96B5E /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.mm */; settings = {ATTRIBUTES = (); }; };
-		8DD76F6A0486A84900D96B5E /* Tutorial 1 - Window Creation.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* Tutorial 1 - Window Creation.1 */; };
+		27C949FC124D219C0082233F /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689E610DAF30900B941D4 /* SDL.framework */; };
+		27C949FD124D219C0082233F /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689E710DAF30900B941D4 /* SDL_image.framework */; };
+		27C94A01124D21A90082233F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689B510DAF28000B941D4 /* Cocoa.framework */; };
+		27C94A03124D21C30082233F /* SDL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 341689E610DAF30900B941D4 /* SDL.framework */; };
+		27C94A04124D21C30082233F /* SDL_image.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 341689E710DAF30900B941D4 /* SDL_image.framework */; };
+		27C94A06124D21CA0082233F /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.mm */; };
+		27C94A07124D21CA0082233F /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 341689FE10DAF36B00B941D4 /* SDLMain.m */; };
+		27C94A37124D22B20082233F /* lavish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341689F210DAF31A00B941D4 /* lavish.framework */; };
+		27C94A38124D22B50082233F /* lavish.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 341689F210DAF31A00B941D4 /* lavish.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		341689F110DAF31A00B941D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 341689EA10DAF31A00B941D4 /* lavish.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216 /* lavish.framework */;
-			remoteInfo = lavish;
-		};
-		341689F510DAF33800B941D4 /* PBXContainerItemProxy */ = {
+		27C94A09124D21D80082233F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 341689EA10DAF31A00B941D4 /* lavish.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216 /* lavish */;
 			remoteInfo = lavish;
 		};
+		341689F110DAF31A00B941D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 341689EA10DAF31A00B941D4 /* lavish.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = lavish;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		341689D110DAF2CF00B941D4 /* Copy Frameworks */ = {
+		27C94A08124D21D00082233F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				34168A0D10DAF3A000B941D4 /* GLEW.framework in Copy Frameworks */,
-				34168A0E10DAF3A000B941D4 /* SDL.framework in Copy Frameworks */,
-				34168A0F10DAF3A000B941D4 /* SDL_image.framework in Copy Frameworks */,
-				341689F410DAF32900B941D4 /* lavish.framework in Copy Frameworks */,
+				27C94A38124D22B50082233F /* lavish.framework in CopyFiles */,
+				27C94A03124D21C30082233F /* SDL.framework in CopyFiles */,
+				27C94A04124D21C30082233F /* SDL_image.framework in CopyFiles */,
 			);
-			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8DD76F690486A84900D96B5E /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-				8DD76F6A0486A84900D96B5E /* Tutorial 1 - Window Creation.1 in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		27C949CB124D21600082233F /* Sample-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27C949CD124D21600082233F /* Sample-01-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sample-01-Info.plist"; sourceTree = "<group>"; };
 		341689B510DAF28000B941D4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		341689E610DAF30900B941D4 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../projects/mac/dependancies/SDL.framework; sourceTree = SOURCE_ROOT; };
 		341689E710DAF30900B941D4 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = ../../../projects/mac/dependancies/SDL_image.framework; sourceTree = SOURCE_ROOT; };
 		341689EA10DAF31A00B941D4 /* lavish.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = lavish.xcodeproj; path = ../../../projects/mac/lavish.xcodeproj; sourceTree = SOURCE_ROOT; };
 		341689FD10DAF36B00B941D4 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDLMain.h; path = ../../../projects/mac/dependancies/SDLMain.h; sourceTree = SOURCE_ROOT; };
 		341689FE10DAF36B00B941D4 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDLMain.m; path = ../../../projects/mac/dependancies/SDLMain.m; sourceTree = SOURCE_ROOT; };
-		34168A0010DAF37500B941D4 /* GLEW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLEW.framework; path = ../../../projects/mac/dependancies/GLEW.framework; sourceTree = SOURCE_ROOT; };
-		8DD76F6C0486A84900D96B5E /* Tutorial 1 - Window Creation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Tutorial 1 - Window Creation"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859E8B029090EE04C91782 /* Tutorial 1 - Window Creation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "Tutorial 1 - Window Creation.1"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8DD76F660486A84900D96B5E /* Frameworks */ = {
+		27C949C9124D21600082233F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				341689F310DAF32500B941D4 /* lavish.framework in Frameworks */,
-				341689B610DAF28000B941D4 /* Cocoa.framework in Frameworks */,
-				341689E810DAF30900B941D4 /* SDL.framework in Frameworks */,
-				341689E910DAF30900B941D4 /* SDL_image.framework in Frameworks */,
-				34168A0110DAF37500B941D4 /* GLEW.framework in Frameworks */,
+				27C94A37124D22B20082233F /* lavish.framework in Frameworks */,
+				27C94A01124D21A90082233F /* Cocoa.framework in Frameworks */,
+				27C949FC124D219C0082233F /* SDL.framework in Frameworks */,
+				27C949FD124D219C0082233F /* SDL_image.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +86,7 @@
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6859E8C029090F304C91782 /* Documentation */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
+				27C949CD124D21600082233F /* Sample-01-Info.plist */,
 			);
 			name = "Tutorial 1 - Window Creation";
 			sourceTree = "<group>";
@@ -119,7 +104,7 @@
 		1AB674ADFE9D54B511CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8DD76F6C0486A84900D96B5E /* Tutorial 1 - Window Creation */,
+				27C949CB124D21600082233F /* Sample-01.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,7 +112,6 @@
 		341689BB10DAF29000B941D4 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				34168A0010DAF37500B941D4 /* GLEW.framework */,
 				341689E610DAF30900B941D4 /* SDL.framework */,
 				341689E710DAF30900B941D4 /* SDL_image.framework */,
 				341689B510DAF28000B941D4 /* Cocoa.framework */,
@@ -154,34 +138,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8DD76F620486A84900D96B5E /* Tutorial 1 - Window Creation */ = {
+		27C949CA124D21600082233F /* Sample-01 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "Tutorial 1 - Window Creation" */;
+			buildConfigurationList = 27C949D0124D21610082233F /* Build configuration list for PBXNativeTarget "Sample-01" */;
 			buildPhases = (
-				8DD76F640486A84900D96B5E /* Sources */,
-				8DD76F660486A84900D96B5E /* Frameworks */,
-				8DD76F690486A84900D96B5E /* CopyFiles */,
-				341689D110DAF2CF00B941D4 /* Copy Frameworks */,
+				27C949C7124D21600082233F /* Resources */,
+				27C949C8124D21600082233F /* Sources */,
+				27C949C9124D21600082233F /* Frameworks */,
+				27C94A08124D21D00082233F /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				341689F610DAF33800B941D4 /* PBXTargetDependency */,
+				27C94A0A124D21D80082233F /* PBXTargetDependency */,
 			);
-			name = "Tutorial 1 - Window Creation";
-			productInstallPath = "$(HOME)/bin";
-			productName = "Tutorial 1 - Window Creation";
-			productReference = 8DD76F6C0486A84900D96B5E /* Tutorial 1 - Window Creation */;
-			productType = "com.apple.product-type.tool";
+			name = "Sample-01";
+			productName = "Sample-01";
+			productReference = 27C949CB124D21600082233F /* Sample-01.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "Tutorial 1 - Window Creation" */;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "01-Window-Creation" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* Tutorial 1 - Window Creation */;
 			projectDirPath = "";
 			projectReferences = (
@@ -192,7 +182,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				8DD76F620486A84900D96B5E /* Tutorial 1 - Window Creation */,
+				27C949CA124D21600082233F /* Sample-01 */,
 			);
 		};
 /* End PBXProject section */
@@ -207,66 +197,37 @@
 		};
 /* End PBXReferenceProxy section */
 
+/* Begin PBXResourcesBuildPhase section */
+		27C949C7124D21600082233F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		8DD76F640486A84900D96B5E /* Sources */ = {
+		27C949C8124D21600082233F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD76F650486A84900D96B5E /* main.mm in Sources */,
-				341689FF10DAF36B00B941D4 /* SDLMain.m in Sources */,
+				27C94A06124D21CA0082233F /* main.mm in Sources */,
+				27C94A07124D21CA0082233F /* SDLMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		341689F610DAF33800B941D4 /* PBXTargetDependency */ = {
+		27C94A0A124D21D80082233F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = lavish;
-			targetProxy = 341689F510DAF33800B941D4 /* PBXContainerItemProxy */;
+			targetProxy = 27C94A09124D21D80082233F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1DEB923208733DC60010E9CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../projects/mac/dependancies\"",
-					"\"$(SRCROOT)/../../../projects/mac/dependancies\"",
-				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"_GLIBCXX_DEBUG=1",
-					"_GLIBCXX_DEBUG_PEDANTIC=1",
-				);
-				INSTALL_PATH = /usr/local/bin;
-				PRODUCT_NAME = "Tutorial 1 - Window Creation";
-			};
-			name = Debug;
-		};
-		1DEB923308733DC60010E9CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../projects/mac/dependancies\"",
-					"\"$(SRCROOT)/../../../projects/mac/dependancies\"",
-				);
-				GCC_MODEL_TUNING = G5;
-				INSTALL_PATH = /usr/local/bin;
-				PRODUCT_NAME = "Tutorial 1 - Window Creation";
-			};
-			name = Release;
-		};
 		1DEB923608733DC60010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -293,23 +254,85 @@
 			};
 			name = Release;
 		};
+		27C949CE124D21610082233F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../projects/mac/dependancies\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../include\"";
+				INFOPLIST_FILE = "Sample-01-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Sample-01";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		27C949CF124D21610082233F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../projects/mac/dependancies\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../include\"";
+				INFOPLIST_FILE = "Sample-01-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Sample-01";
+				VALID_ARCHS = "i386 x86_64";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "Tutorial 1 - Window Creation" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1DEB923208733DC60010E9CD /* Debug */,
-				1DEB923308733DC60010E9CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "Tutorial 1 - Window Creation" */ = {
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "01-Window-Creation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB923608733DC60010E9CD /* Debug */,
 				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27C949D0124D21610082233F /* Build configuration list for PBXNativeTarget "Sample-01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27C949CE124D21610082233F /* Debug */,
+				27C949CF124D21610082233F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

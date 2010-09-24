@@ -1,4 +1,4 @@
-#include <lavish/display.hpp>
+#include <lavish/core/display.hpp>
 #include <iostream>
 
 using namespace lavish;
