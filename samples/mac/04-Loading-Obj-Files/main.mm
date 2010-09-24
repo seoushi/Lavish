@@ -19,7 +19,7 @@ int main(int argc, char** argv)
 	
     Display d;
 	
-    d.Initialize(800, 600, 24, "Tutorial 4");
+    d.Initialize(800, 600, 24, "Sample 04");
 	
     if( d.Show() == false )
     {

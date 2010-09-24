@@ -7,7 +7,7 @@ int main(int argc, char** argv)
 {
     Display d;
 	
-    d.Initialize(800, 600, 24, "Tutorial 1");
+    d.Initialize(800, 600, 24, "Sample 01");
     
     if( d.Show() == false )
     {

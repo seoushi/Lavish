@@ -56,8 +56,8 @@
 
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
-		27C94863124AC4300082233F /* Sample-4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		27C94865124AC4300082233F /* Sample-4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sample-4-Info.plist"; sourceTree = "<group>"; };
+		27C94863124AC4300082233F /* Sample-04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-04.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27C94865124AC4300082233F /* Sample-04-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sample-04-Info.plist"; sourceTree = "<group>"; };
 		27C948E3124AC7500082233F /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cube.obj; path = ../../data/cube.obj; sourceTree = SOURCE_ROOT; };
 		341689B510DAF28000B941D4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		341689E610DAF30900B941D4 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../projects/mac/dependancies/SDL.framework; sourceTree = SOURCE_ROOT; };
@@ -94,7 +94,7 @@
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6859E8C029090F304C91782 /* Documentation */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
-				27C94865124AC4300082233F /* Sample-4-Info.plist */,
+				27C94865124AC4300082233F /* Sample-04-Info.plist */,
 			);
 			name = "Tutorial 4 - Loading Obj Models";
 			sourceTree = "<group>";
@@ -112,7 +112,7 @@
 		1AB674ADFE9D54B511CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27C94863124AC4300082233F /* Sample-4.app */,
+				27C94863124AC4300082233F /* Sample-04.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		27C94862124AC4300082233F /* Sample-4 */ = {
+		27C94862124AC4300082233F /* Sample-04 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27C94868124AC4310082233F /* Build configuration list for PBXNativeTarget "Sample-4" */;
+			buildConfigurationList = 27C94868124AC4310082233F /* Build configuration list for PBXNativeTarget "Sample-04" */;
 			buildPhases = (
 				27C9485F124AC4300082233F /* Resources */,
 				27C94860124AC4300082233F /* Sources */,
@@ -169,9 +169,9 @@
 			dependencies = (
 				27C948F7124AC8190082233F /* PBXTargetDependency */,
 			);
-			name = "Sample-4";
+			name = "Sample-04";
 			productName = "Sample-4";
-			productReference = 27C94863124AC4300082233F /* Sample-4.app */;
+			productReference = 27C94863124AC4300082233F /* Sample-04.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -179,7 +179,7 @@
 /* Begin PBXProject section */
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "Tutorial 4 - Loading Obj Models" */;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "04-Loading-Obj-Files" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -199,7 +199,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				27C94862124AC4300082233F /* Sample-4 */,
+				27C94862124AC4300082233F /* Sample-04 */,
 			);
 		};
 /* End PBXProject section */
@@ -291,11 +291,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../include\"";
-				INFOPLIST_FILE = "Sample-4-Info.plist";
+				INFOPLIST_FILE = "Sample-04-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
-				PRODUCT_NAME = "Sample-4";
+				PRODUCT_NAME = "Sample-04";
 			};
 			name = Debug;
 		};
@@ -314,11 +314,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../include\"";
-				INFOPLIST_FILE = "Sample-4-Info.plist";
+				INFOPLIST_FILE = "Sample-04-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
-				PRODUCT_NAME = "Sample-4";
+				PRODUCT_NAME = "Sample-04";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -326,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "Tutorial 4 - Loading Obj Models" */ = {
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "04-Loading-Obj-Files" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB923608733DC60010E9CD /* Debug */,
@@ -335,7 +335,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27C94868124AC4310082233F /* Build configuration list for PBXNativeTarget "Sample-4" */ = {
+		27C94868124AC4310082233F /* Build configuration list for PBXNativeTarget "Sample-04" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27C94866124AC4310082233F /* Debug */,
