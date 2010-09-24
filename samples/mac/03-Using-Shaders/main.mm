@@ -1,17 +1,22 @@
-#include <lavish/vertexBuffer.hpp>
-#include <lavish/display.hpp>
-#include <lavish/shaderSet.hpp>
-#include <lavish/timer.hpp>
+#include <lavish/graphics/vertexBuffer.hpp>
+#include <lavish/core/display.hpp>
+#include <lavish/graphics/shaderSet.hpp>
+#include <lavish/core/timer.hpp>
 
 #include <iostream>
+#include <AppKit/AppKit.h>
 
 using namespace lavish;
 
 int main(int argc, char** argv)
 {
+	// TODO: this needs to be integrated during intialization of the library
+	[[NSFileManager defaultManager] changeCurrentDirectoryPath:[[NSBundle mainBundle] resourcePath]];
+	
+	
     Display d;
 	
-    d.Initialize(800, 600, 24, "Tutorial 3");
+    d.Initialize(800, 600, 24, "Sample 03");
 	
     if( d.Show() == false )
     {
@@ -36,8 +41,8 @@ int main(int argc, char** argv)
 	
 	//load shaders
 	ShaderSet* ss = new ShaderSet();
-	Shader* vert = new Shader("data/Shader.vert", shader::Vertex);
-	Shader* frag = new Shader("data/Shader.frag", shader::Fragment);
+	Shader* vert = new Shader("Shader.vert", shader::Vertex);
+	Shader* frag = new Shader("Shader.frag", shader::Fragment);
 	
 	ss->AddShader(vert);
 	ss->AddShader(frag);

@@ -340,7 +340,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = lavish_Prefix.pch;
-				HEADER_SEARCH_PATHS = "../../include/**";
+				HEADER_SEARCH_PATHS = ../../include;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = lavish;
