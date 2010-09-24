@@ -2,9 +2,9 @@ Lavish
 
 About:
 
-A basic framework for 2d and 3d game development using SDL, OpenGL and GLEW. Lavish is a continuation of the snagle engine that I created awhile back http://code.google.com/p/snagle .
+A basic framework for 2d and 3d game development using SDL, OpenGL and GLEW. Lavish is a continuation of the snagle engine that I created awhile back (see http://code.google.com/p/snagle ).
 
-The engine is cross-platform however there is only an xcode/mac project file at the moment. Windows (Visual Studio) and Linux (MakeFile) projects will be coming sometime in the future.
+The engine is cross-platform however there is only xcode/mac and Makefile/linux project file at the moment. A windows project will be coming sometime in the future (when the demand is high enough).
 
 Goals:
 
