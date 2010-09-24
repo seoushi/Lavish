@@ -11,3 +11,7 @@ samples/mac/04-Loading-Obj-Files/build/**/*
 /projects/linux/Makefile~
 *.pbxuser
 *.mode1v3
+samples/linux/01-Window-Creation/sample-01
+samples/linux/02-Displaying-A-Triangle/sample-02
+samples/linux/03-Using-Shaders/sample-03
+samples/linux/04-Loading-Obj-Files/sample-04

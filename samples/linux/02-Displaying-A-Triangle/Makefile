@@ -7,7 +7,7 @@ CFLAGS := -I../../../include -O2 -pipe -Wall -ansi -fPIC
 LDFLAGS := -L../../../projects/linux -llavish
 #-lGL -lGLU -lGLEW -lSDL_image `sdl-config --cflags --libs` -shared
 
-EXECUTABLE = sample-04
+EXECUTABLE = sample-02
 
 SRC= main.cpp\
 
