@@ -1,5 +1,5 @@
-#include <lavish/vertexBuffer.hpp>
-#include <lavish/display.hpp>
+#include <lavish/graphics/vertexBuffer.hpp>
+#include <lavish/core/display.hpp>
 
 #include <iostream>
 

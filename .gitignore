@@ -1,6 +1,6 @@
-projects/mac/build/*
+projects/mac/build/**/*
 samples/mac/01-Window-Creation/build/**/*
-samples/mac/Tutorial 2 - Displaying A Triangle/build/**/*
+samples/mac/02-Displaying-A-Triangle/build/**/*
 samples/mac/Tutorial 3 - Using Shaders/build/**/*
 samples/mac/04-Loading-Obj-Files/build/**/*
 *.o
