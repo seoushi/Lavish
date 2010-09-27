@@ -9,6 +9,11 @@
 
 #include "FPSCamera.hpp"
 
+/*
+ * input is mouse for looking and WASD for movement, press Escape to quit
+ */
+
+
 using namespace lavish;
 
 int main(int argc, char** argv)
@@ -27,9 +32,11 @@ int main(int argc, char** argv)
         return 1;
     }
 	
+	// default fps like behavior
 	d.GrabInput(true);
 	d.ShowMouseCursor(false);
 
+	// have the camera register mouse and keyboard events
 	d.Listener()->AttachMouseListener(&camera);
 	d.Listener()->AttachKeyboardListener(&camera);
 
@@ -44,7 +51,7 @@ int main(int argc, char** argv)
 	float angle;
 	
 	
-	//rid of input before the scene was loaded and reset the camera to it's proper view
+	//clear the input before the scene was loaded and reset the camera to it's default view
 	d.Listener()->Update();
 	camera.Reset();
 	
@@ -52,15 +59,11 @@ int main(int argc, char** argv)
     {
 		camera.Update();
 		
-		//rotate model
-		angle += 90.0f * (((float)(Timer::GetCurrentGameTime() - time)) / 1000.0f);
-		
+		// apply the camera and move the cube into a good default position
 		modelTransformations = camera.CameraMatrix();
-		modelTransformations *= Matrix4::Translate(0.0f, 0.0f, -10.0f);
-		modelTransformations *= Matrix4::RotateX(angle);
-		modelTransformations *= Matrix4::RotateY(angle);
-		modelTransformations *= Matrix4::RotateZ(angle);
-		
+		modelTransformations *= Matrix4::Translate(0.0f, -13.0f, -10.0f);
+		modelTransformations *= Matrix4::Scale(Vector3(10, 10, 10));
+
 		time = Timer::GetCurrentGameTime();
 
 
@@ -71,7 +74,7 @@ int main(int argc, char** argv)
 		
         d.SwapBuffers();
 		
-		if(camera.ShouldQuit())
+		if(camera.ShouldQuit()) // should quit should probably be in it's own input listener
 		{
 			break;
 		}

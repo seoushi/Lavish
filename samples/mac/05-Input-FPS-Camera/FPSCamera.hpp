@@ -40,6 +40,8 @@ class FPSCamera : public lavish::KeyboardListener, public lavish::MouseListener
 	
 	private:
 	
+		float degreesToRadians(float degrees);
+	
 		lavish::Vector2 cameraAngle;
 		lavish::Vector3 cameraPosition;
 		lavish::Matrix4 cameraMatrix;
@@ -53,6 +55,7 @@ class FPSCamera : public lavish::KeyboardListener, public lavish::MouseListener
 	
 		float mouseTrackingSpeedY;
 		float mouseTrackingSpeedX;
+		float moveSpeed;
 	
 		lavish::Vector2 mouseMovement;
 };

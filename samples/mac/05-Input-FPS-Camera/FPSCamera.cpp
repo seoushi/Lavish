@@ -32,6 +32,7 @@ FPSCamera::FPSCamera()
 	
 	mouseTrackingSpeedY = 0.1f;
 	mouseTrackingSpeedX = 0.1f;
+	moveSpeed = 0.1f;
 }
 
 
@@ -44,16 +45,16 @@ void FPSCamera::OnKeyDown(const keyboard::Key key)
 {
 	switch (key)
 	{
-		case keyboard::UpArrow:
+		case keyboard::W:
 			upIsDown = true;
 			break;
-		case keyboard::DownArrow:
+		case keyboard::S:
 			downIsDown = true;
 			break;
-		case keyboard::LeftArrow:
+		case keyboard::A:
 			leftIsDown = true;
 			break;
-		case keyboard::RightArrow:
+		case keyboard::D:
 			rightIsDown = true;
 			break;
 		case keyboard::R:
@@ -68,16 +69,16 @@ void FPSCamera::OnKeyUp(const keyboard::Key key)
 {
 	switch (key)
 	{
-		case keyboard::UpArrow:
+		case keyboard::W:
 			upIsDown = false;
 			break;
-		case keyboard::DownArrow:
+		case keyboard::S:
 			downIsDown = false;
 			break;
-		case keyboard::LeftArrow:
+		case keyboard::A:
 			leftIsDown = false;
 			break;
-		case keyboard::RightArrow:
+		case keyboard::D:
 			rightIsDown = false;
 			break;
 		case keyboard::Escape:
@@ -106,13 +107,45 @@ void FPSCamera::Update()
 	lastUpdateTime = Timer::GetCurrentGameTime();
 	
 	
-	// update the looking direction
-	cameraAngle.y = mouseMovement.x * mouseTrackingSpeedY * frameTime;
-	cameraAngle.x -= mouseMovement.y * mouseTrackingSpeedX * frameTime; // regular / not inverted
+	// update the looking angles
+	cameraAngle.y += mouseMovement.x * mouseTrackingSpeedY * frameTime;
+	cameraAngle.x += mouseMovement.y * mouseTrackingSpeedX * frameTime;
 	mouseMovement = Vector2::Zero();
 	
-	cameraMatrix = Matrix4::RotateY(cameraAngle.y)		// left and right movement
-				   * Matrix4::RotateX(cameraAngle.x);	// updown movement
+	// create forward and left strafing angles
+	Vector3 forwardVec = Vector3(sin(-degreesToRadians(cameraAngle.y)), 
+								 0.0f, //sin(degreesToRadians(cameraAngle.x)), //change this line if you want a "fly cam"
+								 cos(-degreesToRadians(cameraAngle.y)));
+	forwardVec *= (frameTime * moveSpeed);
+	
+	Vector3 leftVec = Vector3(cos(degreesToRadians(cameraAngle.y)), 
+							  0.0f,
+							  sin(degreesToRadians(cameraAngle.y)));
+	leftVec *= (frameTime * moveSpeed);
+	
+	
+	//update the position based on input
+	if(upIsDown)
+	{
+		cameraPosition -= forwardVec;
+	}
+	if(downIsDown)
+	{
+		cameraPosition += forwardVec;
+	}
+	if(leftIsDown)
+	{
+		cameraPosition -= leftVec;
+	}
+	if(rightIsDown)
+	{
+		cameraPosition += leftVec;
+	}
+
+
+	cameraMatrix = Matrix4::RotateX(cameraAngle.x) *	// updown movement
+					Matrix4::RotateY(cameraAngle.y) *	// left and right movement
+					Matrix4::Translate(-cameraPosition);
 }
 
 
@@ -136,4 +169,10 @@ void FPSCamera::Reset()
 	mouseMovement = Vector2::Zero();
 
 	lastUpdateTime = Timer::GetCurrentGameTime();
-}	
+}
+
+float FPSCamera::degreesToRadians(float degrees)
+{
+	return (degrees / 180.0f) * M_PI;
+}
+
