@@ -125,6 +125,18 @@ class Display
          * @return EventListener
          */
         EventListener* Listener();
+	
+	
+		/**
+		 * Sets if the mouse cursor is shown
+		 **/
+		void ShowMouseCursor(bool isShown);
+	
+		/**
+		 * Sets if the windows should grab the input.
+		 * by default this is off. This only affects windowed mode as fullscreen always grabs the input
+		 **/
+		void GrabInput(bool shouldGrabInput);
 
     protected:
 

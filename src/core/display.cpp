@@ -242,5 +242,23 @@ EventListener* Display::Listener()
 }
 
 
+void Display::ShowMouseCursor(bool isShown)
+{
+	SDL_ShowCursor(isShown);
+}
+
+
+void Display::GrabInput(bool shouldGrabInput)
+{
+	if(shouldGrabInput)
+	{
+		SDL_WM_GrabInput(SDL_GRAB_ON);
+	}
+	else
+	{
+		SDL_WM_GrabInput(SDL_GRAB_OFF);
+	}
+}
+
 } /* namespace lavish */
 

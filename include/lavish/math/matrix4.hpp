@@ -61,11 +61,13 @@ class Matrix4
          * Default destructor
          */
         ~Matrix4();
-
-        /**
-         * Turns the matrix into an idenity matrix
-         */
-        void Identity();
+	
+			
+		/**
+		 * returns an identity matrix
+		 */
+		static Matrix4 Identity();
+	
 
 
         /**

@@ -19,7 +19,9 @@ namespace lavish
 
 Matrix4::Matrix4()
 {
-    Identity();
+	// make identity matrix
+	memset(data, 0, 16 * sizeof(float) );
+    m00 = m11 = m22 = m33 = 1.0f;
 }
 
 
@@ -61,14 +63,13 @@ Matrix4::~Matrix4()
 {
 }
 
-
-void Matrix4::Identity()
+	
+Matrix4 Matrix4::Identity()
 {
-    memset(data, 0, 16 * sizeof(float) );
-    m00 = m11 = m22 = m33 = 1.0f;
+	return Matrix4();
 }
 
-
+	
 void Matrix4::Transpose()
 {
     Matrix4 m( m00, m10, m20, m30,
