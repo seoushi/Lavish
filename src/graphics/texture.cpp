@@ -74,12 +74,14 @@ bool Texture::Load(std::string filename)
 
     glGenTextures(1,&glId);
     glBindTexture(GL_TEXTURE_2D, glId);
+	
+	glTexParameteri(GL_TEXTURE_2D, GL_GENERATE_MIPMAP, true);
 
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
     glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
     SDL_PixelFormat *fmt = Surface->format;
 
@@ -89,7 +91,7 @@ bool Texture::Load(std::string filename)
 
 	
 	GLint imageFormat = GL_RGBA;
-	GLint imageType = GL_UNSIGNED_BYTE;
+	GLint imageType	= GL_UNSIGNED_BYTE;
 	GLint internalFormat = GL_RGBA8;
 	
 	switch (Surface->format->BitsPerPixel)
@@ -111,7 +113,9 @@ bool Texture::Load(std::string filename)
 			break;
 	}
 	
-	gluBuild2DMipmaps(GL_TEXTURE_2D, internalFormat, width, height, imageFormat, imageType, Surface->pixels);
+	glTexImage2D(GL_TEXTURE_2D, 0, internalFormat, width, height, 0, imageFormat, imageType, Surface->pixels);
+	//gluBuild2DMipmaps(GL_TEXTURE_2D, internalFormat, width, height, imageFormat, imageType, Surface->pixels);
+	
 
     //free the image
     SDL_FreeSurface(Surface);
