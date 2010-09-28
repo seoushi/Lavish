@@ -81,6 +81,20 @@ class Texture : public Resource
          * binds the texture for using in drawing
          */
         void Bind();
+	
+		/**
+		 * Changes is a texture is clamped between 0.0 to 1.0 or if it repeats
+		 * default is not clamped
+		 * @param if the texture should clamp or not
+		 */
+		void SetClamped(bool clamped);
+	
+	
+		/**
+		 * enables and disables textures
+		 * @param if the textures should be enabled or not
+		 **/
+		static void Enable(bool enableTextures);
 
     protected:
 

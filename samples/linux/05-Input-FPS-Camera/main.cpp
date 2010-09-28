@@ -37,11 +37,16 @@ int main(int argc, char** argv)
 
     d.ClearColor( Color::Blue() );
 	
-	Model* m = new Model("../../data/cube.obj");
+	// load the texture
+	Texture* tex = new Texture("../../grid.png");
+	Texture::Enable(true);
+
+	// load the plane
+	Model* m = new Model("../../data/plane.obj");
 	
 	uint time = Timer::GetCurrentGameTime();
 	
-	Matrix4 modelTransformations = Matrix4::Translate(0.0f, 0.0f, -10.0f);
+	Matrix4 modelTransformations;
 	
 	float angle;
 	
@@ -56,15 +61,14 @@ int main(int argc, char** argv)
 		
 		// apply the camera and move the cube into a good default position
 		modelTransformations = camera.CameraMatrix();
-		modelTransformations *= Matrix4::Translate(0.0f, -13.0f, -10.0f);
-		modelTransformations *= Matrix4::Scale(Vector3(10, 10, 10));
-
+	
 		time = Timer::GetCurrentGameTime();
 
 
         d.ClearScreen();
         d.SetupPerspective(45.0f, 0.1f, 100.0f);
 		
+		tex->bind();
 		m->Render(&modelTransformations);
 		
         d.SwapBuffers();

@@ -1,6 +1,7 @@
 #include <lavish/graphics/vertexBuffer.hpp>
 #include <lavish/core/display.hpp>
 #include <lavish/graphics/model.hpp>
+#include <lavish/graphics/texture.hpp>
 #include <lavish/core/timer.hpp>
 
 #include <iostream>
@@ -42,14 +43,18 @@ int main(int argc, char** argv)
 
     d.ClearColor( Color::Blue() );
 	
-	Model* m = new Model("cube.obj");
+	// load the texture
+	Texture* tex = new Texture("grid.png");
+	Texture::Enable(true);
+
+	// load the model
+	Model* m = new Model("plane.obj");
 	
+
 	uint time = Timer::GetCurrentGameTime();
 	
-	Matrix4 modelTransformations = Matrix4::Translate(0.0f, 0.0f, -10.0f);
-	
-	float angle;
-	
+	Matrix4 modelTransformations;
+		
 	
 	//clear the input before the scene was loaded and reset the camera to it's default view
 	d.Listener()->Update();
@@ -61,8 +66,6 @@ int main(int argc, char** argv)
 		
 		// apply the camera and move the cube into a good default position
 		modelTransformations = camera.CameraMatrix();
-		modelTransformations *= Matrix4::Translate(0.0f, -13.0f, -10.0f);
-		modelTransformations *= Matrix4::Scale(Vector3(10, 10, 10));
 
 		time = Timer::GetCurrentGameTime();
 
@@ -70,6 +73,7 @@ int main(int argc, char** argv)
         d.ClearScreen();
         d.SetupPerspective(45.0f, 0.1f, 100.0f);
 		
+		tex->Bind();
 		m->Render(&modelTransformations);
 		
         d.SwapBuffers();

@@ -75,11 +75,11 @@ bool Texture::Load(std::string filename)
     glGenTextures(1,&glId);
     glBindTexture(GL_TEXTURE_2D, glId);
 
-    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
-    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
+    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
-    glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-    glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
 
     SDL_PixelFormat *fmt = Surface->format;
 
@@ -87,15 +87,31 @@ bool Texture::Load(std::string filename)
     width = (unsigned int)Surface->w;
     height = (unsigned int)Surface->h;
 
-    //if there is alpha
-    if (fmt->Amask)
-    {
-        gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGBA, width, height, GL_RGBA, GL_UNSIGNED_BYTE, Surface->pixels);
-    }
-    else // no alpha
-    {
-        gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGB, width, height, GL_RGB, GL_UNSIGNED_BYTE, Surface->pixels);
-    }
+	
+	GLint imageFormat = GL_RGBA;
+	GLint imageType = GL_UNSIGNED_BYTE;
+	GLint internalFormat = GL_RGBA8;
+	
+	switch (Surface->format->BitsPerPixel)
+	{
+		case 32: 
+			imageFormat = GL_RGBA; 
+			imageType = GL_UNSIGNED_BYTE;
+			internalFormat = GL_RGBA8; 
+			break;
+		case 24: 
+			imageFormat = GL_RGB; 
+			imageType = GL_UNSIGNED_BYTE;
+			internalFormat = GL_RGB8;
+			break;
+		case 16: 
+			imageFormat = GL_RGBA; 
+			imageType = GL_UNSIGNED_SHORT_5_5_5_1;
+			internalFormat = GL_RGB5_A1; 
+			break;
+	}
+	
+	gluBuild2DMipmaps(GL_TEXTURE_2D, internalFormat, width, height, imageFormat, imageType, Surface->pixels);
 
     //free the image
     SDL_FreeSurface(Surface);
@@ -126,6 +142,35 @@ bool Texture::Reload()
 void Texture::Bind()
 {
     glBindTexture(GL_TEXTURE_2D, glId);
+}
+
+
+void Texture::SetClamped(bool clamped)
+{
+	Bind();
+	
+	if(clamped)
+	{
+		glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
+		glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
+	}
+	else
+	{
+		glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	}
+}
+	
+void Texture::Enable(bool enableTextures)
+{
+	if(enableTextures)
+	{
+		glEnable(GL_TEXTURE_2D);
+	}
+	else
+	{
+		glDisable(GL_TEXTURE_2D);
+	}
 }
 
         
