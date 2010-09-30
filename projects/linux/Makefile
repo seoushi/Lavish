@@ -16,6 +16,7 @@ SRC=\
   ../../src/core/resource.cpp\
   ../../src/core/stateManager.cpp\
   ../../src/core/timer.cpp\
+  ../../src/graphics/font.cpp\
   ../../src/graphics/model.cpp\
   ../../src/graphics/shader.cpp\
   ../../src/graphics/shaderSet.cpp\
