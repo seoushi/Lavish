@@ -59,7 +59,7 @@ Font::~Font()
 }
 
 
-bool Font::Load(std::string filename)
+bool Font::Load(std::string filename, std::string textureName)
 {
 	std::ifstream file;
 	file.open(filename.c_str(), std::ios::in);
@@ -68,6 +68,13 @@ bool Font::Load(std::string filename)
 	{
 		return false;
 	}
+	
+	texture = new Texture();
+	if(!texture->Load(textureName))
+	{
+		return false;
+	}
+	
 	
 	std::string element = "";
 	int curChar;
@@ -103,7 +110,7 @@ bool Font::Load(std::string filename)
 			glyph->xOffset = atoi(element.c_str());
 			
 			file >> element;
-			glyph->yOffset = atoi(element.c_str());
+			glyph->yOffset = lineHeight - (h + atoi(element.c_str())); // since we draw upside down (bottom is 0 instead of top) we have to flip the y offset.
 			
 			file >> element;
 			glyph->advance = atoi(element.c_str());
@@ -119,24 +126,6 @@ bool Font::Load(std::string filename)
 		{
 			file >> element;
 			lineHeight = atoi(element.c_str());
-		}
-		else if(element == "texture")
-		{
-			getline(file, element);
-			
-			size_t start = element.find_first_of("\"");
-			size_t end = element.find_first_of("\"", start + 1);
-			
-			std::string textureName = element.substr(start + 1, end - start);
-			
-			texture = new Texture();
-			bool texLoaded = texture->Load(textureName);
-			
-			if(!texLoaded)
-			{
-				file.close();
-				return false;
-			}			
 		}
 	}
 	
@@ -172,7 +161,6 @@ void Font::DrawString(std::wstring text, Matrix4* transformations)
 		mat = (*transformations);
 	}
 
-
 	// render all glyphs
 	for (std::wstring::iterator itr = text.begin(); itr != text.end(); itr++)
 	{
@@ -186,5 +174,29 @@ void Font::DrawString(std::wstring text, Matrix4* transformations)
 	}
 }
 
+
+int Font::StringWidth(std::wstring text)
+{
+	int width = 0;
+	Glyph* glyph;
+	
+	for (std::wstring::iterator itr = text.begin(); itr != text.end(); itr++)
+	{
+		glyph = glyphs[(*itr)];
+		
+		if(glyph)
+		{
+			width += glyph->advance;
+		}
+	}
+	
+	return width;
+}
+	
+	
+int Font::LineHeight()
+{
+	return lineHeight;
+}
 
 } /* lavish */

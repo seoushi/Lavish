@@ -74,8 +74,9 @@ namespace lavish
         /**
          * Loads a font given the file name
 		 * @param the name of the font file to load
+		 * @param the name of the texture to use
          */
-		bool Load(std::string filename);
+		bool Load(std::string filename, std::string textureName);
 		
 		/**
          * Virtual function from the resource class
@@ -90,6 +91,18 @@ namespace lavish
          * @param the transformation on where to start rendering
          */
         void DrawString(std::wstring text, Matrix4* transformations = 0);
+		
+		/**
+		 * @param the string to get the width of
+		 * @return the width of the given string
+		 */
+		int StringWidth(std::wstring text);
+		
+
+		/**
+		 * @return the height of line of text
+		 */
+		int LineHeight();
 		
     private:
 		
