@@ -57,61 +57,58 @@ namespace lavish
 	class Font : public Resource
 	{
 		
-    public:
+		public:
 		
-        /**
-         * Default constructor for a font
-         */
-		Font();
-		
-		
-        /**
-         * Default destructor
-         */
-        virtual ~Font();
+			/**
+			 * Default constructor for a font
+			 */
+			Font();
 		
 		
-        /**
-         * Loads a font given the file name
-		 * @param the name of the font file to load
-		 * @param the name of the texture to use
-         */
-		bool Load(std::string filename, std::string textureName);
+			/**
+			 * Default destructor
+			 */
+			virtual ~Font();
+			
+			/**
+			 * Loads a font given the file name
+				 * @param the name of the font file to load
+				 * @param the name of the texture to use
+			 */
+			bool Load(std::string filename, std::string textureName);
 		
-		/**
-         * Virtual function from the resource class
-         */
-        virtual void Dispose();
+			/**
+			 * Virtual function from the resource class
+			 */
+			virtual void Dispose();
 		
-        
-        /**
-         * Renders a string at a given location
-		 * note: does not automatically switch to an ortho view 
-		 * @param the string to draw
-         * @param the transformation on where to start rendering
-         */
-        void DrawString(std::wstring text, Matrix4* transformations = 0);
+			/**
+			 * Renders a string at a given location
+				 * note: does not automatically switch to an ortho view 
+				 * @param the string to draw
+			 * @param the transformation on where to start rendering
+			 */
+			void DrawString(std::wstring text, Matrix4* transformations = 0);
 		
-		/**
-		 * @param the string to get the width of
-		 * @return the width of the given string
-		 */
-		int StringWidth(std::wstring text);
-		
+			/**
+			 * @param the string to get the width of
+			 * @return the width of the given string
+			 */
+			int StringWidth(std::wstring text);
+	
 
-		/**
-		 * @return the height of line of text
-		 */
-		int LineHeight();
+			/**
+			 * @return the height of line of text
+			 */
+			int LineHeight();
+	
+		private:
 		
-    private:
-		
-		int	lineHeight;
-        Texture* texture;
-		std::map<int, Glyph*> glyphs;
-        Rectangle area;
-        VertexBuffer<VertexTexture> geometry;
-		
+			int	lineHeight;
+			Texture* texture;
+			std::map<int, Glyph*> glyphs;
+			Rectangle area;
+			VertexBuffer<VertexTexture> geometry;
 	};
 	
 	
