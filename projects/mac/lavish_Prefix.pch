@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'lavish' target in the 'lavish' project.
-//
-
-#ifdef __OBJC__
-	#include <lavish/platform.hpp>
-#endif
