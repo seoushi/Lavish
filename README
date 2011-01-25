@@ -1,13 +1,16 @@
-Lavish
+Lavish 2.0
 
-About:
+Goals From 1.0:
 
-A basic framework for 2d and 3d game development using SDL, OpenGL and GLEW. Lavish is a continuation of the snagle engine that I created awhile back (see http://code.google.com/p/snagle ).
+Make an asset pipeline
+Remove LGPL libraries (no SDL)
+Project is a static lib
+Multiple libs (core, math, net, sound, graphics ...)
+Standardize naming convensions
 
-The engine is cross-platform however there is only xcode/mac and Makefile/linux project file at the moment. A windows project will be coming sometime in the future (when the demand is high enough).
 
-Goals:
-
--Cross-platform, modern game framework.
--A set of tools to ease of creating resource.
--Enough scripting capabilities to create a full game without touching native code.
+Libraries:
+soil - loading images
+physfs - file system
+opengl - graphics
+glew - opengl helper
