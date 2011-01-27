@@ -33,7 +33,8 @@ OBJECTDIR=build/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/1910445120/settings.o
+	${OBJECTDIR}/_ext/1910445120/settings.o \
+	${OBJECTDIR}/src/logger.o
 
 
 # C Compiler Flags
@@ -66,6 +67,11 @@ ${OBJECTDIR}/_ext/1910445120/settings.o: /home/sean/Projects/Lavish/core/src/set
 	${MKDIR} -p ${OBJECTDIR}/_ext/1910445120
 	${RM} $@.d
 	$(COMPILE.cc) -g -Iinclude -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1910445120/settings.o /home/sean/Projects/Lavish/core/src/settings.cpp
+
+${OBJECTDIR}/src/logger.o: src/logger.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} $@.d
+	$(COMPILE.cc) -g -Iinclude -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/logger.o src/logger.cpp
 
 # Subprojects
 .build-subprojects:

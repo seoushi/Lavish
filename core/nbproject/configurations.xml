@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true"
                    kind="SOURCE_LOGICAL_FOLDER">
+      <itemPath>include/logger.hpp</itemPath>
       <itemPath>/home/sean/Projects/Lavish/core/include/settings.hpp</itemPath>
       <itemPath>/home/sean/Projects/Lavish/core/include/types.hpp</itemPath>
     </logicalFolder>
@@ -17,6 +18,7 @@
                    displayName="Source Files"
                    projectFiles="true"
                    kind="SOURCE_LOGICAL_FOLDER">
+      <itemPath>src/logger.cpp</itemPath>
       <itemPath>/home/sean/Projects/Lavish/core/src/settings.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
