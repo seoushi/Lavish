@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true"
                    kind="SOURCE_LOGICAL_FOLDER">
+      <itemPath>include/consoleLogger.hpp</itemPath>
       <itemPath>include/logger.hpp</itemPath>
       <itemPath>/home/sean/Projects/Lavish/core/include/settings.hpp</itemPath>
       <itemPath>/home/sean/Projects/Lavish/core/include/types.hpp</itemPath>
@@ -18,6 +19,7 @@
                    displayName="Source Files"
                    projectFiles="true"
                    kind="SOURCE_LOGICAL_FOLDER">
+      <itemPath>src/consoleLogger.cpp</itemPath>
       <itemPath>src/logger.cpp</itemPath>
       <itemPath>/home/sean/Projects/Lavish/core/src/settings.cpp</itemPath>
     </logicalFolder>

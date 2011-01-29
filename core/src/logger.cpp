@@ -1,5 +1,5 @@
 /* 
- * File:   Logger.cpp
+ * File:   logger.cpp
  * 
  * Copyright © 2011, Sean Chapel
  * All rights reserved.

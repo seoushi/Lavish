@@ -1,5 +1,5 @@
 /* 
- * File:   Logger.hpp
+ * File:   logger.hpp
  *
  * Copyright © 2011, Sean Chapel
  * All rights reserved.
@@ -122,7 +122,7 @@ class LoggerDelegate
         LoggerDelegate(){};
 
         /**
-         * Default constructor that must be implemented
+         * Default Destructor that must be implemented
          */
         virtual ~LoggerDelegate() = 0;
 

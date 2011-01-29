@@ -1,5 +1,5 @@
 /* 
- * File:   settings.cpp
+ * File:   consoleLogger.cpp
  * 
  * Copyright © 2011, Sean Chapel
  * All rights reserved.
@@ -28,107 +28,63 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "settings.hpp"
+#include <iostream>
+//#include <stdlib.h>
+#include <time.h>
+
+#include "consoleLogger.hpp"
 
 
 namespace lavish
 {
 
 
-Settings::Settings()
+
+ConsoleLogger::ConsoleLogger()
 {
 }
 
 
-Settings::~Settings()
+ConsoleLogger::~ConsoleLogger()
 {
 }
 
 
-bool Settings::create(uint32 id, std::string name)
+void ConsoleLogger::log(log::Level level, const std::string& function,
+    const std::string& fileName, unsigned int line,
+    const std::string& message)
 {
-    // check if the setting exists
-    if(_settings.find(id) != _settings.end())
+
+    // Make the date/time into a string
+    time_t now;
+    tm* localTime = localtime(&now);
+    
+    char time[20];
+    
+    sprintf(time, "%04d-%02d-%02d %02d:%02d:%02d",
+	localTime->tm_year + 1900, localTime->tm_mon + 1, localTime->tm_mday,
+	localTime->tm_hour, localTime->tm_min, localTime->tm_sec);
+
+    // log errors to cerr
+    if(level == log::Error)
     {
-        return false;
+        std::cerr << "[Error]  in " << fileName << ":" << line
+                << " in function " << function << " : " << message << std::endl;
+
+        return;
     }
 
-    // add it
-    _settings[id] = any();
-    _nameLookup[id] = name;
-    _idLookup[name] = id;
-
-    return true;
-}
-
-
-bool Settings::set(uint32 id, any value)
-{
-    auto itr = _settings.find(id);
-
-    // check if the setting exists
-    if(itr != _settings.end())
+    // add tag for warnings
+    if(level == log::Warning)
     {
-        itr->second = value;
-        return true;
+        std::cout << "[Warning]  in ";
     }
 
-    return false;
+    // log the information
+    std::cout << fileName << ":" << line << " in function " << function
+            << " : " << message << std::endl;
 }
 
-
-bool Settings::set(std::string name, any value)
-{
-    auto itr = _idLookup.find(name);
-
-    // check if the name exists
-    if(itr != _idLookup.end())
-    {
-        return set(itr->second, value);
-    }
-}
-
-
-any Settings::get(uint32 id)
-{
-    auto itr = _settings.find(id);
-
-    // check if the setting exists
-    if(itr != _settings.end())
-    {
-        return itr->second;
-    }
-
-    return boost::any();
-}
-
-
-any Settings::get(std::string name)
-{
-    auto itr = _idLookup.find(name);
-
-    // check if the name exists
-    if(itr != _idLookup.end())
-    {
-        return get(itr->second);
-    }
-
-    return any();
-}
-
-
-std::string Settings::name(uint32 id)
-{
-    auto itr = _nameLookup.find(id);
-
-    // check if the setting exists
-    if(itr != _nameLookup.end())
-    {
-        return itr->second;
-    }
-
-    return "";
-}
 
 
 } /* lavish namespace */

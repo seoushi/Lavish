@@ -1,5 +1,5 @@
 /* 
- * File:   types.hpp
+ * File:   consoleLogger.hpp
  *
  * Copyright © 2011, Sean Chapel
  * All rights reserved.
@@ -28,27 +28,47 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef TYPES_HPP
-#define	TYPES_HPP
+#ifndef CONSOLE_LOGGER_HPP
+#define	CONSOLE_LOGGER_HPP
 
-#include <stdint.h>
-#include <boost/any.hpp>
+#include "logger.hpp"
 
 namespace lavish
 {
 
-typedef int8_t      int8;
-typedef uint8_t     uint8;
-typedef int16_t     int16;
-typedef uint16_t    uint16;
-typedef int32_t     int32;
-typedef uint32_t    uint32;
-typedef uint64_t    uint64;
 
-typedef boost::any  any;
+/**
+ * A LoggerDelegate for logging to the console
+ * warnings and info goto stdout and errors goto stderr
+ */
+class ConsoleLogger : LoggerDelegate
+{
+    public:
+
+        /**
+         * Default Constructor
+         */
+        ConsoleLogger();
+
+        /**
+         * Default Destructor
+         */
+        virtual ~ConsoleLogger();
+
+        /**
+         * Logging delegate function
+         * @param level the level of loggering (warning, info, error)
+         * @param function the function the log was called from
+         * @param fileName the file name log was called from
+         * @param line the line number the log was called from
+         * @param message the message to lo
+         */
+        virtual void log(log::Level level, const std::string& function,
+            const std::string& fileName, unsigned int line,
+            const std::string& message);
+};
+
 
 } /* lavish namespace */
 
-
-#endif	/* TYPES_HPP */
-
+#endif	/* LOGGER_HPP */
