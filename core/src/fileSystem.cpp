@@ -28,7 +28,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <sstream>
+
 #include "fileSystem.hpp"
+#include "logger.hpp"
+
 #include "physfs.h"
 
 
@@ -43,6 +47,10 @@ FileSystem::FileSystem()
 
 FileSystem::~FileSystem()
 {
+    if(PHYSFS_isInit() && !PHYSFS_deinit())
+    {
+        ERROR(PHYSFS_getLastError());
+    }
 }
 
 
@@ -62,13 +70,81 @@ std::shared_ptr<FileSystem> FileSystem::shared()
 
 bool FileSystem::init(std::string rootPath)
 {
+    _rootPath = rootPath;
+    
     // only init phyfs if it hasn't already
     if( !PHYSFS_isInit() )
     {
-        PHYSFS_init(rootPath.c_str());
+        if(!PHYSFS_init(rootPath.c_str()))
+        {
+            ERROR(PHYSFS_getLastError());
+            return false;
+        }
+
         PHYSFS_setSaneConfig("", "", NULL, 0, 0);
     }
+
+    return true;
 }
 
 
+void FileSystem::addPath(std::string path)
+{
+    std::stringstream ss;
+    ss << _rootPath << "/" << path;
+
+    PHYSFS_addToSearchPath(ss.str().c_str(), 1);
 }
+
+
+void FileSystem::removePath(std::string path)
+{
+    std::stringstream ss;
+    ss << _rootPath << "/" << path;
+
+    PHYSFS_removeFromSearchPath(ss.str().c_str());
+}
+
+
+std::list<std::string> FileSystem::searchPaths()
+{
+    std::list<std::string> paths;
+
+    char** sps = PHYSFS_getSearchPath();
+
+    if(!sps)
+    {
+        ERROR(PHYSFS_getLastError());
+        return paths;
+    }
+
+    int dirCount = 0;
+    char** itr;
+    
+    for(itr = sps; *itr != NULL; itr++, dirCount++)
+    {
+        paths.push_back(std::string(*itr));
+    }
+   
+    PHYSFS_freeList(sps);
+
+    return paths;
+}
+
+
+bool FileSystem::makeDir(std::string dir)
+{
+     if(!PHYSFS_mkdir(dir.c_str()))
+     {
+         ERROR(PHYSFS_getLastError());
+         return false;
+     }
+
+     return true;
+}
+
+
+
+
+} /* lavish naemspace */
+

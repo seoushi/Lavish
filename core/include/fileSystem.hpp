@@ -33,6 +33,7 @@
 
 #include <memory>
 #include <string>
+#include <list>
 
 namespace lavish
 {
@@ -60,14 +61,51 @@ class FileSystem
 
         
         /**
-         *
+         * Initalizes the file system
+         * @param rootPath the root path to the executable
+         * @return true if the file system was initalized
          */
         bool init(std::string rootPath);
 
-        
+        /**
+         * Adds a path to search for files in (this includes pack files).
+         * the path passed in will automatically have the rootPath appended to
+         * the front.
+         * @param the path to add
+         */
+        void addPath(std::string path);
+
+        /**
+         * Removes a path to search for files in (this includes pack files).
+         * the path passed in will automatically have the rootPath appended to
+         * the front.
+         * @param the path to remove
+         */
+        void removePath(std::string path);
+
+        /**
+         * Gets a list of the search paths
+         * @return a list of the search paths
+         */
+        std::list<std::string> searchPaths();
+
+        /**
+         * Creates a directory
+         * @param the directory to make
+         * @return true if the directory was made
+         */
+        bool makeDir(std::string dir);
+
+
+        /*
+        FileStream write(std::string file);
+        FileStream append(std::string file);
+        FileStream read(std::string file);
+         */
 
     private:
 
+        std::string _rootPath; /**< the root path of the application */
 };
 
 
