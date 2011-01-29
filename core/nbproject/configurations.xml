@@ -6,20 +6,50 @@
                    projectFiles="true"
                    kind="SOURCE_LOGICAL_FOLDER">
       <itemPath>include/consoleLogger.hpp</itemPath>
+      <itemPath>include/fileSystem.hpp</itemPath>
       <itemPath>include/logger.hpp</itemPath>
       <itemPath>/home/sean/Projects/Lavish/core/include/settings.hpp</itemPath>
       <itemPath>/home/sean/Projects/Lavish/core/include/types.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
-                   displayName="Resource Files"
+                   displayName="physfs"
                    projectFiles="true"
                    kind="SOURCE_LOGICAL_FOLDER">
+      <itemPath>external/src/7zAlloc.c</itemPath>
+      <itemPath>external/src/7zBuffer.c</itemPath>
+      <itemPath>external/src/7zDecode.c</itemPath>
+      <itemPath>external/src/7zExtract.c</itemPath>
+      <itemPath>external/src/7zHeader.c</itemPath>
+      <itemPath>external/src/7zIn.c</itemPath>
+      <itemPath>external/src/7zItem.c</itemPath>
+      <itemPath>external/src/7zMethodID.c</itemPath>
+      <itemPath>external/src/BranchX86.c</itemPath>
+      <itemPath>external/src/BranchX86_2.c</itemPath>
+      <itemPath>external/src/LzmaDecode.c</itemPath>
+      <itemPath>external/src/dir.c</itemPath>
+      <itemPath>external/src/grp.c</itemPath>
+      <itemPath>external/src/hog.c</itemPath>
+      <itemPath>external/src/lzma.c</itemPath>
+      <itemPath>external/src/macosx.c</itemPath>
+      <itemPath>external/src/mvl.c</itemPath>
+      <itemPath>external/src/os2.c</itemPath>
+      <itemPath>external/src/physfs.c</itemPath>
+      <itemPath>external/src/physfs_byteorder.c</itemPath>
+      <itemPath>external/src/physfs_unicode.c</itemPath>
+      <itemPath>external/src/pocketpc.c</itemPath>
+      <itemPath>external/src/posix.c</itemPath>
+      <itemPath>external/src/qpak.c</itemPath>
+      <itemPath>external/src/unix.c</itemPath>
+      <itemPath>external/src/wad.c</itemPath>
+      <itemPath>external/src/windows.c</itemPath>
+      <itemPath>external/src/zip.c</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true"
                    kind="SOURCE_LOGICAL_FOLDER">
       <itemPath>src/consoleLogger.cpp</itemPath>
+      <itemPath>src/fileSystem.cpp</itemPath>
       <itemPath>src/logger.cpp</itemPath>
       <itemPath>/home/sean/Projects/Lavish/core/src/settings.cpp</itemPath>
     </logicalFolder>
@@ -44,9 +74,15 @@
         <platform>2</platform>
       </toolsSet>
       <compileType>
+        <cTool>
+          <incDir>
+            <pElem>external/include</pElem>
+          </incDir>
+        </cTool>
         <ccTool>
           <incDir>
             <pElem>include</pElem>
+            <pElem>external/include</pElem>
           </incDir>
           <commandLine>-std=c++0x</commandLine>
         </ccTool>
@@ -63,11 +99,15 @@
       <compileType>
         <cTool>
           <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>external/include</pElem>
+          </incDir>
         </cTool>
         <ccTool>
           <developmentMode>5</developmentMode>
           <incDir>
             <pElem>include</pElem>
+            <pElem>external/include</pElem>
           </incDir>
           <commandLine>-std=c++0x</commandLine>
         </ccTool>
