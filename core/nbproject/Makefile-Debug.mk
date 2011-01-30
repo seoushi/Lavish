@@ -33,10 +33,12 @@ OBJECTDIR=build/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/src/timer.o \
 	${OBJECTDIR}/external/src/physfs_byteorder.o \
 	${OBJECTDIR}/external/src/posix.o \
 	${OBJECTDIR}/external/src/grp.o \
 	${OBJECTDIR}/_ext/1910445120/settings.o \
+	${OBJECTDIR}/src/dataBuffer.o \
 	${OBJECTDIR}/external/src/wad.o \
 	${OBJECTDIR}/external/src/unix.o \
 	${OBJECTDIR}/external/src/physfs.o \
@@ -94,6 +96,11 @@ dist/Debug/GNU-Linux-x86/libcore.a: ${OBJECTFILES}
 	${AR} -rv ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libcore.a ${OBJECTFILES} 
 	$(RANLIB) dist/Debug/GNU-Linux-x86/libcore.a
 
+${OBJECTDIR}/src/timer.o: src/timer.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} $@.d
+	$(COMPILE.cc) -g -Iinclude -Iexternal/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/timer.o src/timer.cpp
+
 ${OBJECTDIR}/external/src/physfs_byteorder.o: external/src/physfs_byteorder.c 
 	${MKDIR} -p ${OBJECTDIR}/external/src
 	${RM} $@.d
@@ -113,6 +120,11 @@ ${OBJECTDIR}/_ext/1910445120/settings.o: /home/sean/Projects/Lavish/core/src/set
 	${MKDIR} -p ${OBJECTDIR}/_ext/1910445120
 	${RM} $@.d
 	$(COMPILE.cc) -g -Iinclude -Iexternal/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1910445120/settings.o /home/sean/Projects/Lavish/core/src/settings.cpp
+
+${OBJECTDIR}/src/dataBuffer.o: src/dataBuffer.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} $@.d
+	$(COMPILE.cc) -g -Iinclude -Iexternal/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/dataBuffer.o src/dataBuffer.cpp
 
 ${OBJECTDIR}/external/src/wad.o: external/src/wad.c 
 	${MKDIR} -p ${OBJECTDIR}/external/src

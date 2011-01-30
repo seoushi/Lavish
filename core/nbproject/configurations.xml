@@ -6,9 +6,11 @@
                    projectFiles="true"
                    kind="SOURCE_LOGICAL_FOLDER">
       <itemPath>include/consoleLogger.hpp</itemPath>
+      <itemPath>include/dataBuffer.hpp</itemPath>
       <itemPath>include/fileSystem.hpp</itemPath>
       <itemPath>include/logger.hpp</itemPath>
       <itemPath>/home/sean/Projects/Lavish/core/include/settings.hpp</itemPath>
+      <itemPath>include/timer.hpp</itemPath>
       <itemPath>/home/sean/Projects/Lavish/core/include/types.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -49,9 +51,11 @@
                    projectFiles="true"
                    kind="SOURCE_LOGICAL_FOLDER">
       <itemPath>src/consoleLogger.cpp</itemPath>
+      <itemPath>src/dataBuffer.cpp</itemPath>
       <itemPath>src/fileSystem.cpp</itemPath>
       <itemPath>src/logger.cpp</itemPath>
       <itemPath>/home/sean/Projects/Lavish/core/src/settings.cpp</itemPath>
+      <itemPath>src/timer.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
