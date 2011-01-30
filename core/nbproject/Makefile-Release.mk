@@ -61,6 +61,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/external/src/7zExtract.o \
 	${OBJECTDIR}/external/src/BranchX86_2.o \
 	${OBJECTDIR}/external/src/dir.o \
+	${OBJECTDIR}/src/fileStream.o \
 	${OBJECTDIR}/external/src/macosx.o \
 	${OBJECTDIR}/external/src/7zMethodID.o \
 	${OBJECTDIR}/external/src/qpak.o \
@@ -232,6 +233,11 @@ ${OBJECTDIR}/external/src/dir.o: external/src/dir.c
 	${MKDIR} -p ${OBJECTDIR}/external/src
 	${RM} $@.d
 	$(COMPILE.c) -O2 -Iexternal/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/external/src/dir.o external/src/dir.c
+
+${OBJECTDIR}/src/fileStream.o: src/fileStream.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -Iinclude -Iexternal/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/fileStream.o src/fileStream.cpp
 
 ${OBJECTDIR}/external/src/macosx.o: external/src/macosx.c 
 	${MKDIR} -p ${OBJECTDIR}/external/src

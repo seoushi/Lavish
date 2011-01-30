@@ -35,6 +35,8 @@
 #include <string>
 #include <list>
 
+#include "fileStream.hpp"
+
 namespace lavish
 {
 
@@ -71,7 +73,7 @@ class FileSystem
          * Adds a path to search for files in (this includes pack files).
          * the path passed in will automatically have the rootPath appended to
          * the front.
-         * @param the path to add
+         * @param path the path to add
          */
         void addPath(std::string path);
 
@@ -79,7 +81,7 @@ class FileSystem
          * Removes a path to search for files in (this includes pack files).
          * the path passed in will automatically have the rootPath appended to
          * the front.
-         * @param the path to remove
+         * @param path the path to remove
          */
         void removePath(std::string path);
 
@@ -91,17 +93,31 @@ class FileSystem
 
         /**
          * Creates a directory
-         * @param the directory to make
+         * @param dir the directory to make
          * @return true if the directory was made
          */
         bool makeDir(std::string dir);
 
-
-        /*
-        FileStream write(std::string file);
-        FileStream append(std::string file);
-        FileStream read(std::string file);
+        /**
+         * Sets the write directory
+         * @param dir the directory to write to
          */
+        void setWriteDir(std::string dir);
+
+        /**
+         * Tells if a file exists or not
+         * @param fileName the file to check for
+         * @return true if it exists
+         */
+        bool doesFileExist(std::string fileName);
+
+        /**
+         * Opens a file for reading, writing or appending
+         * @param file the file to open for writting
+         * @param mode the way to open the file
+         * @return a pointer to the opened file
+         */
+        std::shared_ptr<FileStream> open(std::string fileName, file::Mode mode);
 
     private:
 

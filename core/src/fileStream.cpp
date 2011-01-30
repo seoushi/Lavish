@@ -1,5 +1,5 @@
 /* 
- * File:   types.hpp
+ * File:   fileStream.cpp
  *
  * Copyright © 2011, Sean Chapel
  * All rights reserved.
@@ -28,29 +28,97 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef TYPES_HPP
-#define	TYPES_HPP
-
-#include <stdint.h>
-#include <boost/any.hpp>
+#include "fileStream.hpp"
+#include "logger.hpp"
 
 namespace lavish
 {
 
-typedef int8_t      int8;
-typedef uint8_t     uint8;
-typedef int16_t     int16;
-typedef uint16_t    uint16;
-typedef int32_t     int32;
-typedef int64_t     int64;
-typedef uint32_t    uint32;
-typedef uint64_t    uint64;
+
+FileStream::FileStream(PHYSFS_file* file, file::Mode mode)
+    : _file(file), _mode(mode)
+{
+}
 
 
-typedef boost::any  any;
+FileStream::~FileStream()
+{
+    PHYSFS_close(_file);
+}
+
+
+int64 FileStream::read(void* buffer, uint32 size)
+{
+    if(_mode != file::Read)
+    {
+        WARN("File is not open for reading, this will most likely fail.");
+    }
+
+    int64 result = PHYSFS_read(_file, buffer, 1, size);
+
+    if(result == -1)
+    {
+        ERROR(PHYSFS_getLastError());
+    }
+
+    return result;
+}
+
+
+int64 FileStream::write(void* buffer, uint32 size)
+{
+    if((_mode != file::Write) || (_mode != file::Append))
+    {
+        WARN("File is not open for writing, this will most likely fail.");
+    }
+
+    int64 result = PHYSFS_write(_file, buffer, 1, size);
+
+    if(result == -1)
+    {
+        ERROR(PHYSFS_getLastError());
+    }
+
+    return result;
+}
+
+
+bool FileStream::seek(int64 amount)
+{
+    if(!PHYSFS_seek(_file, amount))
+    {
+        ERROR(PHYSFS_getLastError());
+        return false;
+    }
+
+    return true;
+}
+
+
+int64 FileStream::position()
+{
+    int64 result = PHYSFS_tell(_file);
+
+    if(result == -1)
+    {
+        ERROR(PHYSFS_getLastError());
+    }
+
+    return result;
+}
+
+
+bool FileStream::eof()
+{
+    return PHYSFS_eof(_file) == 1;
+}
+
+
+int64 FileStream::length()
+{
+    return PHYSFS_fileLength(_file);
+}
+
+
 
 } /* lavish namespace */
-
-
-#endif	/* TYPES_HPP */
-

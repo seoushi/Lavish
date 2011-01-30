@@ -144,7 +144,52 @@ bool FileSystem::makeDir(std::string dir)
 }
 
 
+void FileSystem::setWriteDir(std::string dir)
+{
+    PHYSFS_setWriteDir(dir.c_str());
+}
 
 
-} /* lavish naemspace */
+bool FileSystem::doesFileExist(std::string fileName)
+{
+    return PHYSFS_exists(fileName.c_str());
+}
+
+
+std::shared_ptr<FileStream> FileSystem::open(std::string fileName,
+                                             file::Mode mode)
+{
+    std::shared_ptr<FileStream> filePtr;
+    PHYSFS_file* file = NULL;
+
+    switch(mode)
+    {
+        case file::Append:
+            file = PHYSFS_openAppend(fileName.c_str());
+            break;
+        case file::Read:
+            file = PHYSFS_openRead(fileName.c_str());
+            break;
+        case file::Write:
+            file = PHYSFS_openWrite(fileName.c_str());
+            break;
+        default:
+            WARN("unrecognized file mode");
+            return filePtr;
+            break;
+    }
+
+    if(!file)
+    {
+        WARN(PHYSFS_getLastError());
+        return filePtr;
+    }
+
+    return std::shared_ptr<FileStream>(new FileStream(file, mode));
+}
+
+
+
+
+} /* lavish namespace */
 
