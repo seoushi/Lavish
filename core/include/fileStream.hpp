@@ -31,7 +31,8 @@
 #ifndef FILESTREAM_HPP
 #define	FILESTREAM_HPP
 
-#include "physfs.h"
+#include <physfs.h>
+
 #include "types.hpp"
 
 namespace lavish

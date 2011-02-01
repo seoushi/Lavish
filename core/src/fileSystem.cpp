@@ -33,7 +33,7 @@
 #include "fileSystem.hpp"
 #include "logger.hpp"
 
-#include "physfs.h"
+#include <physfs.h>
 
 
 namespace lavish
