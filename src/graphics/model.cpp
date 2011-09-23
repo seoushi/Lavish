@@ -117,31 +117,31 @@ namespace lavish
 			else if(element == "vn")
 			{
 				file >> element;
-				tmpV3.x = atof(element.c_str());
+				tmpV3.x = (float)atof(element.c_str());
 				file >> element;
-				tmpV3.y = atof(element.c_str());
+				tmpV3.y = (float)atof(element.c_str());
 				file >> element;
-				tmpV3.z = atof(element.c_str());
+				tmpV3.z = (float)atof(element.c_str());
 				
 				normals.push_back(tmpV3);
 			}
 			else if(element == "vt")
 			{ 
 				file >> element;
-				tmpV2.x = atof(element.c_str());
+				tmpV2.x = (float)atof(element.c_str());
 				file >> element;
-				tmpV2.y = atof(element.c_str());
+				tmpV2.y = (float)atof(element.c_str());
 				
 				texCoords.push_back(tmpV2);
 			}
 			else if(element == "v")
 			{
 				file >> element;
-				tmpV3.x = atof(element.c_str());
+				tmpV3.x = (float)atof(element.c_str());
 				file >> element;
-				tmpV3.y = atof(element.c_str());
+				tmpV3.y = (float)atof(element.c_str());
 				file >> element;
-				tmpV3.z = atof(element.c_str());
+				tmpV3.z = (float)atof(element.c_str());
 				
 				vertices.push_back(tmpV3);
 			}
@@ -238,7 +238,7 @@ namespace lavish
 			// average out all the normals
 			for(uint i = 0; i < normals.size(); i++)
 			{
-				normals[i] /= numFacesAttachedToVert[i];
+				normals[i] /= (float)numFacesAttachedToVert[i];
 			}
 		}
 
@@ -247,7 +247,7 @@ namespace lavish
 		// make vertex buffer from data
 		for(uint i = 0; i < faceVerts.size(); i++)
 		{
-			buffer.AddElement(VertexNormalTexture(vertices[faceVerts[i]], normals[faceNormals[i]], texCoords[faceTexCoords[i]]));
+			buffer.AddElement(VertexNormalTexture(vertices[faceVerts[i]], normals[faceVerts[i]], texCoords[faceTexCoords[i]]));
 		}
 		
 		buffer.Generate();

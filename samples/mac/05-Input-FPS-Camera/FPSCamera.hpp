@@ -12,8 +12,8 @@
 #include <lavish/math/matrix4.hpp>
 #include <lavish/math/vector2.hpp>
 
-#ifndef _FPS_CAMERA.HPP_
-#define _FPS_CAMERA.HPP_
+#ifndef _FPS_CAMERA_HPP_
+#define _FPS_CAMERA_HPP_
 
 class FPSCamera : public lavish::KeyboardListener, public lavish::MouseListener
 {

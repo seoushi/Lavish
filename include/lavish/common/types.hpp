@@ -11,7 +11,7 @@
 
 
 typedef unsigned char byte;
-typedef unsigned int u32;
+typedef unsigned int uint;
 
 
 #endif	/* _TYPES_HPP */

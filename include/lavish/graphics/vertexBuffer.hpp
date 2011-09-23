@@ -144,7 +144,7 @@ class VertexBuffer : public Resource
 
     private:
 
-        u32 glId;
+        uint glId;
         std::vector<T> buffer;
 };
 

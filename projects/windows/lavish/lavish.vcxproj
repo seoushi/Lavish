@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCTargetsPath Condition="'$(VCTargetsPath11)' != '' and '$(VSVersion)' == '' and '$(VisualStudioVersion)' == ''">$(VCTargetsPath11)</VCTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{308B31EC-2C78-4A80-8478-7B10AC50E480}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>lavish</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <AdditionalIncludeDirectories>..\dependencies\include;..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\lavish\common\color.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\common\rectangle.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\common\types.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\core\display.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\core\eventListener.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\core\exception.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\core\gameState.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\core\keyboard.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\core\mouse.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\core\platform.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\core\resource.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\core\stateManager.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\core\timer.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\graphics\font.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\graphics\model.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\graphics\renderable.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\graphics\shader.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\graphics\shaderSet.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\graphics\sprite.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\graphics\texture.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\graphics\vertexBuffer.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\graphics\vertexFormats.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\math\math.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\math\matrix4.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\math\vector2.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\math\vector3.hpp" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\common\color.cpp" />
+    <ClCompile Include="..\..\..\src\common\rectangle.cpp" />
+    <ClCompile Include="..\..\..\src\core\display.cpp" />
+    <ClCompile Include="..\..\..\src\core\eventListener.cpp" />
+    <ClCompile Include="..\..\..\src\core\exception.cpp" />
+    <ClCompile Include="..\..\..\src\core\keyboard.cpp" />
+    <ClCompile Include="..\..\..\src\core\mouse.cpp" />
+    <ClCompile Include="..\..\..\src\core\resource.cpp" />
+    <ClCompile Include="..\..\..\src\core\stateManager.cpp" />
+    <ClCompile Include="..\..\..\src\core\timer.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\font.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\model.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\shader.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\shaderSet.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\sprite.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\texture.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\vertexFormats.cpp" />
+    <ClCompile Include="..\..\..\src\math\matrix.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

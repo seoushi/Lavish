@@ -8,7 +8,7 @@
  */
 
 #include <iostream>
-#include <dlfcn.h>
+//#include <dlfcn.h>
 
 #include <lavish/core/display.hpp>
 

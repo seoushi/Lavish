@@ -60,7 +60,7 @@ bool Shader::Load(std::string filename, shader::Type type)
     
 	// get file length
 	file.seekg (0, std::ios::end);
-	int len = file.tellg();
+	int len = (int)file.tellg();
 	file.seekg (0, std::ios::beg);
     
 	if(len == 0) 
@@ -69,7 +69,7 @@ bool Shader::Load(std::string filename, shader::Type type)
 	}
     
 	
-	GLchar* ShaderSource = (GLchar*) new char[len+1];	
+	GLchar* ShaderSource = (GLchar*) new char[len+1];
 	ShaderSource[len] = 0; 
 	
 	// read in the shader

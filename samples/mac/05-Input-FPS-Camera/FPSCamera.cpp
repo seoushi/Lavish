@@ -10,6 +10,7 @@
 #include <iostream>
 
 #include <lavish/core/timer.hpp>
+#include <lavish/math/math.hpp>
 
 #include "FPSCamera.hpp"
 
@@ -30,9 +31,9 @@ FPSCamera::FPSCamera()
 	downIsDown	= false;
 	shouldQuit	= false;
 	
-	mouseTrackingSpeedY = 0.1f;
-	mouseTrackingSpeedX = 0.1f;
-	moveSpeed = 0.1f;
+	mouseTrackingSpeedY = 15.0f;
+	mouseTrackingSpeedX = 15.0f;
+	moveSpeed = 15.0f;
 }
 
 
@@ -103,25 +104,26 @@ void FPSCamera::OnMouseMove(const unsigned int x, const unsigned int y, const in
 
 void FPSCamera::Update()
 {
-	float frameTime = Timer::GetCurrentGameTime() - lastUpdateTime;
+	float frameTime = (float)Timer::GetCurrentGameTime() - lastUpdateTime;
 	lastUpdateTime = Timer::GetCurrentGameTime();
+	float deltaTime = frameTime / 1000.0f;
 	
 	
 	// update the looking angles
-	cameraAngle.y += mouseMovement.x * mouseTrackingSpeedY * frameTime;
-	cameraAngle.x += mouseMovement.y * mouseTrackingSpeedX * frameTime;
+	cameraAngle.y += mouseMovement.x * mouseTrackingSpeedY * deltaTime;
+	cameraAngle.x += mouseMovement.y * mouseTrackingSpeedX * deltaTime;
 	mouseMovement = Vector2::Zero();
 	
 	// create forward and left strafing angles
 	Vector3 forwardVec = Vector3(sin(-degreesToRadians(cameraAngle.y)), 
 								 0.0f, //sin(degreesToRadians(cameraAngle.x)), //change this line if you want a "fly cam"
 								 cos(-degreesToRadians(cameraAngle.y)));
-	forwardVec *= (frameTime * moveSpeed);
+	forwardVec *= (deltaTime * moveSpeed);
 	
 	Vector3 leftVec = Vector3(cos(degreesToRadians(cameraAngle.y)), 
 							  0.0f,
 							  sin(degreesToRadians(cameraAngle.y)));
-	leftVec *= (frameTime * moveSpeed);
+	leftVec *= (deltaTime * moveSpeed);
 	
 	
 	//update the position based on input
@@ -173,6 +175,6 @@ void FPSCamera::Reset()
 
 float FPSCamera::degreesToRadians(float degrees)
 {
-	return (degrees / 180.0f) * M_PI;
+	return (degrees / 180.0f) * PI;
 }
 

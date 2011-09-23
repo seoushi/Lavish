@@ -38,7 +38,7 @@ void Glyph::Render(Matrix4* transformations)
 		mat = (*transformations);
 	}
 	
-	mat *= Matrix4::Translate(xOffset, yOffset, 0);
+	mat *= Matrix4::Translate((float)xOffset, (float)yOffset, 0);
 
 	// draw the glyph
 	sprite->Render(&mat);
@@ -104,7 +104,7 @@ bool Font::Load(std::string filename, std::string textureName)
 			file >> element;
 			h = atoi(element.c_str());
 
-			glyph->sprite = new Sprite(texture, w, h, x, y, true);
+			glyph->sprite = new Sprite(texture, (float)w, (float)h, (float)x, (float)y, true);
 			
 			file >> element;
 			glyph->xOffset = atoi(element.c_str());
@@ -169,7 +169,7 @@ void Font::DrawString(std::wstring text, Matrix4* transformations)
 		if(glyph)
 		{
 			glyph->Render(&mat);
-			mat *= Matrix4::Translate(glyph->advance, 0.0f, 0.0f);
+			mat *= Matrix4::Translate((float)glyph->advance, 0.0f, 0.0f);
 		}
 	}
 }
