@@ -15,7 +15,6 @@ namespace lavish
 
 Resource::Resource()
 {
-    resourceType = resource::Unknown;
     resourceName = "";
     isResourceLoaded = false;
 }
@@ -29,12 +28,6 @@ Resource::~Resource()
 std::string Resource::ResourceName()
 {
     return resourceName;
-}
-
-
-resource::Type Resource::ResourceType()
-{
-    return resourceType;
 }
 
 

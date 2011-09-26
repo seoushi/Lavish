@@ -13,19 +13,16 @@ namespace lavish
 {
 
 
-Sprite::Sprite(Texture* tex, float w, float h, float x, float y, bool isInPixels)
+Sprite::Sprite(std::shared_ptr<Texture> tex, float w, float h, float x, float y, bool isInPixels)
 {
-    resourceType = resource::Sprite;
     Rectangle rect(x, y, x + w, y +h);
 
     Load(tex, rect, isInPixels);
 }
 
 
-Sprite::Sprite(Texture* tex, Rectangle &rect, bool isInPixels)
+Sprite::Sprite(std::shared_ptr<Texture> tex, Rectangle &rect, bool isInPixels)
 {
-    resourceType = resource::Sprite;
-
     Load(tex, rect, isInPixels);
 }
 
@@ -36,7 +33,7 @@ Sprite::~Sprite()
 }
 
 
-bool Sprite::Load(Texture* tex, Rectangle &rect, bool isInPixels)
+bool Sprite::Load(std::shared_ptr<Texture> tex, Rectangle &rect, bool isInPixels)
 {
     if(!tex || !tex->IsLoaded())
     {
@@ -99,7 +96,7 @@ void Sprite::Dispose()
     }
 }
 
-void Sprite::Render(Matrix4* transformations)
+void Sprite::Render(std::shared_ptr<Matrix4> transformations)
 {
     if(transformations)
     {
@@ -110,6 +107,11 @@ void Sprite::Render(Matrix4* transformations)
     geometry.Bind();
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
     geometry.Unbind();
+}
+
+
+std::string Sprite::ResourceType() {
+	return "sprite";
 }
 
 

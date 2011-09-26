@@ -69,7 +69,10 @@ namespace lavish
 		 * Renders the model
 		 * @param the transformation of the model
 		 */
-		void Render(Matrix4* transformations);
+		void Render(std::shared_ptr<Matrix4> transformations);
+
+
+		virtual std::string ResourceType();
 		
     protected:
 		

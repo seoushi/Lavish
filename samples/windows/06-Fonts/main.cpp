@@ -28,7 +28,7 @@ int main(int argc, char** argv)
 		
 	
 	std::wstring text = L"The quick brown fox jumps over the lazy dog.!@#$%^&*()";
-	Matrix4 textPos = Matrix4::Translate((float)(ScreenWidth / 2) - (font.StringWidth(text) / 2), 
+	auto textPos = Matrix4::Translate((float)(ScreenWidth / 2) - (font.StringWidth(text) / 2), 
 										 (float)ScreenHeight / 2,
 										 0);
 	
@@ -37,7 +37,7 @@ int main(int argc, char** argv)
 		d.ClearScreen();
 		d.Setup2d();
 
-		font.DrawString(text, &textPos);
+		font.DrawString(text, textPos);
 		
 		d.SwapBuffers();
     }

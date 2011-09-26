@@ -24,12 +24,12 @@ namespace lavish
 		glDeleteProgram(glId);
 	}
 	
-	void ShaderSet::AddShader(Shader* shader)
+	void ShaderSet::AddShader(std::shared_ptr<Shader> shader)
 	{
 		glAttachShader(glId, shader->glId);
 	}
 	
-	void ShaderSet::RemoveShader(Shader* shader)
+	void ShaderSet::RemoveShader(std::shared_ptr<Shader> shader)
 	{
 		glDetachShader(glId, shader->glId);
 	}

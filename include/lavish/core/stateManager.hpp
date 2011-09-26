@@ -29,7 +29,7 @@ class StateManager
         /**
          * A default constructor
          */
-        StateManager(Display* display);
+        StateManager(std::shared_ptr<Display> display);
 
 
         /**
@@ -42,7 +42,7 @@ class StateManager
          * Changes the current state to a new one
          * Destroyes the current state, loads the new one then changes to the new state
          */
-        void ChangeState(GameState* state);
+        void ChangeState(std::shared_ptr<GameState> state);
 
 
         /**
@@ -62,9 +62,9 @@ class StateManager
 
     protected:
 
-        Display* display;        /**< reference to the display               */
-        bool isRunning;          /**< if the state manager is running or not */
-        GameState* currentState; /**< holds the current state                */
+        std::shared_ptr<Display> display;			/**< reference to the display               */
+        bool isRunning;								/**< if the state manager is running or not */
+        std::shared_ptr<GameState> currentState;	/**< holds the current state                */
 };
 
 } /* lavish */

@@ -96,10 +96,12 @@ class Texture : public Resource
 		 **/
 		static void Enable(bool enableTextures);
 
+		virtual std::string ResourceType();
+
     protected:
 
-	unsigned int glId;	/**< Holds the opengl texture id        */
-	unsigned int width;	/**< Stores the width of the texture    */
+		unsigned int glId;	/**< Holds the opengl texture id        */
+		unsigned int width;	/**< Stores the width of the texture    */
         unsigned int height;    /**< Stores the height of the texture   */
 
 };

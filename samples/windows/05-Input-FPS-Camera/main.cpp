@@ -17,26 +17,26 @@ using namespace lavish;
 
 int main(int argc, char** argv)
 {
-	FPSCamera camera;
-	Display d;
+	auto camera = std::make_shared<FPSCamera>();
+	auto d = std::make_shared<Display>();
 	
-	d.Initialize(800, 600, 24, "Sample 05");
+	d->Initialize(800, 600, 24, "Sample 05");
 
-	if( d.Show() == false )
+	if( d->Show() == false )
 	{
 		std::cout << "Failed to open window, exiting." << std::endl;
 		return 1;
 	}
 
 	// default fps like behavior
-	d.GrabInput(true);
-	d.ShowMouseCursor(false);
+	d->GrabInput(true);
+	d->ShowMouseCursor(false);
 
 	// have the camera register mouse and keyboard events
-	d.Listener()->AttachMouseListener(&camera);
-	d.Listener()->AttachKeyboardListener(&camera);
+	d->Listener()->AttachMouseListener(camera);
+	d->Listener()->AttachKeyboardListener(camera);
 
-	d.ClearColor( Color::Blue() );
+	d->ClearColor( Color::Blue() );
 	
 	// load the texture
 	Texture* tex = new Texture("data/grid.png");
@@ -47,32 +47,27 @@ int main(int argc, char** argv)
 	
 	uint time = Timer::GetCurrentGameTime();
 	
-	Matrix4 modelTransformations;
-	
 	
 	//clear the input before the scene was loaded and reset the camera to it's default view
-	d.Listener()->Update();
-	camera.Reset();
+	d->Listener()->Update();
+	camera->Reset();
 	
-	while(d.Listener()->Update())
+	while(d->Listener()->Update())
 	{
-		camera.Update();
-		
-		// apply the camera and move the cube into a good default position
-		modelTransformations = camera.CameraMatrix();
+		camera->Update();
 	
 		time = Timer::GetCurrentGameTime();
 
 
-		d.ClearScreen();
-		d.SetupPerspective(45.0f, 0.1f, 100.0f);
+		d->ClearScreen();
+		d->SetupPerspective(45.0f, 0.1f, 100.0f);
 		
 		tex->Bind();
-		m->Render(&modelTransformations);
+		m->Render(camera->CameraMatrix());
 		
-        d.SwapBuffers();
+        d->SwapBuffers();
 		
-		if(camera.ShouldQuit()) // should quit should probably be in it's own input listener
+		if(camera->ShouldQuit()) // should quit should probably be in it's own input listener
 		{
 			break;
 		}

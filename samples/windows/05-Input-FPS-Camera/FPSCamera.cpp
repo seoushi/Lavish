@@ -21,8 +21,8 @@ FPSCamera::FPSCamera()
 {
 	cameraAngle = Vector2::Zero();
 	cameraPosition = Vector3::Zero();
-	cameraMatrix = Matrix4::Identity();
 	mouseMovement = Vector2::Zero();
+	cameraMatrix = Matrix4::Identity();
 	lastUpdateTime = Timer::GetCurrentGameTime();
 	
 	leftIsDown	= false;
@@ -145,13 +145,13 @@ void FPSCamera::Update()
 	}
 
 
-	cameraMatrix = Matrix4::RotateX(cameraAngle.x) *	// updown movement
-					Matrix4::RotateY(cameraAngle.y) *	// left and right movement
-					Matrix4::Translate(-cameraPosition);
+	(*cameraMatrix) = (*Matrix4::RotateX(cameraAngle.x)) *	// updown movement
+					(*Matrix4::RotateY(cameraAngle.y)) *	// left and right movement
+					(*Matrix4::Translate(-cameraPosition));
 }
 
 
-Matrix4 FPSCamera::CameraMatrix() const
+std::shared_ptr<Matrix4> FPSCamera::CameraMatrix()
 {
 	return cameraMatrix;
 }

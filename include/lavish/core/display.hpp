@@ -12,6 +12,7 @@
 
 #include <string>
 #include <list>
+#include <memory>
 
 #include <lavish/core/platform.hpp>
 #include <lavish/common/color.hpp>
@@ -124,7 +125,7 @@ class Display
          * The event listener for the display
          * @return EventListener
          */
-        EventListener* Listener();
+        std::shared_ptr<EventListener> Listener();
 	
 	
 		/**
@@ -150,7 +151,7 @@ class Display
         Uint32 sdlFlags;                /**< Stores the drawing surface's capabilities  */
         std::list<Vector2> resolutions; /**< Stores supported display resolutions       */
 
-        EventListener events;       /**< The display's event listener               */
+        std::shared_ptr<EventListener> events;       /**< The display's event listener               */
 };
 
 

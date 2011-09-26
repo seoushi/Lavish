@@ -17,15 +17,12 @@ namespace lavish
 
 	Model::Model()
 	{
-		resourceType = resource::Model;
 		this->filename = "";
 	}
 
 	
 	Model::Model(std::string filename)
-	{
-		resourceType = resource::Model;
-		
+	{	
 		if(! Load(filename) )
 		{
 			throw LAVISH_EXCEPTION("Failed to load model");
@@ -71,7 +68,7 @@ namespace lavish
 	}
 
 
-	void Model::Render(Matrix4* transformations)
+	void Model::Render(std::shared_ptr<Matrix4> transformations)
 	{
 		glLoadMatrixf(transformations->data);
 		
@@ -253,6 +250,11 @@ namespace lavish
 		buffer.Generate();
 		
 		return true;
+	}
+
+
+	std::string Model::ResourceType() {
+		return "model";
 	}
 
 	

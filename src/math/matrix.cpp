@@ -8,10 +8,12 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <memory>
 
 #include <lavish/math/matrix4.hpp>
 #include <lavish/math/math.hpp>
 #include <lavish/core/platform.hpp>
+
 
 namespace lavish
 {
@@ -64,9 +66,9 @@ Matrix4::~Matrix4()
 }
 
 	
-Matrix4 Matrix4::Identity()
+std::shared_ptr<Matrix4> Matrix4::Identity()
 {
-	return Matrix4();
+	return std::make_shared<Matrix4>();
 }
 
 	
@@ -81,82 +83,82 @@ void Matrix4::Transpose()
 }
 
 
-Matrix4 Matrix4::Transposed() const
+std::shared_ptr<Matrix4> Matrix4::Transposed()
 {
-    return Matrix4( m00, m10, m20, m30,
-                    m01, m11, m21, m31,
-                    m02, m12, m22, m32,
-                    m03, m13, m23, m33 );
+    return std::shared_ptr<Matrix4>( new Matrix4(m00, m10, m20, m30,
+										m01, m11, m21, m31,
+										m02, m12, m22, m32,
+										m03, m13, m23, m33 ));
 }
 
 
-Matrix4 Matrix4::RotateX( const float degrees )
+std::shared_ptr<Matrix4> Matrix4::RotateX( const float degrees )
 {
-    Matrix4 m;
+	auto m = std::make_shared<Matrix4>();
 
     float  sr = (float)sin( (degrees * PI_OVER_180) );
     float  cr = (float)cos( (degrees * PI_OVER_180) );
 
-    m.m11 =  cr;
-    m.m21 = -sr;
-    m.m12 =  sr;
-    m.m22 =  cr;
+    m->m11 =  cr;
+    m->m21 = -sr;
+    m->m12 =  sr;
+    m->m22 =  cr;
 
     return m;
 }
 
 
-Matrix4 Matrix4::RotateY( const float degrees )
+std::shared_ptr<Matrix4> Matrix4::RotateY( const float degrees )
 {
-    Matrix4 m;
+    auto m = std::make_shared<Matrix4>();
 
     float  sr = (float)sin( (degrees * PI_OVER_180) );
     float  cr = (float)cos( (degrees * PI_OVER_180) );
 
-    m.m00 =  cr;
-    m.m20 =  sr;
-    m.m02 = -sr;
-    m.m22 =  cr;
+    m->m00 =  cr;
+    m->m20 =  sr;
+    m->m02 = -sr;
+    m->m22 =  cr;
 
     return m;
 }
 
 
-Matrix4 Matrix4::RotateZ( const float degrees )
+std::shared_ptr<Matrix4> Matrix4::RotateZ( const float degrees )
 {
-    Matrix4 m;
+    auto m = std::make_shared<Matrix4>();
 
     float  sr = (float)sin( (degrees * PI_OVER_180) );
     float  cr = (float)cos( (degrees * PI_OVER_180) );
 
-    m.m00 =  cr;
-    m.m10 = -sr;
-    m.m01 =  sr;
-    m.m11 =  cr;
+    m->m00 =  cr;
+    m->m10 = -sr;
+    m->m01 =  sr;
+    m->m11 =  cr;
 
     return m;
 }
 
 
-Matrix4 Matrix4::Scale( const float x, const float y, const float z )
+std::shared_ptr<Matrix4> Matrix4::Scale( const float x, const float y, const float z )
 {
-    Matrix4 m;
+    auto m = std::make_shared<Matrix4>();
 
-    m.m00 = x;
-    m.m11 = y;
-    m.m22 = z;
+    m->m00 = x;
+    m->m11 = y;
+    m->m22 = z;
 
     return m;
 }
 
 
-Matrix4 Matrix4::Scale(const Vector3 &v)
+std::shared_ptr<Matrix4> Matrix4::Scale(const Vector3 &v)
 {
-    Matrix4 m;
+    auto m = std::make_shared<Matrix4>();
 
-    m.m00 = v.x;
-    m.m11 = v.y;
-    m.m22 = v.z;
+    m->m00 = v.x;
+    m->m11 = v.y;
+    m->m22 = v.z;
 
     return m;
 }
@@ -178,25 +180,25 @@ void Matrix4::GetScale(Vector3* v) const
 }
 
 
-Matrix4 Matrix4::Translate( const float x, const float y, const float z)
+std::shared_ptr<Matrix4> Matrix4::Translate( const float x, const float y, const float z)
 {
-    Matrix4 m;
+	auto m = std::make_shared<Matrix4>();
 
-    m.m30 = x;
-    m.m31 = y;
-    m.m32 = z;
+    m->m30 = x;
+    m->m31 = y;
+    m->m32 = z;
 
     return m;
 }
 
 
-Matrix4 Matrix4::Translate( const Vector3 &v )
+std::shared_ptr<Matrix4> Matrix4::Translate( const Vector3 &v )
 {
-    Matrix4 m;
+    auto m = std::make_shared<Matrix4>();
 
-    m.m30 = v.x;
-    m.m31 = v.y;
-    m.m32 = v.z;
+    m->m30 = v.x;
+    m->m31 = v.y;
+    m->m32 = v.z;
 
     return m;
 }

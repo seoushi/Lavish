@@ -22,14 +22,11 @@ Texture::Texture()
     glId = 0;
     width = 0;
     height = 0;
-    resourceType = resource::Texture;
 }
 
 
 Texture::Texture(std::string filename)
 {
-    resourceType = resource::Texture;
-
     glId = 0;
     width = 0;
     height = 0;
@@ -177,5 +174,8 @@ void Texture::Enable(bool enableTextures)
 	}
 }
 
+std::string Texture::ResourceType() {
+	return "texture";
+}
         
 }

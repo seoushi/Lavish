@@ -4,6 +4,7 @@
 #include <lavish/core/timer.hpp>
 
 #include <iostream>
+#include <memory>
 
 using namespace lavish;
 
@@ -35,9 +36,9 @@ int main(int argc, char** argv)
 	
 	
 	//load shaders
-	ShaderSet* ss = new ShaderSet();
-	Shader* vert = new Shader("data/Shader.vert", shader::Vertex);
-	Shader* frag = new Shader("data/Shader.frag", shader::Fragment);
+	auto ss = std::make_shared<ShaderSet>();
+	auto vert = std::make_shared<Shader>("data/Shader.vert", shader::Vertex);
+	auto frag = std::make_shared<Shader>("data/Shader.frag", shader::Fragment);
 	
 	ss->AddShader(vert);
 	ss->AddShader(frag);

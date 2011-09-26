@@ -55,8 +55,8 @@ class GameState
         virtual void OnRender() = 0;
 
 
-        Display*      display;       /** holds a reference to the Display       */
-        StateManager* stateManager;  /** holds a reference to the state manager */
+        std::shared_ptr<Display>      display;       /** holds a reference to the Display       */
+        std::shared_ptr<StateManager> stateManager;  /** holds a reference to the state manager */
 };
 
 

@@ -9,6 +9,7 @@
 #ifndef _SHADER_SET_HPP
 #define	_SHADER_SET_HPP
 
+#include <memory>
 #include <string>
 #include <lavish/core/platform.hpp>
 #include <lavish/graphics/shader.hpp>
@@ -38,13 +39,13 @@ namespace lavish
          * Adds a shader to the set for use.
 		 * @param the shader to add to the set
          */
-		void AddShader(Shader* shader);
+		void AddShader(std::shared_ptr<Shader> shader);
 		
 		/**
          * Removes a shader from the set.
 		 * @param the shader to remove from the set
          */
-		void RemoveShader(Shader* shader);
+		void RemoveShader(std::shared_ptr<Shader> shader);
 		
 		/**
          * After all shaders have been added, finalize needs to be called.

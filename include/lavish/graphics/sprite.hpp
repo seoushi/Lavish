@@ -9,6 +9,9 @@
 #ifndef _SPRITE_HPP
 #define	_SPRITE_HPP
 
+
+#include <memory>
+
 #include <lavish/graphics/renderable.hpp>
 #include <lavish/core/resource.hpp>
 #include <lavish/graphics/texture.hpp>
@@ -33,7 +36,7 @@ class Sprite : public Renderable, public Resource
          * @param y the bottom most value on the texture for the sprite
          * @param isInPixels true means the values are in pixel coordinates and not clamped between 0.0f and 1.0f
          */
-        Sprite(Texture* tex, float w = 1.0f, float h = 1.0f, float x = 0.0f, float y = 0.0f, bool isInPixels = false);
+        Sprite(std::shared_ptr<Texture> tex, float w = 1.0f, float h = 1.0f, float x = 0.0f, float y = 0.0f, bool isInPixels = false);
 
 
         /**
@@ -42,7 +45,7 @@ class Sprite : public Renderable, public Resource
          * @param rect the Rectangle of the area of the sprite
          * @param isInPixels true means the values are in pixel coordinates and not clamped between 0.0f and 1.0f
          */
-        Sprite(Texture* tex, Rectangle &rect, bool isInPixels = false);
+        Sprite(std::shared_ptr<Texture> tex, Rectangle &rect, bool isInPixels = false);
 
 
         /**
@@ -58,7 +61,7 @@ class Sprite : public Renderable, public Resource
          * @param isInPixels true means the values are in pixel coordinates and not clamped between 0.0f and 1.0f
          * @return if the sprite was loaded
          */
-        bool Load(Texture* tex, Rectangle &rect, bool isInPixels = false);
+        bool Load(std::shared_ptr<Texture> tex, Rectangle &rect, bool isInPixels = false);
 
          /**
          * Virtual function from the resource class
@@ -70,11 +73,13 @@ class Sprite : public Renderable, public Resource
          * Implements the Renderable virtual function
          * Renders from the bottom left (0,0) upwards
          */
-        virtual void Render(Matrix4* transformations = 0);
+        virtual void Render(std::shared_ptr<Matrix4> transformations = 0);
+
+		virtual std::string ResourceType();
 
     private:
 
-        Texture* texture;
+        std::shared_ptr<Texture> texture;
         Rectangle area;
         VertexBuffer<VertexTexture> geometry;
 

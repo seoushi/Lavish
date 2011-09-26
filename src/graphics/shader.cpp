@@ -24,13 +24,11 @@ namespace lavish
 Shader::Shader()
 {
     glId = 0;
-    resourceType = resource::Shader;
 }
 
 
 Shader::Shader(std::string filename, shader::Type type)
 {
-    resourceType = resource::Shader;
     glId = 0;
 
     if(!Load(filename,type))
@@ -128,6 +126,10 @@ bool Shader::Reload()
 shader::Type Shader::Type()
 {
 	return type;
+}
+
+std::string Shader::ResourceType() {
+	return "shader";
 }
         
 }

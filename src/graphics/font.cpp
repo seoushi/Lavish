@@ -8,6 +8,8 @@
 
 #include <lavish/graphics/font.hpp>
 #include <fstream>
+#include <algorithm>
+#include <memory>
 
 namespace lavish
 {
@@ -20,32 +22,25 @@ Glyph::Glyph()
 }
 
 Glyph::~Glyph()
-{
-	if(sprite)
-	{
-		delete sprite;
-	}
-}
+{}
 
 
-void Glyph::Render(Matrix4* transformations)
+void Glyph::Render(std::shared_ptr<Matrix4> transformations)
 {
-	Matrix4 mat;
+	auto mat = std::make_shared<Matrix4>();
 	
 	// move to proper location for drawing
 	if(transformations)
 	{
-		mat = (*transformations);
+		(*mat) = (*transformations);
 	}
 	
-	mat *= Matrix4::Translate((float)xOffset, (float)yOffset, 0);
+	(*mat) *= (*Matrix4::Translate((float)xOffset, (float)yOffset, 0));
 
 	// draw the glyph
-	sprite->Render(&mat);
+	sprite->Render(mat);
 }
 
-	
-	
 	
 Font::Font()
 {
@@ -69,7 +64,7 @@ bool Font::Load(std::string filename, std::string textureName)
 		return false;
 	}
 	
-	texture = new Texture();
+	texture = std::make_shared<Texture>();
 	if(!texture->Load(textureName))
 	{
 		return false;
@@ -87,7 +82,7 @@ bool Font::Load(std::string filename, std::string textureName)
 
 		if (element == "char")
 		{
-			Glyph* glyph = new Glyph();
+			auto glyph = std::make_shared<Glyph>();
 			
 			file >> element;
 			curChar = atoi(element.c_str());
@@ -104,7 +99,7 @@ bool Font::Load(std::string filename, std::string textureName)
 			file >> element;
 			h = atoi(element.c_str());
 
-			glyph->sprite = new Sprite(texture, (float)w, (float)h, (float)x, (float)y, true);
+			glyph->sprite = std::shared_ptr<Sprite>(new Sprite(texture, (float)w, (float)h, (float)x, (float)y, true));
 			
 			file >> element;
 			glyph->xOffset = atoi(element.c_str());
@@ -137,58 +132,47 @@ bool Font::Load(std::string filename, std::string textureName)
 
 void Font::Dispose()
 {
-	if(texture)
-	{
-		delete texture;
-	}
-	
-	for (std::map<int, Glyph*>::iterator itr = glyphs.begin(); itr != glyphs.end(); itr++)
-	{
-		delete itr->second;
-	}
-	
+	texture = std::shared_ptr<Texture>(NULL);
 	glyphs.clear();
 }
 
         
-void Font::DrawString(std::wstring text, Matrix4* transformations)
+void Font::DrawString(std::wstring text, std::shared_ptr<Matrix4> transformations)
 {
-	Glyph* glyph;
-	Matrix4 mat = Matrix4::Identity();
+	auto glyph = std::make_shared<Glyph>();
+	auto mat = std::make_shared<Matrix4>();
 	
 	if(transformations)
 	{
-		mat = (*transformations);
+		(*mat) = (*transformations);
 	}
 
 	// render all glyphs
-	for (std::wstring::iterator itr = text.begin(); itr != text.end(); itr++)
-	{
-		glyph = glyphs[(*itr)];
+	std::for_each(begin(text), end(text), [&glyph, this, &mat](char c){
+		glyph = this->glyphs[c];
 		
-		if(glyph)
+		if(glyph.get() != NULL)
 		{
-			glyph->Render(&mat);
-			mat *= Matrix4::Translate((float)glyph->advance, 0.0f, 0.0f);
+			glyph->Render(mat);
+			(*mat) *= (*Matrix4::Translate((float)glyph->advance, 0.0f, 0.0f));
 		}
-	}
+	});
 }
 
 
 int Font::StringWidth(std::wstring text)
 {
 	int width = 0;
-	Glyph* glyph;
+	std::shared_ptr<Glyph> glyph;
 	
-	for (std::wstring::iterator itr = text.begin(); itr != text.end(); itr++)
-	{
-		glyph = glyphs[(*itr)];
+	std::for_each(begin(text), end(text), [&glyph, this, &width](char c){
+		glyph = glyphs[c];
 		
 		if(glyph)
 		{
 			width += glyph->advance;
 		}
-	}
+	});
 	
 	return width;
 }
@@ -197,6 +181,10 @@ int Font::StringWidth(std::wstring text)
 int Font::LineHeight()
 {
 	return lineHeight;
+}
+
+std::string Font::ResourceType() {
+	return "font";
 }
 
 } /* lavish */

@@ -35,7 +35,6 @@ class VertexBuffer : public Resource
          */
         VertexBuffer()
         {
-            resourceType = resource::VertexBuffer;
         }
 
         /**
@@ -141,6 +140,10 @@ class VertexBuffer : public Resource
                 isResourceLoaded = false;
             }
         }
+
+		virtual std::string ResourceType() {
+			return "vertexBuffer";
+		}
 
     private:
 

@@ -22,6 +22,7 @@ Display::Display()
 {
     isFullScreen = false;
     surface = NULL;
+	events = std::make_shared<EventListener>();
 }
 
 Display::~Display()
@@ -236,9 +237,9 @@ void Display::Setup2d()
 }
 
 
-EventListener* Display::Listener()
+std::shared_ptr<EventListener> Display::Listener()
 {
-    return &events;
+    return events;
 }
 
 

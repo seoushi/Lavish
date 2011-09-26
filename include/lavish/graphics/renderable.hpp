@@ -9,6 +9,8 @@
 #ifndef _RENDERABLE_HPP
 #define	_RENDERABLE_HPP
 
+#include <memory>
+
 #include <lavish/math/matrix4.hpp>
 #include <lavish/core/platform.hpp>
 
@@ -38,7 +40,7 @@ namespace lavish
         /**
          * A virtual function that should draw an object
          */
-        virtual void Render(Matrix4* transformations = 0) = 0;
+        virtual void Render(std::shared_ptr<Matrix4> transformations = 0) = 0;
 	};
 	
 	

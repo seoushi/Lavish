@@ -12,6 +12,7 @@
 
 #include <lavish/math/vector3.hpp>
 #include <lavish/core/platform.hpp>
+#include <memory>
 
 namespace lavish
 {
@@ -66,7 +67,7 @@ class Matrix4
 		/**
 		 * returns an identity matrix
 		 */
-		static Matrix4 Identity();
+		static std::shared_ptr<Matrix4> Identity();
 	
 
 
@@ -79,7 +80,7 @@ class Matrix4
         /**
          * @return the transposed version of the matrix
          */
-        Matrix4 Transposed() const;
+        std::shared_ptr<Matrix4> Transposed();
 
 
         /**
@@ -87,7 +88,7 @@ class Matrix4
          * @param degrees the degrees to rotate
          * @return a matrix rotated around the X axis
          */
-        Matrix4 static RotateX( const float degrees );
+        std::shared_ptr<Matrix4> static RotateX( const float degrees );
 
 
         /**
@@ -95,7 +96,7 @@ class Matrix4
          * @param degrees the degrees to rotate
          * @return a matrix rotated around the Y axis
          */
-        Matrix4 static RotateY( const float degrees );
+        std::shared_ptr<Matrix4> static RotateY( const float degrees );
 
 
         /**
@@ -103,7 +104,7 @@ class Matrix4
          * @param degrees the degrees to rotate
          * @return a matrix rotated around the Z axis
          */
-        Matrix4 static RotateZ( const float degrees );
+        std::shared_ptr<Matrix4> static RotateZ( const float degrees );
 
 
         /**
@@ -113,7 +114,7 @@ class Matrix4
          * @param z the amount to scale on the Z axis
          * @return a scaled matrix
          */
-        Matrix4 static Scale( const float x, const float y , const float z );
+        std::shared_ptr<Matrix4> static Scale( const float x, const float y , const float z );
 
 
         /**
@@ -121,7 +122,7 @@ class Matrix4
          * @param v a vector with the scale amounts
          * @return a scaled matrix
          */
-        Matrix4 static Scale( const Vector3 &v);
+        std::shared_ptr<Matrix4> static Scale( const Vector3 &v);
 
 
         /**
@@ -147,7 +148,7 @@ class Matrix4
          * @param z the Z axis translation
          * @return a translation matrix
          */
-        Matrix4 static Translate( const float x, const float y, const float z);
+        std::shared_ptr<Matrix4> static Translate( const float x, const float y, const float z);
 
 
         /**
@@ -155,7 +156,7 @@ class Matrix4
          * @param v the vector to translate with
          * @return a translation matrix
          */
-        Matrix4 static Translate( const Vector3 &v );
+        std::shared_ptr<Matrix4> static Translate( const Vector3 &v );
 
 
         /**

@@ -16,25 +16,6 @@ namespace lavish
 {
 
 
-namespace resource
-{
-    /**
-     * An enum of the types of resources
-     */
-    enum Type
-    {
-        Unknown,
-        Texture,
-        Sprite,
-        VertexBuffer,
-		Shader,
-		Model,
-        Custom
-    };
-} /* resource */
-
-
-
 /**
  * An interface class to define what a resource is
  */
@@ -65,7 +46,7 @@ class Resource
          * Returns the resource's type
          * @return the type of the resource
          */
-        resource::Type ResourceType();
+        virtual std::string ResourceType() = 0;
 
         
         /**
@@ -83,7 +64,6 @@ class Resource
 
     protected:
 
-        resource::Type  resourceType;
         std::string     resourceName;
         bool            isResourceLoaded;
 

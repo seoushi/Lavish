@@ -82,6 +82,8 @@ namespace lavish
          * @return type of the shader
          */
 		shader::Type Type();
+
+		virtual std::string ResourceType();
 		
     protected:
 		

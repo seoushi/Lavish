@@ -13,7 +13,7 @@
 namespace lavish
 {
 
-StateManager::StateManager(Display* display)
+StateManager::StateManager(std::shared_ptr<Display> display)
 {
     this->display = display;
     isRunning = false;
@@ -23,25 +23,15 @@ StateManager::StateManager(Display* display)
 
 StateManager::~StateManager()
 {
-    if(currentState)
-    {
-        delete currentState;
-    }
 }
 
 
-void StateManager::ChangeState(GameState* state)
+void StateManager::ChangeState(std::shared_ptr<GameState> state)
 {
-    if(currentState)
-    {
-        delete currentState;
-        currentState = NULL;
-    }
-
-    if(state)
+	if(state.get() != NULL)
     {
         state->display = display;
-        state->stateManager = this;
+        state->stateManager = std::shared_ptr<StateManager>(this);
         
         state->OnLoad();
         currentState = state;

@@ -21,11 +21,11 @@ int main(int argc, char** argv)
 	
     d.ClearColor( Color::Blue() );
 	
-	Model* m = new Model("data/cube.obj");
+	auto m = std::make_shared<Model>("data/cube.obj");
 	
 	uint time = Timer::GetCurrentGameTime();
 	
-	Matrix4 modelTransformations = Matrix4::Translate(0.0f, 0.0f, -10.0f);
+	auto modelTransformations = Matrix4::Translate(0.0f, 0.0f, -10.0f);
 	
 	float angle;
 	
@@ -34,9 +34,9 @@ int main(int argc, char** argv)
 		//rotate model
 		angle = 90.0f * (((float)(Timer::GetCurrentGameTime() - time)) / 1000.0f);
 		
-		modelTransformations *= Matrix4::RotateX(angle);
-		modelTransformations *= Matrix4::RotateY(angle);
-		modelTransformations *= Matrix4::RotateZ(angle);
+		(*modelTransformations) *= (*Matrix4::RotateX(angle));
+		(*modelTransformations) *= (*Matrix4::RotateY(angle));
+		(*modelTransformations) *= (*Matrix4::RotateZ(angle));
 		
 		time = Timer::GetCurrentGameTime();
 
@@ -44,7 +44,7 @@ int main(int argc, char** argv)
         d.ClearScreen();
         d.SetupPerspective(45.0f, 0.1f, 100.0f);
 		
-		m->Render(&modelTransformations);
+		m->Render(modelTransformations);
 		
         d.SwapBuffers();
     }

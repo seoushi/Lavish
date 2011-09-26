@@ -10,6 +10,7 @@
 #define	_FONT_HPP
 
 #include <map>
+#include <memory>
 
 #include <lavish/graphics/renderable.hpp>
 #include <lavish/graphics/sprite.hpp>
@@ -44,10 +45,10 @@ namespace lavish
 			 * Implements the Renderable virtual function
 			 * Renders from the bottom left (0,0) upwards
 			 */
-			virtual void Render(Matrix4* transformations = 0);
+			virtual void Render(std::shared_ptr<Matrix4> transformations = 0);
 			
 			
-			Sprite* sprite;	/*< sprite of the glyph		*/
+			std::shared_ptr<Sprite> sprite;	/*< sprite of the glyph		*/
 			int xOffset;	/*< x offset when drawing	*/
 			int yOffset;	/*< y offset when drawing	*/
 			int advance;	/*< the ammount to advance in the x direction after drawing	*/
@@ -88,25 +89,26 @@ namespace lavish
 				 * @param the string to draw
 			 * @param the transformation on where to start rendering
 			 */
-			void DrawString(std::wstring text, Matrix4* transformations = 0);
+			void DrawString(std::wstring text, std::shared_ptr<Matrix4> transformations = 0);
 		
 			/**
 			 * @param the string to get the width of
 			 * @return the width of the given string
 			 */
 			int StringWidth(std::wstring text);
-	
 
 			/**
 			 * @return the height of line of text
 			 */
 			int LineHeight();
+
+			virtual std::string ResourceType();
 	
 		private:
 		
 			int	lineHeight;
-			Texture* texture;
-			std::map<int, Glyph*> glyphs;
+			std::shared_ptr<Texture> texture;
+			std::map<int, std::shared_ptr<Glyph>> glyphs;
 			Rectangle area;
 			VertexBuffer<VertexTexture> geometry;
 	};

@@ -32,7 +32,7 @@ class FPSCamera : public lavish::KeyboardListener, public lavish::MouseListener
 		//should be called every frame
 		void Update();
 
-		lavish::Matrix4 CameraMatrix() const;
+		std::shared_ptr<lavish::Matrix4> CameraMatrix();
 	
 		bool ShouldQuit();
 	
@@ -44,7 +44,7 @@ class FPSCamera : public lavish::KeyboardListener, public lavish::MouseListener
 	
 		lavish::Vector2 cameraAngle;
 		lavish::Vector3 cameraPosition;
-		lavish::Matrix4 cameraMatrix;
+		std::shared_ptr<lavish::Matrix4> cameraMatrix;
 		unsigned int lastUpdateTime;
 	
 		bool leftIsDown;

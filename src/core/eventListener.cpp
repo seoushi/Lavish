@@ -6,6 +6,8 @@
  * Copyright 2009 Seoushi Games. All rights reserved.
  */
 
+#include <algorithm>
+
 #include <lavish/core/eventListener.hpp>
 #include <lavish/core/platform.hpp>
 
@@ -34,38 +36,38 @@ bool EventListener::Update()
                 break;
 
             case SDL_MOUSEBUTTONDOWN:
-                for(MouseListenerIterator itr = mouseListeners.begin(); itr != mouseListeners.end(); itr++)
-                {
-                    (*itr)->OnButtonDown((mouse::Button) e.button.button);
-                }
+				std::for_each(begin(mouseListeners), end(mouseListeners), [&e](std::shared_ptr<MouseListener> itr)
+					{
+						itr->OnButtonDown((mouse::Button) e.button.button);
+					});
                 break;
 
             case SDL_MOUSEBUTTONUP:
-                for(MouseListenerIterator itr = mouseListeners.begin(); itr != mouseListeners.end(); itr++)
-                {
-                    (*itr)->OnButtonUp((mouse::Button) e.button.button);
-                }
+				std::for_each(begin(mouseListeners), end(mouseListeners), [&e](std::shared_ptr<MouseListener> itr)
+					{
+						itr->OnButtonUp((mouse::Button) e.button.button);
+					});
                 break;
                 
             case SDL_MOUSEMOTION:
-                for(MouseListenerIterator itr = mouseListeners.begin(); itr != mouseListeners.end(); itr++)
-                {
-                    (*itr)->OnMouseMove(e.motion.x, e.motion.y, e.motion.xrel, e.motion.yrel);
-                }
+				std::for_each(begin(mouseListeners), end(mouseListeners), [&e](std::shared_ptr<MouseListener> itr)
+					{
+						itr->OnMouseMove(e.motion.x, e.motion.y, e.motion.xrel, e.motion.yrel);
+					});
                 break;
 
             case SDL_KEYDOWN:
-                for(KeyboardListenerIterator itr = keyboardListeners.begin(); itr != keyboardListeners.end(); itr++)
-                {
-                    (*itr)->OnKeyDown( (keyboard::Key) e.key.keysym.sym );
-                }
+				std::for_each(begin(keyboardListeners), end(keyboardListeners), [&e](std::shared_ptr<KeyboardListener> itr)
+					{
+						itr->OnKeyDown( (keyboard::Key) e.key.keysym.sym );
+					});
                 break;
 
             case SDL_KEYUP:
-                for(KeyboardListenerIterator itr = keyboardListeners.begin(); itr != keyboardListeners.end(); itr++)
-                {
-                    (*itr)->OnKeyUp( (keyboard::Key) e.key.keysym.sym );
-                }
+				std::for_each(begin(keyboardListeners), end(keyboardListeners), [&e](std::shared_ptr<KeyboardListener> itr)
+					{
+						itr->OnKeyUp( (keyboard::Key) e.key.keysym.sym );
+					});
                 break;
         }
     }
@@ -74,25 +76,25 @@ bool EventListener::Update()
 }
 
 
-void EventListener::AttachMouseListener(MouseListener* listener)
+void EventListener::AttachMouseListener(std::shared_ptr<MouseListener> listener)
 {
     mouseListeners.push_back(listener);
 }
 
 
-void EventListener::DetachMouseListener(MouseListener* listener)
+void EventListener::DetachMouseListener(std::shared_ptr<MouseListener> listener)
 {
     mouseListeners.remove(listener);
 }
 
 
-void EventListener::AttachKeyboardListener(KeyboardListener* listener)
+void EventListener::AttachKeyboardListener(std::shared_ptr<KeyboardListener> listener)
 {
     keyboardListeners.push_back(listener);
 }
 
 
-void EventListener::DetachKeyboardListener(KeyboardListener* listener)
+void EventListener::DetachKeyboardListener(std::shared_ptr<KeyboardListener> listener)
 {
     keyboardListeners.remove(listener);
 }
