@@ -1,0 +1,6 @@
+<resources>
+    <texture file="data/grid.png" name="grid" />
+    <texture file="data/arial-32.png" name="arial" />
+    <shader file="data/Shader.frag" name="frag" />
+    <shader file="data/Shader.vert" name="vert" />
+</resources>

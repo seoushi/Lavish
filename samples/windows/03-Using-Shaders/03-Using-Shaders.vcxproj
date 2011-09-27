@@ -62,7 +62,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>..\..\..\projects\windows\lavish\Debug;..\..\..\projects\windows\dependencies\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>lavish.lib;%(AdditionalDependencies);opengl32.lib;glu32.lib;glew32.lib;sdl.lib;sdlmain.lib</AdditionalDependencies>
+      <AdditionalDependencies>lavish.lib;%(AdditionalDependencies);opengl32.lib;glu32.lib;glew32.lib;sdl.lib;sdlmain.lib;sdl_image.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

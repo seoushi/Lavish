@@ -24,16 +24,9 @@ class Texture : public Resource
     public:
 
         /**
-         * A default constructor
+         * Default constructor
          */
-        Texture();
-
-        
-        /**
-         * A constructor that takes a path to a file
-         * This will throw an exception if the file cannot be loaded successfully
-         */
-        Texture(std::string filename);
+		Texture(unsigned int glId, unsigned int width, unsigned int height);
 
         
         /**
@@ -55,26 +48,10 @@ class Texture : public Resource
          */
         unsigned int Height();
 
-
-        /**
-         * Loads a texture from a file
-         * @param the path to the file
-         * @return if the texture was loaded successfully
-         */
-        bool Load(std::string filename);
-
-
         /**
          * Virtual function from the resource class
          */
         virtual void Dispose();
-
-
-        /**
-         * Reloads the texture from file
-         * @return if the texture was loaded successfully
-         */
-        bool Reload();
 
 
         /**

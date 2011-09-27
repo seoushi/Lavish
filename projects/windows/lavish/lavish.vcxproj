@@ -103,6 +103,9 @@
     <ClInclude Include="..\..\..\include\lavish\math\matrix4.hpp" />
     <ClInclude Include="..\..\..\include\lavish\math\vector2.hpp" />
     <ClInclude Include="..\..\..\include\lavish\math\vector3.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\resource\resourceManager.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\resource\textureResourceLoader.hpp" />
+    <ClInclude Include="..\..\..\include\lavish\resource\tinyxml.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +127,11 @@
     <ClCompile Include="..\..\..\src\graphics\texture.cpp" />
     <ClCompile Include="..\..\..\src\graphics\vertexFormats.cpp" />
     <ClCompile Include="..\..\..\src\math\matrix.cpp" />
+    <ClCompile Include="..\..\..\src\resource\resourceManager.cpp" />
+    <ClCompile Include="..\..\..\src\resource\textureResourceLoader.cpp" />
+    <ClCompile Include="..\..\..\src\resource\tinyxml.cpp" />
+    <ClCompile Include="..\..\..\src\resource\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\..\src\resource\tinyxmlparser.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -36,13 +36,6 @@ class Resource
 
 
         /**
-         * Returns the resource's name
-         * @return the name of the resource
-         */
-        std::string ResourceName();
-
-
-        /**
          * Returns the resource's type
          * @return the type of the resource
          */

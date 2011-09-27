@@ -37,6 +37,12 @@
     <Filter Include="Source Files\math">
       <UniqueIdentifier>{9f356708-49ad-4d79-9c43-233a9fb65184}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\resource">
+      <UniqueIdentifier>{c17e0ed1-4070-429e-8e1a-1ff936614618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\resource">
+      <UniqueIdentifier>{d06f08f3-6a05-47ad-af3b-eaf4ac3fee3b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -102,9 +108,6 @@
     <ClInclude Include="..\..\..\include\lavish\core\platform.hpp">
       <Filter>Header Files\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\lavish\core\resource.hpp">
-      <Filter>Header Files\core</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\include\lavish\core\stateManager.hpp">
       <Filter>Header Files\core</Filter>
     </ClInclude>
@@ -122,6 +125,18 @@
     </ClInclude>
     <ClInclude Include="..\..\..\include\lavish\math\vector3.hpp">
       <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\lavish\resource\tinyxml.h">
+      <Filter>Header Files\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\lavish\resource\resourceManager.hpp">
+      <Filter>Header Files\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\lavish\core\resource.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\lavish\resource\textureResourceLoader.hpp">
+      <Filter>Header Files\resource</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +193,21 @@
     </ClCompile>
     <ClCompile Include="..\..\..\src\math\matrix.cpp">
       <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\resource\tinyxml.cpp">
+      <Filter>Source Files\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\resource\tinyxmlerror.cpp">
+      <Filter>Source Files\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\resource\tinyxmlparser.cpp">
+      <Filter>Source Files\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\resource\resourceManager.cpp">
+      <Filter>Source Files\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\resource\textureResourceLoader.cpp">
+      <Filter>Source Files\resource</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

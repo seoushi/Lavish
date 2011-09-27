@@ -2,7 +2,10 @@
 #include <lavish/core/display.hpp>
 #include <lavish/graphics/shaderSet.hpp>
 #include <lavish/core/timer.hpp>
+#include <lavish/resource/resourceManager.hpp>
+#include <lavish/resource/textureResourceLoader.hpp>
 
+#include <fstream>
 #include <iostream>
 #include <memory>
 
@@ -10,7 +13,13 @@ using namespace lavish;
 
 int main(int argc, char** argv)
 {
+	std::ofstream fout("output.txt");
+    std::cout.rdbuf(fout.rdbuf());
+
+
     Display d;
+	ResourceManager resMan;
+
 	
     d.Initialize(800, 600, 24, "Sample 03");
 	
@@ -34,7 +43,12 @@ int main(int argc, char** argv)
     
     vbo.Generate();
 	
+
+	resMan.AddResourceLoader( std::make_shared<TextureResourceLoader>() );
+	resMan.Load("data/resources.lrf");
 	
+
+
 	//load shaders
 	auto ss = std::make_shared<ShaderSet>();
 	auto vert = std::make_shared<Shader>("data/Shader.vert", shader::Vertex);
